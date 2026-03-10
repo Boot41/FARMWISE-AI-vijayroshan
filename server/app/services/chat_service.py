@@ -9,7 +9,11 @@ from sqlalchemy.orm import selectinload
 
 from app.db.models import ChatMessage, ChatSession, User, utcnow
 from app.services.agent_client import send_chat_request
-from app.services.data_service import list_latest_mandi_prices, list_latest_weather, list_region_crops
+from app.services.data_service import (
+    list_latest_mandi_prices,
+    list_latest_weather,
+    list_region_crops,
+)
 
 
 def _build_session_title(message: str) -> str:

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 from uuid import UUID, uuid4
 
 from sqlalchemy import JSON, Boolean, Date, DateTime, Float, ForeignKey, String, Text, Uuid, func
@@ -11,7 +11,7 @@ from app.db.base import Base
 
 
 def utcnow() -> datetime:
-    return datetime.now(timezone.utc)
+    return datetime.now(UTC)
 
 
 json_type = JSON().with_variant(JSONB, "postgresql")
@@ -31,14 +31,14 @@ class Region(Base):
         DateTime(timezone=True), default=utcnow, server_default=func.now()
     )
 
-    users: Mapped[list["User"]] = relationship(back_populates="region")
-    region_crops: Mapped[list["RegionCrop"]] = relationship(
+    users: Mapped[list[User]] = relationship(back_populates="region")
+    region_crops: Mapped[list[RegionCrop]] = relationship(
         back_populates="region", cascade="all, delete-orphan"
     )
-    weather_forecasts: Mapped[list["WeatherForecast"]] = relationship(
+    weather_forecasts: Mapped[list[WeatherForecast]] = relationship(
         back_populates="region", cascade="all, delete-orphan"
     )
-    mandi_prices: Mapped[list["MandiPrice"]] = relationship(
+    mandi_prices: Mapped[list[MandiPrice]] = relationship(
         back_populates="region", cascade="all, delete-orphan"
     )
 
@@ -68,10 +68,10 @@ class User(Base):
     )
 
     region: Mapped[Region] = relationship(back_populates="users")
-    chat_sessions: Mapped[list["ChatSession"]] = relationship(
+    chat_sessions: Mapped[list[ChatSession]] = relationship(
         back_populates="user", cascade="all, delete-orphan"
     )
-    refresh_tokens: Mapped[list["RefreshToken"]] = relationship(
+    refresh_tokens: Mapped[list[RefreshToken]] = relationship(
         back_populates="user", cascade="all, delete-orphan"
     )
 
@@ -151,7 +151,7 @@ class ChatSession(Base):
     )
 
     user: Mapped[User] = relationship(back_populates="chat_sessions")
-    messages: Mapped[list["ChatMessage"]] = relationship(
+    messages: Mapped[list[ChatMessage]] = relationship(
         back_populates="session",
         cascade="all, delete-orphan",
         order_by="ChatMessage.created_at",

@@ -226,5 +226,6 @@ The seed script inserts:
 - Do not add reasoning logic to the backend.
 - If the agent payload contract changes, update `app/services/agent_client.py` and `app/services/chat_service.py`, not the DB schema unless the stored chat model also changes.
 - Keep documentation free of sensitive environment values.
+- Run the configured pre-commit hooks before creating a commit.
 - When creating a commit, use a proper title that clearly describes the change scope and intent.
 - When creating a pull request, use a proper title and description that summarize what changed, why it changed, and any important verification notes.

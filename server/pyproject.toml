@@ -50,6 +50,21 @@ strict = true
 plugins = ["pydantic.mypy"]
 exclude = ["alembic/"]
 
+[[tool.mypy.overrides]]
+module = [
+  "alembic",
+  "alembic.*",
+  "bcrypt",
+  "httpx",
+  "jose",
+  "jose.*",
+  "loguru",
+  "passlib",
+  "passlib.*",
+  "pytest",
+]
+ignore_missing_imports = true
+
 [tool.importlinter]
 root_packages = ["app"]
 

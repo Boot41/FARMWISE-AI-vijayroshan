@@ -8,7 +8,12 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.api.deps import db_session
 from app.schemas.common import APIResponse
 from app.schemas.data import MandiPriceOut, RegionCropOut, RegionOut, WeatherForecastOut
-from app.services.data_service import list_latest_mandi_prices, list_latest_weather, list_region_crops, list_regions
+from app.services.data_service import (
+    list_latest_mandi_prices,
+    list_latest_weather,
+    list_region_crops,
+    list_regions,
+)
 
 router = APIRouter(prefix="/data", tags=["data"])
 

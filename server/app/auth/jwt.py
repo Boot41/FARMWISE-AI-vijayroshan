@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import UTC, datetime, timedelta
 from types import SimpleNamespace
-from typing import Any
+from typing import Any, cast
 from uuid import UUID, uuid4
 
 import bcrypt
@@ -18,7 +18,9 @@ from app.db.models import User
 from app.db.session import get_db_session
 
 if not hasattr(bcrypt, "__about__"):
-    bcrypt.__about__ = SimpleNamespace(__version__=getattr(bcrypt, "__version__", "unknown"))
+    bcrypt.__about__ = SimpleNamespace(  # type: ignore[attr-defined]
+        __version__=getattr(bcrypt, "__version__", "unknown")
+    )
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 bearer_scheme = HTTPBearer(auto_error=False)
@@ -26,16 +28,17 @@ bearer_scheme = HTTPBearer(auto_error=False)
 
 def hash_password(password: str) -> str:
     try:
-        return pwd_context.hash(password)
+        return cast(str, pwd_context.hash(password))
     except ValueError:
-        return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+        hashed_password = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
+        return hashed_password.decode("utf-8")
 
 
 def verify_password(password: str, password_hash: str) -> bool:
     try:
-        return pwd_context.verify(password, password_hash)
+        return cast(bool, pwd_context.verify(password, password_hash))
     except ValueError:
-        return bcrypt.checkpw(password.encode("utf-8"), password_hash.encode("utf-8"))
+        return bool(bcrypt.checkpw(password.encode("utf-8"), password_hash.encode("utf-8")))
 
 
 def _create_token(subject: str, token_type: str, expires_delta: timedelta) -> tuple[str, datetime]:
@@ -70,16 +73,25 @@ def create_refresh_token(subject: str) -> tuple[str, datetime]:
 def decode_token(token: str) -> dict[str, Any]:
     settings = get_settings()
     try:
-        payload = jwt.decode(token, settings.secret_key, algorithms=[settings.algorithm])
+        decoded_payload = jwt.decode(token, settings.secret_key, algorithms=[settings.algorithm])
     except JWTError as exc:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid or expired token",
         ) from exc
 
+    if not isinstance(decoded_payload, dict):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid token payload",
+        )
+    payload = cast(dict[str, Any], decoded_payload)
+
     subject = payload.get("sub")
     if not isinstance(subject, str):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token payload")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token payload"
+        )
     return payload
 
 
@@ -88,7 +100,9 @@ async def get_current_user(
     db: AsyncSession = Depends(get_db_session),
 ) -> User:
     if credentials is None:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required"
+        )
 
     payload = decode_token(credentials.credentials)
     if payload.get("token_type") != "access":
@@ -96,7 +110,9 @@ async def get_current_user(
     try:
         user_id = UUID(payload["sub"])
     except ValueError as exc:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token subject") from exc
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token subject"
+        ) from exc
 
     result = await db.execute(select(User).where(User.id == user_id))
     user = result.scalar_one_or_none()

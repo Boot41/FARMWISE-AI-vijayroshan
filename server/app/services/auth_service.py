@@ -57,7 +57,9 @@ async def register_user(
     normalized_email = email.lower()
     existing_user = await db.execute(select(User).where(User.email == normalized_email))
     if existing_user.scalar_one_or_none() is not None:
-        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Email is already registered")
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT, detail="Email is already registered"
+        )
 
     region_result = await db.execute(select(Region).where(Region.id == region_id))
     region = region_result.scalar_one_or_none()
@@ -84,7 +86,9 @@ async def login_user(db: AsyncSession, *, email: str, password: str) -> AuthPayl
     user = result.scalar_one_or_none()
 
     if user is None or not verify_password(password, user.password_hash):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password"
+        )
 
     return await _build_auth_payload(db, user)
 
@@ -92,17 +96,23 @@ async def login_user(db: AsyncSession, *, email: str, password: str) -> AuthPayl
 async def refresh_access_token(db: AsyncSession, *, refresh_token: str) -> AccessTokenOnly:
     payload = decode_token(refresh_token)
     if payload.get("token_type") != "refresh":
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid refresh token")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid refresh token"
+        )
 
     result = await db.execute(select(RefreshToken).where(RefreshToken.token == refresh_token))
     stored_token = result.scalar_one_or_none()
     if stored_token is None or stored_token.revoked:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Refresh token is invalid")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Refresh token is invalid"
+        )
     expires_at = stored_token.expires_at
     if expires_at.tzinfo is None:
         expires_at = expires_at.replace(tzinfo=UTC)
     if expires_at < datetime.now(UTC):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Refresh token has expired")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Refresh token has expired"
+        )
 
     access_token, _ = create_access_token(str(payload["sub"]))
     return AccessTokenOnly(access_token=access_token)

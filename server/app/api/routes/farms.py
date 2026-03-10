@@ -18,7 +18,9 @@ async def get_me(
     db: AsyncSession = Depends(db_session),
 ) -> APIResponse[UserProfile]:
     user = await get_user_profile(db, user_id=current_user.id)
-    return APIResponse(message="User profile fetched successfully", data=UserProfile.model_validate(user))
+    return APIResponse(
+        message="User profile fetched successfully", data=UserProfile.model_validate(user)
+    )
 
 
 @router.patch("/me", response_model=APIResponse[UserProfile])
@@ -34,4 +36,6 @@ async def patch_me(
         irrigation_type=body.irrigation_type,
         current_crop=body.current_crop,
     )
-    return APIResponse(message="User profile updated successfully", data=UserProfile.model_validate(user))
+    return APIResponse(
+        message="User profile updated successfully", data=UserProfile.model_validate(user)
+    )

@@ -33,7 +33,9 @@ async def list_region_crops(db: AsyncSession, region_id: UUID) -> Sequence[Regio
     return result.scalars().all()
 
 
-async def list_latest_weather(db: AsyncSession, region_id: UUID, limit: int = 7) -> list[WeatherForecast]:
+async def list_latest_weather(
+    db: AsyncSession, region_id: UUID, limit: int = 7
+) -> list[WeatherForecast]:
     await get_region_or_404(db, region_id)
     result = await db.execute(
         select(WeatherForecast)

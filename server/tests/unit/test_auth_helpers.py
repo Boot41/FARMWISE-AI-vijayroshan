@@ -1,6 +1,12 @@
 from __future__ import annotations
 
-from app.auth.jwt import create_access_token, create_refresh_token, decode_token, hash_password, verify_password
+from app.auth.jwt import (
+    create_access_token,
+    create_refresh_token,
+    decode_token,
+    hash_password,
+    verify_password,
+)
 
 
 def test_password_hash_and_verify() -> None:

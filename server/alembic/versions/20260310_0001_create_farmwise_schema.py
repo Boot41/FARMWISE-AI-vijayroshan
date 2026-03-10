@@ -8,8 +8,9 @@ Create Date: 2026-03-10 00:01:00.000000
 from __future__ import annotations
 
 import sqlalchemy as sa
-from alembic import op
 from sqlalchemy.dialects import postgresql
+
+from alembic import op
 
 revision = "20260310_0001"
 down_revision = None
@@ -83,8 +84,15 @@ def upgrade() -> None:
         sa.ForeignKeyConstraint(["region_id"], ["regions.id"], ondelete="CASCADE"),
         sa.PrimaryKeyConstraint("id"),
     )
-    op.create_index(op.f("ix_weather_forecasts_forecast_date"), "weather_forecasts", ["forecast_date"], unique=False)
-    op.create_index(op.f("ix_weather_forecasts_region_id"), "weather_forecasts", ["region_id"], unique=False)
+    op.create_index(
+        op.f("ix_weather_forecasts_forecast_date"),
+        "weather_forecasts",
+        ["forecast_date"],
+        unique=False,
+    )
+    op.create_index(
+        op.f("ix_weather_forecasts_region_id"), "weather_forecasts", ["region_id"], unique=False
+    )
 
     op.create_table(
         "mandi_prices",
@@ -98,7 +106,9 @@ def upgrade() -> None:
         sa.PrimaryKeyConstraint("id"),
     )
     op.create_index(op.f("ix_mandi_prices_crop_name"), "mandi_prices", ["crop_name"], unique=False)
-    op.create_index(op.f("ix_mandi_prices_recorded_date"), "mandi_prices", ["recorded_date"], unique=False)
+    op.create_index(
+        op.f("ix_mandi_prices_recorded_date"), "mandi_prices", ["recorded_date"], unique=False
+    )
     op.create_index(op.f("ix_mandi_prices_region_id"), "mandi_prices", ["region_id"], unique=False)
 
     op.create_table(
@@ -124,7 +134,9 @@ def upgrade() -> None:
         sa.ForeignKeyConstraint(["session_id"], ["chat_sessions.id"], ondelete="CASCADE"),
         sa.PrimaryKeyConstraint("id"),
     )
-    op.create_index(op.f("ix_chat_messages_session_id"), "chat_messages", ["session_id"], unique=False)
+    op.create_index(
+        op.f("ix_chat_messages_session_id"), "chat_messages", ["session_id"], unique=False
+    )
 
     op.create_table(
         "refresh_tokens",

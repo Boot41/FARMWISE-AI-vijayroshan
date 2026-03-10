@@ -1,1 +1,61 @@
-repos: []
+repos:
+  - repo: local
+    hooks:
+      - id: backend-ruff-format
+        name: backend ruff format
+        entry: bash -lc 'cd server && uv run ruff format .'
+        language: system
+        pass_filenames: false
+        files: ^server/
+
+      - id: backend-ruff-check
+        name: backend ruff check
+        entry: bash -lc 'cd server && uv run ruff check .'
+        language: system
+        pass_filenames: false
+        files: ^server/
+
+      - id: backend-mypy
+        name: backend mypy
+        entry: bash -lc 'cd server && uv run mypy --explicit-package-bases .'
+        language: system
+        pass_filenames: false
+        files: ^server/
+
+      - id: backend-import-linter
+        name: backend import linter
+        entry: bash -lc 'cd server && uv run lint-imports'
+        language: system
+        pass_filenames: false
+        files: ^server/
+
+      - id: frontend-eslint
+        name: frontend eslint
+        entry: bash -lc 'cd client && test -d node_modules && npm run lint || (echo \"client/node_modules is missing; run npm ci in client first\" && exit 1)'
+        language: system
+        pass_filenames: false
+        files: ^client/
+
+      - id: backend-unit-tests
+        name: backend unit tests
+        entry: bash -lc 'cd server && uv run pytest tests/unit -q'
+        language: system
+        pass_filenames: false
+        stages: [manual]
+        files: ^server/
+
+      - id: backend-integration-tests
+        name: backend integration tests
+        entry: bash -lc 'cd server && uv run pytest tests/integration -q'
+        language: system
+        pass_filenames: false
+        stages: [manual]
+        files: ^server/
+
+      - id: frontend-build
+        name: frontend build
+        entry: bash -lc 'cd client && test -d node_modules && npm run build || (echo \"client/node_modules is missing; run npm ci in client first\" && exit 1)'
+        language: system
+        pass_filenames: false
+        stages: [manual]
+        files: ^client/

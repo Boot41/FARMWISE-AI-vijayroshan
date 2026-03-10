@@ -20,7 +20,6 @@ from app.db.models import (
     WeatherForecast,
 )
 
-
 SEED_REGIONS = [
     {
         "state": "Tamil Nadu",
@@ -159,7 +158,16 @@ SEED_USERS = [
 
 
 async def reset_database(session: AsyncSession) -> None:
-    for model in [ChatMessage, ChatSession, RefreshToken, MandiPrice, WeatherForecast, RegionCrop, User, Region]:
+    for model in [
+        ChatMessage,
+        ChatSession,
+        RefreshToken,
+        MandiPrice,
+        WeatherForecast,
+        RegionCrop,
+        User,
+        Region,
+    ]:
         await session.execute(delete(model))
     await session.commit()
 
