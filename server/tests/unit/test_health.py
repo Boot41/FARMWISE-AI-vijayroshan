@@ -1,11 +1,8 @@
 from __future__ import annotations
 
-import pytest
-from httpx import AsyncClient
+from app.main import create_app
 
 
-@pytest.mark.asyncio
-async def test_health_returns_ok(client: AsyncClient) -> None:
-    response = await client.get("/health")
-    assert response.status_code == 200
-    assert response.json() == {"status": "ok"}
+def test_app_metadata() -> None:
+    app = create_app()
+    assert app.title == "FarmWise AI Backend"

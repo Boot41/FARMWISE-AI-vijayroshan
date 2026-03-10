@@ -16,8 +16,11 @@ COPY server/pyproject.toml server/uv.lock ./
 RUN uv pip install --system --no-cache -r pyproject.toml
 
 COPY server/ .
+COPY Agents /app/Agents
 COPY --from=frontend-build /build/dist /app/static
 
-EXPOSE 8000
+ENV PYTHONPATH=/app:/app/Agents
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+EXPOSE 8010
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8010"]

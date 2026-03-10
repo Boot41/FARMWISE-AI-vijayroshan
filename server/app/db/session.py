@@ -19,7 +19,7 @@ def get_engine() -> AsyncEngine:
     global _engine
     if _engine is None:
         settings = get_settings()
-        _engine = create_async_engine(settings.effective_db_url, echo=False)
+        _engine = create_async_engine(settings.effective_db_url, echo=False, future=True)
     return _engine
 
 

@@ -1,17 +1,15 @@
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter
 
-from app.api.routes import agent, auth, health
-from app.auth.deps import require_user
+from app.api.routes import auth, chat, data, farms, health
 
-public_router = APIRouter()
-public_router.include_router(health.router)
-public_router.include_router(auth.router)
-
-api_router = APIRouter(prefix="/api/v1", dependencies=[Depends(require_user)])
-api_router.include_router(agent.router)
+api_router = APIRouter(prefix="/api")
+api_router.include_router(health.router)
+api_router.include_router(auth.router)
+api_router.include_router(chat.router)
+api_router.include_router(data.router)
+api_router.include_router(farms.router)
 
 root_router = APIRouter()
-root_router.include_router(public_router)
 root_router.include_router(api_router)

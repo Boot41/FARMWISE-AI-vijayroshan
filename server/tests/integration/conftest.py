@@ -1,47 +1,28 @@
 from __future__ import annotations
 
 from collections.abc import AsyncGenerator
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, date, datetime, timedelta
+from pathlib import Path
 
-import jwt
 import pytest
-from fastapi import FastAPI
 from httpx import ASGITransport, AsyncClient
-from sqlalchemy.ext.asyncio import (
-    AsyncSession,
-    async_sessionmaker,
-    create_async_engine,
-)
+from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
-import app.db.models  # noqa: F401 — register all models
-from app.api.router import root_router
-from app.auth.passwords import hash_password
-from app.core.config import get_settings
+from app.auth.jwt import create_access_token, hash_password
 from app.db.base import Base
-from app.db.models import User
-from app.middleware.error_handler import ErrorHandlerMiddleware
-from app.middleware.request_logging import RequestLoggingMiddleware
-
-
-def _create_test_app() -> FastAPI:
-    """Create a FastAPI app without lifespan (no shared engine)."""
-    test_app = FastAPI(title="Test")
-    test_app.add_middleware(RequestLoggingMiddleware)
-    test_app.add_middleware(ErrorHandlerMiddleware)
-    test_app.include_router(root_router)
-    return test_app
+from app.db.models import MandiPrice, Region, RegionCrop, User, WeatherForecast
+from app.db.session import get_db_session
+from app.main import create_app
 
 
 @pytest.fixture
-async def engine():  # type: ignore[no-untyped-def]
-    settings = get_settings()
-    eng = create_async_engine(settings.effective_db_url, echo=False)
-    async with eng.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
-    yield eng
-    async with eng.begin() as conn:
-        await conn.run_sync(Base.metadata.drop_all)
-    await eng.dispose()
+async def engine(tmp_path_factory: pytest.TempPathFactory):  # type: ignore[no-untyped-def]
+    db_path = Path(tmp_path_factory.mktemp("db")) / "farmwise-test.db"
+    engine = create_async_engine(f"sqlite+aiosqlite:///{db_path}", future=True)
+    async with engine.begin() as connection:
+        await connection.run_sync(Base.metadata.create_all)
+    yield engine
+    await engine.dispose()
 
 
 @pytest.fixture
@@ -50,51 +31,105 @@ async def session_factory(engine):  # type: ignore[no-untyped-def]
 
 
 @pytest.fixture
-async def db(session_factory):  # type: ignore[no-untyped-def]
-    async with session_factory() as session:
-        yield session
+async def client(session_factory) -> AsyncGenerator[AsyncClient, None]:  # type: ignore[no-untyped-def]
+    app = create_app()
 
-
-@pytest.fixture
-async def client(session_factory):  # type: ignore[no-untyped-def]
-    from app.api.deps import db_session as db_session_dep
-
-    test_app = _create_test_app()
-
-    async def _override() -> AsyncGenerator[AsyncSession, None]:
+    async def override_session() -> AsyncGenerator[AsyncSession, None]:
         async with session_factory() as session:
             yield session
 
-    test_app.dependency_overrides[db_session_dep] = _override
-    transport = ASGITransport(app=test_app)
-    async with AsyncClient(transport=transport, base_url="http://test") as ac:
+    app.dependency_overrides[get_db_session] = override_session
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://testserver") as ac:
         yield ac
 
 
 @pytest.fixture
-async def seed_user(db: AsyncSession) -> User:
-    user = User(
-        username="testuser",
-        email="test@example.com",
-        full_name="Test User",
-        password_hash=hash_password("testpass"),
-    )
-    db.add(user)
-    await db.commit()
-    await db.refresh(user)
-    return user
-
-
-def make_token(user_id: int) -> str:
-    settings = get_settings()
-    payload = {
-        "sub": str(user_id),
-        "exp": datetime.now(UTC) + timedelta(hours=1),
-    }
-    return jwt.encode(payload, settings.secret_key, algorithm="HS256")
+async def seeded_region(session_factory) -> Region:  # type: ignore[no-untyped-def]
+    async with session_factory() as session:
+        region = Region(
+            state="Tamil Nadu",
+            district="Chennai",
+            region_name="Cauvery Delta",
+            dominant_soil_type="Red Laterite",
+            default_water_availability="Tank irrigation",
+            climate_zone="Tropical",
+        )
+        session.add(region)
+        await session.flush()
+        session.add_all(
+            [
+                RegionCrop(
+                    region_id=region.id,
+                    crop_name="Paddy",
+                    crop_season="Kharif",
+                    suitability_score=9.2,
+                    notes="Primary seasonal crop",
+                ),
+                RegionCrop(
+                    region_id=region.id,
+                    crop_name="Groundnut",
+                    crop_season="Zaid",
+                    suitability_score=7.5,
+                    notes="Supplementary crop",
+                ),
+            ]
+        )
+        today = date.today()
+        for offset in range(7):
+            session.add(
+                WeatherForecast(
+                    region_id=region.id,
+                    forecast_date=today + timedelta(days=offset),
+                    min_temp=25.0 + offset * 0.1,
+                    max_temp=33.0 + offset * 0.1,
+                    expected_rainfall_mm=5.0 + offset,
+                    humidity_pct=70.0 + offset,
+                    wind_speed_kmph=12.0 + offset,
+                    forecast_generated_at=datetime.now(UTC),
+                )
+            )
+        session.add_all(
+            [
+                MandiPrice(
+                    region_id=region.id,
+                    crop_name="Paddy",
+                    price_per_quintal=2400.0,
+                    recorded_date=today,
+                ),
+                MandiPrice(
+                    region_id=region.id,
+                    crop_name="Groundnut",
+                    price_per_quintal=6100.0,
+                    recorded_date=today,
+                ),
+            ]
+        )
+        await session.commit()
+        await session.refresh(region)
+        return region
 
 
 @pytest.fixture
-def auth_headers(seed_user: User) -> dict[str, str]:
-    token = make_token(seed_user.id)
-    return {"Authorization": f"Bearer {token}"}
+async def seeded_user(session_factory, seeded_region: Region) -> User:  # type: ignore[no-untyped-def]
+    async with session_factory() as session:
+        user = User(
+            name="Test Farmer",
+            email="farmer@example.com",
+            phone_number="9999999999",
+            password_hash=hash_password("pass123"),
+            region_id=seeded_region.id,
+            water_availability="Tank irrigation",
+            irrigation_type="Flood",
+            current_crop="Paddy",
+        )
+        session.add(user)
+        await session.commit()
+        await session.refresh(user)
+        return user
+
+
+@pytest.fixture
+def auth_headers(seeded_user: User) -> dict[str, str]:
+    access_token, _ = create_access_token(str(seeded_user.id))
+    return {"Authorization": f"Bearer {access_token}"}

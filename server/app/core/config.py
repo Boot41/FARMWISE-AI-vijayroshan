@@ -13,13 +13,18 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=SERVER_DIR / ".env", extra="ignore")
 
     env: Literal["development", "test", "production"] = "development"
-    database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5433/app_scaffold"
-    secret_key: str = "app-scaffold-dev-secret"
-    google_api_key: str = ""
-    google_genai_use_vertexai: bool = False
+    database_url: str = "postgresql+asyncpg://user:password@localhost:5433/farmwise"
+    secret_key: str = "your-secret-key-here"
+    algorithm: str = "HS256"
+    access_token_expire_minutes: int = 30
+    refresh_token_expire_days: int = 7
+    agent_service_url: str = "http://localhost:8001"
+    api_prefix: str = "/api"
 
     @property
     def effective_db_url(self) -> str:
+        if self.database_url.startswith("postgresql://"):
+            return self.database_url.replace("postgresql://", "postgresql+asyncpg://", 1)
         return self.database_url
 
 
