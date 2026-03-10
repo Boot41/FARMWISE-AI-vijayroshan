@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-stone-950 text-stone-100 antialiased;
+    font-family: "Manrope", system-ui, sans-serif;
+  }
+
+  * {
+    @apply border-stone-800;
+  }
+}
+
+@layer utilities {
+  .ticker-track {
+    width: max-content;
+    animation: ticker 24s linear infinite;
+  }
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

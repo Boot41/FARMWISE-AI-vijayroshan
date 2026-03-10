@@ -23,6 +23,233 @@ The backend exists to manage structured data and session state. It should never 
 - Username: `user`
 - Password: `password`
 
+## Frontend Scope
+
+The frontend in `client/` is intentionally small.
+It owns:
+
+- login and registration UI
+- protected routing for `/dashboard` and `/chat`
+- in-memory token handling in the browser
+- data fetching from the backend API
+- dashboard presentation for weather, mandi prices, and region crops
+- chat session browsing and chat message rendering
+- fallback rendering for plain-text assistant responses
+
+The frontend does not own:
+
+- persistence of auth tokens beyond the current page lifetime
+- direct calls to the agent service
+- business logic that belongs in FastAPI services
+- AI reasoning or prompt logic
+
+If a future change starts duplicating backend rules or embedding agent orchestration in React, that is a design regression.
+
+## Current Frontend Structure
+
+```text
+client/
+├── src/
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── pages/
+│   │   ├── Chat.tsx
+│   │   ├── Dashboard.tsx
+│   │   └── Login.tsx
+│   ├── components/
+│   │   ├── Spinner.tsx
+│   │   ├── cards/
+│   │   │   ├── CropAdvisoryCard.tsx
+│   │   │   ├── IrrigationCard.tsx
+│   │   │   ├── MarketTimingCard.tsx
+│   │   │   └── PestDiagnosisCard.tsx
+│   │   ├── chat/
+│   │   │   ├── ChatInput.tsx
+│   │   │   ├── ChatMessage.tsx
+│   │   │   └── SessionSidebar.tsx
+│   │   └── dashboard/
+│   │       ├── PriceWidget.tsx
+│   │       ├── RegionCropsWidget.tsx
+│   │       └── WeatherWidget.tsx
+│   └── lib/
+│       ├── api.ts
+│       └── auth.ts
+├── .env.example
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── vite.config.ts
+```
+
+## Frontend Routing
+
+The current routes are:
+
+- `/`
+  redirects to `/dashboard` when authenticated, otherwise `/login`
+- `/login`
+  public route for login and registration
+- `/dashboard`
+  protected route for the regional overview
+- `/chat`
+  protected route for chat sessions and agent interaction
+
+Protection is implemented in `client/src/App.tsx` using `isAuthenticated()` from `client/src/lib/auth.ts`.
+Because tokens are memory-only, a full browser reload returns the user to `/login`.
+
+## Frontend Auth Model
+
+The auth store is module-local state in `client/src/lib/auth.ts`.
+
+What exists now:
+
+- `setTokens(access, refresh)`
+- `getAccessToken()`
+- `getRefreshToken()`
+- `clearTokens()`
+- `isAuthenticated()`
+
+Important constraints:
+
+- no `localStorage`
+- no `sessionStorage`
+- no cookie-based session handling in the client
+
+`client/src/lib/api.ts` attaches the access token on every request.
+On a `401`, it attempts `POST /api/auth/refresh` once using the in-memory refresh token.
+If refresh fails, tokens are cleared and the browser is redirected to `/login`.
+
+## Frontend API Integration
+
+All client-side API calls go through `client/src/lib/api.ts`.
+Do not introduce direct `fetch()` or standalone `axios` calls inside pages or components.
+
+The frontend assumes the backend response envelope:
+
+```json
+{
+  "success": true,
+  "message": "Human readable message",
+  "data": {}
+}
+```
+
+Actual payloads are read from `response.data.data`.
+User-facing errors are derived from `response.data.message`.
+
+Typed helper functions currently exported from `client/src/lib/api.ts` include:
+
+- `login`
+- `register`
+- `logout`
+- `getMe`
+- `getRegions`
+- `getWeather`
+- `getPrices`
+- `getRegionCrops`
+- `sendMessage`
+- `getSessions`
+- `getSessionMessages`
+- `getApiErrorMessage`
+
+## Current Frontend Behavior
+
+### Login Page
+
+`client/src/pages/Login.tsx` supports both login and registration in one card.
+
+Current behavior:
+
+- registration preloads regions from `GET /api/data/regions`
+- successful login or registration stores the returned access and refresh tokens in memory
+- success redirects to `/dashboard`
+- backend envelope errors are shown inline
+
+### Dashboard Page
+
+`client/src/pages/Dashboard.tsx` loads:
+
+- `GET /api/users/me`
+- `GET /api/data/regions/{region_id}/weather`
+- `GET /api/data/regions/{region_id}/prices`
+- `GET /api/data/regions/{region_id}/crops`
+
+The page currently includes:
+
+- welcome header with user and region info
+- logout action
+- CTA to `/chat`
+- `WeatherWidget`
+- `PriceWidget`
+- `RegionCropsWidget`
+- CSS-only looping mandi ticker at the bottom
+
+The ticker is implemented in `client/src/index.css` and duplicates the text content to create a seamless loop.
+
+### Chat Page
+
+`client/src/pages/Chat.tsx` currently:
+
+- loads existing sessions with `GET /api/chat/sessions`
+- auto-loads the first session if one exists
+- loads session detail with `GET /api/chat/sessions/{session_id}`
+- starts a blank conversation when `New Chat` is pressed
+- sends messages with `POST /api/chat/message`
+- refreshes the session history after each successful send
+- scrolls to the bottom when content changes
+- shows spinner-based loading states for history fetches and message sends
+
+The page is intentionally simple state-wise and uses only local React state.
+Do not introduce Redux, Zustand, React Query, or other client state infrastructure unless there is a clear new requirement.
+
+## Chat Rendering Contract
+
+`client/src/components/chat/ChatMessage.tsx` handles assistant messages defensively.
+
+Current logic:
+
+- user messages always render as right-aligned bubbles
+- assistant messages render as plain text by default
+- if `message_metadata.structured === true` and `message_metadata.intent` is known, the relevant card component is used
+
+Supported structured intents:
+
+- `crop_recommendation`
+- `pest_diagnosis`
+- `market_timing`
+- `irrigation_schedule`
+
+Current backend reality:
+
+- the backend presently stores assistant messages with minimal metadata like `{"source": "agent_service"}`
+- this means the frontend mostly renders plain assistant bubbles today
+- the structured cards are implemented and ready, but they depend on richer `message_metadata`
+
+If that metadata contract changes, update `client/src/lib/api.ts`, `client/src/components/chat/ChatMessage.tsx`, and the card prop types together.
+
+## Frontend Developer Commands
+
+From [`client/`](/home/think41/WEEK_4_PROJECT/FarmWise_AI/client):
+
+```bash
+npm install
+npm run dev -- --host 0.0.0.0 --port 5173
+npm run build
+npm run lint
+```
+
+## Guidance For Future Codex Work
+
+- Keep API types and API calls in `client/src/lib/api.ts`.
+- Keep token logic in `client/src/lib/auth.ts`.
+- Keep route-level data loading inside page components.
+- Keep presentational widgets and cards in `client/src/components/`.
+- Preserve the memory-only auth behavior unless the product requirement explicitly changes.
+- Do not add direct client calls to `http://localhost:8001`; the frontend should only talk to the backend API.
+- If you change the visual system, preserve the current minimal Tailwind setup instead of reintroducing MUI or another UI framework without a requirement.
+- If you add new structured chat cards, update both the intent switch and the typed card data shapes.
+
 ## Backend Scope
 
 The backend in `server/` owns:
