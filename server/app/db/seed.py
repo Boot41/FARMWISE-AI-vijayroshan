@@ -149,11 +149,11 @@ SEED_REGIONS = [
 ]
 
 SEED_USERS = [
-    ("Arun Prakash", "arun@farmwise.ai", "Tamil Nadu", "Tank irrigation", "Paddy"),
-    ("Meera Patil", "meera@farmwise.ai", "Maharashtra", "Borewell + Rain", "Onion"),
-    ("Gurpreet Singh", "gurpreet@farmwise.ai", "Punjab", "Canal irrigation", "Wheat"),
-    ("Anila Joseph", "anila@farmwise.ai", "Kerala", "High rainfall", "Banana"),
-    ("Ravi Shekhawat", "ravi@farmwise.ai", "Rajasthan", "Scarce drip only", "Bajra"),
+    ("Arun Prakash", "arun@farmwise.ai", "Tamil Nadu", "Tank irrigation", "Rice", 35),
+    ("Meera Patil", "meera@farmwise.ai", "Maharashtra", "Borewell + Rain", "Tomato", 28),
+    ("Gurpreet Singh", "gurpreet@farmwise.ai", "Punjab", "Canal irrigation", "Wheat", 42),
+    ("Anila Joseph", "anila@farmwise.ai", "Kerala", "High rainfall", "Coconut", 20),
+    ("Ravi Shekhawat", "ravi@farmwise.ai", "Rajasthan", "Scarce drip only", "Bajra", 30),
 ]
 
 
@@ -236,7 +236,14 @@ async def seed_database() -> None:
                     )
 
             password_hash = hash_password("pass123")
-            for name, email, state, water_availability, current_crop in SEED_USERS:
+            for (
+                name,
+                email,
+                state,
+                water_availability,
+                current_crop,
+                sowing_days_ago,
+            ) in SEED_USERS:
                 region = region_map[state]
                 session.add(
                     User(
@@ -248,6 +255,7 @@ async def seed_database() -> None:
                         water_availability=water_availability,
                         irrigation_type=region.default_water_availability,
                         current_crop=current_crop,
+                        sowing_date=today - timedelta(days=sowing_days_ago),
                     )
                 )
 

@@ -90,6 +90,7 @@ async def process_chat_message(
             "water_availability": user.water_availability or user.region.default_water_availability,
             "irrigation_type": user.irrigation_type,
             "current_crop": user.current_crop,
+            "sowing_date": str(user.sowing_date) if user.sowing_date else None,
             "season_crops": [
                 {
                     "crop_name": crop.crop_name,

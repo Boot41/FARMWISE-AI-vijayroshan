@@ -85,6 +85,19 @@ function Dashboard() {
     (price) => `🌾 ${price.crop_name} ₹${price.price_per_quintal}/qtl`,
   );
   const tickerText = tickerItems.join("  |  ");
+  const sowingDate =
+    (user as (UserProfile & { sowing_date?: string | null }) | null)?.sowing_date ?? null;
+  const cropAgeDays = sowingDate
+    ? Math.floor((Date.now() - new Date(sowingDate).getTime()) / 86400000)
+    : null;
+  const formattedSowingDate = sowingDate
+    ? new Intl.DateTimeFormat("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      }).format(new Date(sowingDate))
+    : null;
+  const showCropStatus = Boolean(user?.current_crop && sowingDate && cropAgeDays !== null);
 
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.12),_transparent_30%),linear-gradient(180deg,_#0c0a09_0%,_#111827_100%)]">
@@ -137,6 +150,18 @@ function Dashboard() {
           </div>
         ) : (
           <>
+            {showCropStatus ? (
+              <section className="mt-6 rounded-2xl border border-emerald-900/60 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-100">
+                <div className="flex flex-col gap-2 md:flex-row md:flex-wrap md:items-center md:gap-3">
+                  <span>🌾 Current Crop: {user?.current_crop}</span>
+                  <span className="hidden text-emerald-200/50 md:inline">|</span>
+                  <span>🗓 Sown: {formattedSowingDate}</span>
+                  <span className="hidden text-emerald-200/50 md:inline">|</span>
+                  <span>📅 Age: {cropAgeDays} days old</span>
+                </div>
+              </section>
+            ) : null}
+
             <section className="mt-6 grid gap-6 xl:grid-cols-3">
               <WeatherWidget forecasts={weather} />
               <PriceWidget prices={prices} />

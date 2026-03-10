@@ -35,6 +35,7 @@ async def patch_me(
         water_availability=body.water_availability,
         irrigation_type=body.irrigation_type,
         current_crop=body.current_crop,
+        sowing_date=body.sowing_date,
     )
     return APIResponse(
         message="User profile updated successfully", data=UserProfile.model_validate(user)

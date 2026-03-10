@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import date, datetime
 from uuid import UUID
 
 from pydantic import BaseModel, ConfigDict, Field
@@ -19,6 +19,7 @@ class UserSummary(BaseModel):
     water_availability: str | None
     irrigation_type: str | None
     current_crop: str | None
+    sowing_date: date | None
     created_at: datetime
     updated_at: datetime
 
@@ -33,3 +34,4 @@ class UserProfileUpdateRequest(BaseModel):
     water_availability: str | None = Field(default=None, max_length=120)
     irrigation_type: str | None = Field(default=None, max_length=120)
     current_crop: str | None = Field(default=None, max_length=120)
+    sowing_date: date | None = None

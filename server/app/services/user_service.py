@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from datetime import date
 from uuid import UUID
 
 from fastapi import HTTPException, status
@@ -27,10 +28,12 @@ async def update_user_profile(
     water_availability: str | None,
     irrigation_type: str | None,
     current_crop: str | None,
+    sowing_date: date | None,
 ) -> User:
     user = await get_user_profile(db, user_id=user_id)
     user.water_availability = water_availability
     user.irrigation_type = irrigation_type
     user.current_crop = current_crop
+    user.sowing_date = sowing_date
     await db.commit()
     return await get_user_profile(db, user_id=user_id)

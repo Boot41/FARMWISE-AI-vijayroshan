@@ -178,6 +178,7 @@ Current behavior:
 The page currently includes:
 
 - welcome header with user and region info
+- conditional crop status bar under the header showing current crop, sowing date, and crop age in days
 - logout action
 - CTA to `/chat`
 - `WeatherWidget`
@@ -332,6 +333,8 @@ The main tables are:
 
 All core IDs are UUIDs. Async SQLAlchemy is used throughout.
 
+`users` now stores crop profile fields including `water_availability`, `irrigation_type`, `current_crop`, and nullable `sowing_date`.
+
 ## Response Contract
 
 Successful responses use a consistent envelope:
@@ -377,9 +380,9 @@ All backend routes are mounted under `/api`.
 ### User Endpoints
 
 - `GET /api/users/me`
-  Returns the authenticated user profile with nested region data.
+  Returns the authenticated user profile with nested region data, including crop profile fields such as `current_crop` and `sowing_date`.
 - `PATCH /api/users/me`
-  Updates `water_availability`, `irrigation_type`, and `current_crop`.
+  Updates `water_availability`, `irrigation_type`, `current_crop`, and `sowing_date`.
 
 ### Data Endpoints
 
@@ -414,7 +417,7 @@ What it does:
 - loads latest mandi prices per crop
 - loads regional crop suitability rows
 - loads prior session history if the session already exists
-- builds the structured payload for `AGENT_SERVICE_URL/agent/chat`
+- builds the structured payload for `AGENT_SERVICE_URL/agent/chat`, including user crop context such as `current_crop` and `sowing_date`
 - stores the user message and assistant reply in `chat_messages`
 
 The backend only forwards context. It does not decide the answer itself.
@@ -443,6 +446,7 @@ The seed script inserts:
 
 - 5 regions with realistic crop, weather, and mandi price data
 - demo users for each region
+- demo user crop profiles with `current_crop` and relative `sowing_date` values so the dashboard can show crop age
 - demo password: `pass123`
 
 ## Guidance For Future Codex Work

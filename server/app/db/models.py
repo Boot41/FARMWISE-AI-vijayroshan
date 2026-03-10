@@ -57,6 +57,7 @@ class User(Base):
     water_availability: Mapped[str | None] = mapped_column(String(120), nullable=True)
     irrigation_type: Mapped[str | None] = mapped_column(String(120), nullable=True)
     current_crop: Mapped[str | None] = mapped_column(String(120), nullable=True)
+    sowing_date: Mapped[date | None] = mapped_column(Date, nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, server_default=func.now()
     )
