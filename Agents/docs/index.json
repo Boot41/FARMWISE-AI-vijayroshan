@@ -1,0 +1,4047 @@
+{
+  "version": 1,
+  "docs_dir": "/home/think41/WEEK_4_PROJECT/FARMWISE-AI/Agents/docs",
+  "document_count": 18,
+  "chunk_count": 134,
+  "documents": [
+    {
+      "id": "advisories__kharif_2024",
+      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "path": "advisories/kharif_2024.md",
+      "category": "advisories",
+      "source_pdf": "advisories/kharif_2024.pdf",
+      "word_count": 677,
+      "char_count": 4883,
+      "keywords": [
+        "farmers",
+        "qtl",
+        "water",
+        "kharif",
+        "monsoon",
+        "rajasthan",
+        "all",
+        "avoid",
+        "irrigation",
+        "rice",
+        "conservation",
+        "crop"
+      ]
+    },
+    {
+      "id": "advisories__rabi_2024",
+      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "path": "advisories/rabi_2024.md",
+      "category": "advisories",
+      "source_pdf": "advisories/rabi_2024.pdf",
+      "word_count": 792,
+      "char_count": 5333,
+      "keywords": [
+        "rabi",
+        "mustard",
+        "wheat",
+        "basal",
+        "qtl",
+        "farmers",
+        "avoid",
+        "crop",
+        "demand",
+        "november",
+        "oil",
+        "onion"
+      ]
+    },
+    {
+      "id": "crop_calendars__kerala",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "path": "crop_calendars/kerala.md",
+      "category": "crop_calendars",
+      "source_pdf": "crop_calendars/kerala.pdf",
+      "word_count": 592,
+      "char_count": 3907,
+      "keywords": [
+        "days",
+        "irrigation",
+        "apply",
+        "coconut",
+        "planting",
+        "years",
+        "harvest",
+        "banana",
+        "growth",
+        "high",
+        "jun",
+        "loam"
+      ]
+    },
+    {
+      "id": "crop_calendars__maharashtra",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "path": "crop_calendars/maharashtra.md",
+      "category": "crop_calendars",
+      "source_pdf": "crop_calendars/maharashtra.pdf",
+      "word_count": 628,
+      "char_count": 3974,
+      "keywords": [
+        "days",
+        "irrigation",
+        "rabi",
+        "onion",
+        "apply",
+        "stage",
+        "tomato",
+        "harvest",
+        "season",
+        "crop",
+        "das",
+        "kharif"
+      ]
+    },
+    {
+      "id": "crop_calendars__punjab",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "path": "crop_calendars/punjab.md",
+      "category": "crop_calendars",
+      "source_pdf": "crop_calendars/punjab.pdf",
+      "word_count": 717,
+      "char_count": 4383,
+      "keywords": [
+        "days",
+        "irrigation",
+        "water",
+        "apply",
+        "rice",
+        "loam",
+        "punjab",
+        "das",
+        "paddy",
+        "crop",
+        "not",
+        "sowing"
+      ]
+    },
+    {
+      "id": "crop_calendars__rajasthan",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "path": "crop_calendars/rajasthan.md",
+      "category": "crop_calendars",
+      "source_pdf": "crop_calendars/rajasthan.pdf",
+      "word_count": 695,
+      "char_count": 4290,
+      "keywords": [
+        "days",
+        "irrigation",
+        "crop",
+        "sandy",
+        "stage",
+        "apply",
+        "cumin",
+        "loam",
+        "low",
+        "rain",
+        "rajasthan",
+        "water"
+      ]
+    },
+    {
+      "id": "crop_calendars__tamil_nadu",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "path": "crop_calendars/tamil_nadu.md",
+      "category": "crop_calendars",
+      "source_pdf": "crop_calendars/tamil_nadu.pdf",
+      "word_count": 569,
+      "char_count": 3608,
+      "keywords": [
+        "days",
+        "irrigation",
+        "every",
+        "rice",
+        "apply",
+        "groundnut",
+        "reduce",
+        "water",
+        "growth",
+        "kharif",
+        "soil",
+        "loam"
+      ]
+    },
+    {
+      "id": "pest_guides__bajra",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 689,
+      "char_count": 4424,
+      "keywords": [
+        "treatment",
+        "conditions",
+        "seed",
+        "ergot",
+        "season",
+        "shoot",
+        "spray",
+        "bajra",
+        "downy",
+        "early",
+        "humid",
+        "plants"
+      ]
+    },
+    {
+      "id": "pest_guides__coconut",
+      "title": "Coconut Pest and Disease Guide",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 906,
+      "char_count": 5850,
+      "keywords": [
+        "into",
+        "palm",
+        "root",
+        "crown",
+        "bore",
+        "bud",
+        "coconut",
+        "organic",
+        "disease",
+        "holes",
+        "leaves",
+        "palms"
+      ]
+    },
+    {
+      "id": "pest_guides__groundnut",
+      "title": "Groundnut Pest and Disease Guide",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 746,
+      "char_count": 4770,
+      "keywords": [
+        "litre",
+        "seed",
+        "treatment",
+        "groundnut",
+        "leaf",
+        "soil",
+        "spray",
+        "conditions",
+        "spot",
+        "alternative",
+        "aphids",
+        "application"
+      ]
+    },
+    {
+      "id": "pest_guides__maize",
+      "title": "Maize Pest and Disease Guide",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 726,
+      "char_count": 4720,
+      "keywords": [
+        "treatment",
+        "plants",
+        "early",
+        "conditions",
+        "infected",
+        "seed",
+        "whorl",
+        "kharif",
+        "litre",
+        "organic",
+        "prevention",
+        "stage"
+      ]
+    },
+    {
+      "id": "pest_guides__mustard",
+      "title": "Mustard Pest and Disease Guide",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 690,
+      "char_count": 4559,
+      "keywords": [
+        "litre",
+        "spray",
+        "conditions",
+        "sowing",
+        "season",
+        "leaves",
+        "primary",
+        "severe",
+        "treatment",
+        "alternative",
+        "alternatively",
+        "aphids"
+      ]
+    },
+    {
+      "id": "pest_guides__onion",
+      "title": "Onion Pest and Disease Guide",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 805,
+      "char_count": 5218,
+      "keywords": [
+        "spray",
+        "leaves",
+        "thrips",
+        "litre",
+        "conditions",
+        "leaf",
+        "crop",
+        "infected",
+        "plants",
+        "season",
+        "avoid",
+        "dry"
+      ]
+    },
+    {
+      "id": "pest_guides__pepper",
+      "title": "Black Pepper Pest and Disease Guide",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 778,
+      "char_count": 5076,
+      "keywords": [
+        "spray",
+        "berries",
+        "vine",
+        "leaves",
+        "litre",
+        "soil",
+        "pepper",
+        "disease",
+        "gardens",
+        "infected",
+        "monsoon",
+        "black"
+      ]
+    },
+    {
+      "id": "pest_guides__rice",
+      "title": "Rice Pest and Disease Guide",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 1131,
+      "char_count": 7410,
+      "keywords": [
+        "spray",
+        "leaf",
+        "litre",
+        "nitrogen",
+        "application",
+        "avoid",
+        "brown",
+        "chemical",
+        "conditions",
+        "crop",
+        "during",
+        "field"
+      ]
+    },
+    {
+      "id": "pest_guides__tomato",
+      "title": "Tomato Pest and Disease Guide",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 953,
+      "char_count": 6301,
+      "keywords": [
+        "litre",
+        "spray",
+        "leaves",
+        "tomato",
+        "conditions",
+        "fruit",
+        "plants",
+        "treatment",
+        "yellow",
+        "avoid",
+        "organic",
+        "prevention"
+      ]
+    },
+    {
+      "id": "pest_guides__wheat",
+      "title": "Wheat Pest and Disease Guide",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "source_pdf": null,
+      "word_count": 942,
+      "char_count": 6111,
+      "keywords": [
+        "seed",
+        "treatment",
+        "litre",
+        "rust",
+        "conditions",
+        "season",
+        "sowing",
+        "yellow",
+        "dry",
+        "organic",
+        "spray",
+        "crop"
+      ]
+    },
+    {
+      "id": "pesticide_reference__approved_pesticides",
+      "title": "FARMWISE AI — Approved Pesticide Reference Catalog",
+      "path": "pesticide_reference/approved_pesticides.md",
+      "category": "pesticide_reference",
+      "source_pdf": "pesticide_reference/approved_pesticides.pdf",
+      "word_count": 634,
+      "char_count": 4312,
+      "keywords": [
+        "foliar",
+        "spray",
+        "litre",
+        "rice",
+        "blight",
+        "borer",
+        "tomato",
+        "groundnut",
+        "wheat",
+        "soil",
+        "onion",
+        "yes"
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "id": "advisories__kharif_2024::s001::c001",
+      "document_id": "advisories__kharif_2024",
+      "path": "advisories/kharif_2024.md",
+      "category": "advisories",
+      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "_Source PDF: `kharif_2024.pdf`_\nJune – November 2024 | All Zones\nMinistry of Agriculture & Farmers Welfare | ICAR | State Agricultural Universities\nDocument Type: Seasonal Advisory\n\n1. Season Overview\nThe Southwest Monsoon 2024 is forecast to be near-normal to above-normal (104% of Long Period Average) by India\nMeteorological Department. Above-normal rainfall is expected across Maharashtra, Karnataka, and Madhya Pradesh. Below-normal\nrainfall risk exists in parts of Rajasthan and Gujarat. Farmers should plan crop choices based on their specific district forecasts.\nKey message: Good monsoon forecasts support expansion of rice, soybean, and cotton in central India. Groundnut areas in Tamil\nNadu should plan for moisture conservation. Rajasthan farmers should focus on drought-tolerant bajra and cluster bean varieties.\n\n2. Crop Recommendations by Region\nRegion\n\nTop Recommended Crops\n\nWhy Recommended",
+      "word_count": 127,
+      "char_count": 907,
+      "keywords": [
+        "farmers",
+        "should",
+        "above-normal",
+        "crop",
+        "forecasts",
+        "india",
+        "monsoon",
+        "pdf",
+        "plan",
+        "rainfall",
+        "rajasthan",
+        "recommended"
+      ],
+      "source_pdf": "advisories/kharif_2024.pdf"
+    },
+    {
+      "id": "advisories__kharif_2024::s001::c002",
+      "document_id": "advisories__kharif_2024",
+      "path": "advisories/kharif_2024.md",
+      "category": "advisories",
+      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Crops to Avoid / Caution\n\nTamil Nadu\n\nRice (Kuruvai)\n\nGood tank levels forecast. Northeast monsoon normal.\nAvoidRice\nsugarcane\nprices firm\nexpansion\nat ■1,800–2,000/qtl\n— water may tighten pos\n\n(Cauvery Delta)\n\nGroundnut (TMV-7)\n\nMaharashtra\n\nTomato (Hybrid)\n\n(Nashik / Deccan)\n\nOnion (Agrifound Dark Red)\n\nPunjab\n\nPaddy (PR-126, PB-1692)\n\n(Plains)\n\nMaize (Spring harvest)\n\nKerala\n\nBanana (Nendran, Grand Naine)Heavy monsoon supports banana. Vegetable prices\nAvoid\nhightransplanting\nin Kerala market\npepper cuttings in July–August —\n\n(Malabar Coast)\n\nVegetables (Kharif)\n\nRajasthan\n\nBajra (HHB-67 Improved)\n\n(Thar / Jaipur)\n\nCluster Bean (Guar)\n\nModerate monsoon supports Kharif onion. TomatoAvoid\npriceslate-sown\nexpectedonion\nstrongafter\nin December–January\nAugust 15 — quality risk\n\nCanal irrigation assured. PR-126 matures early —Avoid\nreduces\nBasmati\nwater in\nuse\nareas\nvs PR-121\nwith bacterial blight history. Re",
+      "word_count": 120,
+      "char_count": 918,
+      "keywords": [
+        "avoid",
+        "monsoon",
+        "august",
+        "banana",
+        "kerala",
+        "kharif",
+        "onion",
+        "pr-126",
+        "prices",
+        "supports",
+        "water",
+        "agrifound"
+      ],
+      "source_pdf": "advisories/kharif_2024.pdf"
+    },
+    {
+      "id": "advisories__kharif_2024::s001::c003",
+      "document_id": "advisories__kharif_2024",
+      "path": "advisories/kharif_2024.md",
+      "category": "advisories",
+      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Drought tolerant — viable even in low-rainfall year.Avoid\nGuarmaize\ngum export\nin western\ndemand\nRajasthan\nstrong — water insufficien\n\n3. Market Price Outlook — Kharif 2024\nCrop\n\nExpected Price Range\n\nTrend\n\nKey Factors\n\nTomato\n\n■800 – 2,500/qtl (volatile)\n\n↑ Oct–Jan; ↓ Feb\n\nModerate supply; weather disruptions possible. Good returns if sold October–Dec\n\nOnion (Kharif)\n\n■600 – 1,400/qtl\n\n↑ Nov–Dec\n\nStrong domestic demand. Nashik arrivals peak October — price dips then recover\n\nPaddy (Common)\n\nMSP ■2,183/qtl\n\nStable (MSP)\n\nGovernment procurement at MSP assured in Punjab, UP, AP. Register with APMC\n\nGroundnut\n\n■5,000 – 5,800/qtl\n\n↑ stable\n\nEdible oil prices firm. Process into oil or sell as seed for best returns\n\nBajra\n\n■2,000 – 2,400/qtl\n\n→ Stable\n\nMSP ■2,500 declared. Rajasthan procurement active November–December\n\nMaize\n\n■1,900 – 2,200/qtl\n\n↑ slightly\n\nPoultry and starch industry demand strong. Punjab and Karnataka prices favorabl",
+      "word_count": 139,
+      "char_count": 945,
+      "keywords": [
+        "qtl",
+        "msp",
+        "demand",
+        "price",
+        "stable",
+        "strong",
+        "dec",
+        "kharif",
+        "october",
+        "oil",
+        "prices",
+        "procurement"
+      ],
+      "source_pdf": "advisories/kharif_2024.pdf"
+    },
+    {
+      "id": "advisories__kharif_2024::s001::c004",
+      "document_id": "advisories__kharif_2024",
+      "path": "advisories/kharif_2024.md",
+      "category": "advisories",
+      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Cluster Bean (Guar)\n\n■4,500 – 6,500/qtl\n\n↑ volatile\n\nExport-linked price. High guar gum demand from oil industry. Hold stock if possibl\n\n4. Government Schemes — Active for Kharif 2024\nScheme Name\n\nBenefit\n\nWho is Eligible\n\nHow to Apply\n\nPM-KISAN\n\n■6,000/year direct transfer in 3 installments\nAll landholding farmers with Aadhaar-linked\nRegister\nbank\nat pmkisan.gov.in\naccount\nor nearest CSC center\n\nPM Fasal Bima Yojana (PMFBY)Crop insurance against natural calamities,\nAll farmers\npest, disease.\ngrowingPremium:\nnotified crops\n2% forinKharif\nnotified\nRegisterareas\nvia bank branch or Common Service Centre be\nSoil Health Card Scheme\n\nFree soil testing and NPK recommendations\nAll farmers\nevery —\n2 years\nfree of charge\n\nContact nearest Krishi Vigyan Kendra (KVK) or Agricultu\n\nNational Food Security Mission (NFSM)\nSubsidized seed, fertilizer, and machinery\nSmall\nfor and\nrice,marginal\nwheat, pulses\nfarmers in targeted\nApply\ndistricts\nthrough District Agriculture Officer",
+      "word_count": 139,
+      "char_count": 974,
+      "keywords": [
+        "farmers",
+        "all",
+        "apply",
+        "bank",
+        "free",
+        "guar",
+        "nearest",
+        "notified",
+        "scheme",
+        "soil",
+        "aadhaar-linked",
+        "account"
+      ],
+      "source_pdf": "advisories/kharif_2024.pdf"
+    },
+    {
+      "id": "advisories__kharif_2024::s001::c005",
+      "document_id": "advisories__kharif_2024",
+      "path": "advisories/kharif_2024.md",
+      "category": "advisories",
+      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Pradhan Mantri Krishi SinchayeeSubsidy\nYojana (PMKSY)\non drip and sprinkler irrigation:All\n55%\nfarmers;\nfor small\nsmall/marginal\nfarmers, 45%\nget\nforhigher\nothers\nApply\nsubsidy\nthrough State Horticulture or Agriculture Departm\n\n5. Water Conservation Advisory — Kharif 2024\n\nDespite near-normal monsoon forecast, water conservation remains essential for sustainable farming. The following practices are\nstrongly recommended:\nRegion\n\nKey Water Conservation Practice\n\nExpected Water Saving\n\nPunjab / Haryana\n\nDirect Seeded Rice (DSR) — avoid transplanted paddy where possible. Saves 15–25% water15–25%\nper season.\n\nTamil Nadu\n\nSystem of Rice Intensification (SRI) — wider spacing, young seedlings, intermittent irrigation 20–30%\n\nMaharashtra\n\nDrip irrigation for tomato and onion. Mulching with sugarcane trash or plastic\n\n30–40%\n\nRajasthan\n\nRainwater harvesting — tanka and kund structures. Zero tillage in low rainfall areas.",
+      "word_count": 122,
+      "char_count": 924,
+      "keywords": [
+        "water",
+        "conservation",
+        "irrigation",
+        "drip",
+        "farmers",
+        "rice",
+        "small",
+        "advisory",
+        "agriculture",
+        "all",
+        "apply",
+        "areas"
+      ],
+      "source_pdf": "advisories/kharif_2024.pdf"
+    },
+    {
+      "id": "advisories__kharif_2024::s001::c006",
+      "document_id": "advisories__kharif_2024",
+      "path": "advisories/kharif_2024.md",
+      "category": "advisories",
+      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Maximize use of rainfall\n\nKerala\n\nDrainage management as important as irrigation — ensure no waterlogging for pepper and coconut\nPrevent loss from excess water",
+      "word_count": 24,
+      "char_count": 159,
+      "keywords": [
+        "coconut",
+        "drainage",
+        "ensure",
+        "excess",
+        "important",
+        "irrigation",
+        "kerala",
+        "loss",
+        "management",
+        "maximize",
+        "pepper",
+        "prevent"
+      ],
+      "source_pdf": "advisories/kharif_2024.pdf"
+    },
+    {
+      "id": "advisories__rabi_2024::s001::c001",
+      "document_id": "advisories__rabi_2024",
+      "path": "advisories/rabi_2024.md",
+      "category": "advisories",
+      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "_Source PDF: `rabi_2024.pdf`_\nOctober 2024 – April 2025 | All Zones\nMinistry of Agriculture & Farmers Welfare | ICAR | State Agricultural Universities\nDocument Type: Seasonal Advisory\n\n1. Season Overview\nRabi 2024-25 begins on the back of a near-normal Kharif season. Soil moisture levels are adequate across most wheat-growing\nstates — Punjab, Haryana, Uttar Pradesh, and Madhya Pradesh. Reservoir storage is above average, supporting assured irrigation\nfor wheat and mustard. Cold wave risk in December–January must be monitored for mustard and cumin.\nKey message: Wheat MSP has been increased to ■2,275/qtl — excellent returns expected. Mustard prices remain strong due to\nedible oil demand. Onion Rabi planting window is October–November for February–March harvest.\n\n2. Crop Recommendations by Region\nRegion\n\nTop Recommended Crops\n\nWhy Recommended\n\nCrops to Avoid / Caution\n\nTamil Nadu\n\nRice (Rabi / Samba)",
+      "word_count": 135,
+      "char_count": 910,
+      "keywords": [
+        "mustard",
+        "rabi",
+        "crops",
+        "october",
+        "pdf",
+        "pradesh",
+        "recommended",
+        "region",
+        "season",
+        "wheat",
+        "above",
+        "across"
+      ],
+      "source_pdf": "advisories/rabi_2024.pdf"
+    },
+    {
+      "id": "advisories__rabi_2024::s001::c002",
+      "document_id": "advisories__rabi_2024",
+      "path": "advisories/rabi_2024.md",
+      "category": "advisories",
+      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Samba rice variety excellent for Rabi season. Good\nAvoid\ntanksugarcane\nlevels fromratoon\nKharif.if Groundnut\nwater is uncertain\nprices firm.\n\n(Cauvery Delta)\n\nGroundnut (Rabi)\n\nMaharashtra\n\nWheat (GW-322, HD-2781)\n\n(Nashik / Deccan)\n\nOnion (Rabi)\n\nPunjab\n\nWheat (HD-3086, PBW-826)\n\n(Plains)\n\nMustard (border rows)\n\nKerala\n\nVegetables (Ash gourd, Bitter gourd)\nRabi season is relatively dry — vegetable cultivation\nAvoid\nprofitable.\nnew pepper\nBanana\nplanting\nplanted\nin November\nnow harvests\n— establishm\nin Onam s\n\n(Malabar Coast)\n\nBanana (Rabi planting)\n\nRajasthan\n\nMustard (Pusa Bold, RH-749)\n\n(Thar / Jaipur)\n\nCumin (GC-4)\n\nBlack cotton soil retains Kharif moisture well for wheat.\nAvoidRabi\nlate onion planting\nis highestafter\nquality\nNovember\n— premium\n20 —prices\nqualityi\n\nHD-3086 and PBW-826 are rust-resistant varietiesAvoid\n— critical\nlate sowing\ngiven new\nafterrust\nNovember\nraces detected\n20 — every\nin 2023.\nweek\nMS\no",
+      "word_count": 131,
+      "char_count": 930,
+      "keywords": [
+        "rabi",
+        "november",
+        "planting",
+        "wheat",
+        "avoid",
+        "banana",
+        "gourd",
+        "groundnut",
+        "hd-3086",
+        "kharif",
+        "late",
+        "mustard"
+      ],
+      "source_pdf": "advisories/rabi_2024.pdf"
+    },
+    {
+      "id": "advisories__rabi_2024::s001::c003",
+      "document_id": "advisories__rabi_2024",
+      "path": "advisories/rabi_2024.md",
+      "category": "advisories",
+      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Mustard is the primary Rabi crop — excellent oil content\nAvoid sowing\nvarieties\ncumin\navailable.\nbeforeCumin\nNovember\nprices1very\n— warm\nstrong\ncon\n(■\n\n3. Market Price Outlook — Rabi 2024-25\nCrop\n\nExpected Price Range\n\nTrend\n\nKey Factors\n\nWheat\n\nMSP ■2,275/qtl (floor)\n\n→ Stable\n\nGovernment procurement at MSP. Global wheat prices elevated — export possibi\n\nMustard\n\n■5,200 – 6,500/qtl\n\n↑ Strong\n\nEdible oil import duty raised — domestic mustard oil demand high. Excellent oppo\n\nOnion (Rabi)\n\n■1,200 – 3,000/qtl\n\n↑ Mar–Apr\n\nStorage demand strong. Rabi onion has better storability than Kharif. Hold stock ti\n\nCumin\n\n■18,000 – 28,000/qtl\n\n↑ Very strong\n\nExport demand from Middle East and Europe high. Limited global supply. Best op\n\nGroundnut (Rabi)\n\n■5,200 – 5,800/qtl\n\n→ Stable\n\nOil demand stable. Seed groundnut fetches premium — maintain quality, avoid afl\n\nRice (Rabi/Samba)\n\nMSP ■2,183/qtl\n\n→ Stable",
+      "word_count": 138,
+      "char_count": 905,
+      "keywords": [
+        "qtl",
+        "rabi",
+        "demand",
+        "oil",
+        "stable",
+        "strong",
+        "msp",
+        "mustard",
+        "avoid",
+        "crop",
+        "cumin",
+        "excellent"
+      ],
+      "source_pdf": "advisories/rabi_2024.pdf"
+    },
+    {
+      "id": "advisories__rabi_2024::s001::c004",
+      "document_id": "advisories__rabi_2024",
+      "path": "advisories/rabi_2024.md",
+      "category": "advisories",
+      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Procurement available through FCI and state agencies. Samba and Ponni varietie\n\n4. Government Schemes — Active for Rabi 2024-25\nScheme Name\n\nBenefit\n\nWho is Eligible\n\nHow to Apply\n\nWheat MSP Procurement\n\nGuaranteed purchase at ■2,275/qtl through\nRegistered\nFCI / State\nfarmers\nagencies\nin Punjab, Haryana,\nRegister\nUP, MP\nat mandi\nand other\n/ APMC\nnotified\nbefore\nstates\nprocurement season (\n\nMustard Mission (National Oilseeds\nSubsidized\nMission)high-yielding mustard seed,Farmers\nmicronutrients,\nin Rajasthan,\ndemonstration\nHaryana,plots\nMP, Contact\nUP\nDistrict Agriculture Officer before October 15\nPM Fasal Bima Yojana (Rabi)\n\nCrop insurance: 1.5% premium for wheat,\nAll farmers\nmustard,growing\ngram notified crops\n\nEnroll through bank / CSC before November 30 cutoff\n\nKisan Credit Card (KCC)\n\nShort-term crop loan at 4% effective interest\nAll farmers\n(with prompt\nwith land\nrepayment\nrecords incentive)\nApply at any nationalized bank or cooperative bank with",
+      "word_count": 137,
+      "char_count": 963,
+      "keywords": [
+        "farmers",
+        "bank",
+        "before",
+        "mustard",
+        "procurement",
+        "through",
+        "agencies",
+        "all",
+        "apply",
+        "crop",
+        "fci",
+        "haryana"
+      ],
+      "source_pdf": "advisories/rabi_2024.pdf"
+    },
+    {
+      "id": "advisories__rabi_2024::s001::c005",
+      "document_id": "advisories__rabi_2024",
+      "path": "advisories/rabi_2024.md",
+      "category": "advisories",
+      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Paramparagat Krishi Vikas Yojana\n■50,000/ha\n(PKVY) over 3 years for organic farming\nFarmer\nconversion\ngroups (minimum\nand certification\n50 farmers Apply\n/ 50 ha\nthrough\ncluster)State Agriculture Department\n\n5. Fertilizer Recommendations & Subsidy Advisory — Rabi 2024-25\n\nFertilizer prices have stabilized in 2024. Government subsidy on Urea continues — MRP capped at ■242/50kg bag. DAP subsidy\nextended — MRP ■1,350/50kg bag. Farmers are advised to purchase fertilizers only from licensed dealers and insist on proper\nreceipts.\nCrop\n\nRecommended NPK (kg/ha)\nSplit Application\n\nKey Micronutrient\n\nWheat\n\n120:60:40\n\nN: 1/3 basal, 1/3 at CRI (20 DAS), 1/3 at tillering (40 DAS)\n\nZinc Sulfate 25 kg/ha if deficient\n\nMustard\n\n60:40:40\n\nN: 1/2 basal, 1/2 at 30 DAS. P and K: full basal\n\nSulfur 40 kg/ha — critical for oil content and d\n\nOnion (Rabi)\n\n50:75:50\n\nN: 1/3 basal, 1/3 at 30 DAT, 1/3 at 60 DAT. P+K: full basal",
+      "word_count": 146,
+      "char_count": 915,
+      "keywords": [
+        "basal",
+        "das",
+        "subsidy",
+        "bag",
+        "dat",
+        "farmers",
+        "fertilizer",
+        "full",
+        "mrp",
+        "rabi",
+        "advised",
+        "advisory"
+      ],
+      "source_pdf": "advisories/rabi_2024.pdf"
+    },
+    {
+      "id": "advisories__rabi_2024::s001::c006",
+      "document_id": "advisories__rabi_2024",
+      "path": "advisories/rabi_2024.md",
+      "category": "advisories",
+      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "heading_path": [
+        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+      ],
+      "text": "Boron 0.5 kg/ha for bulb development\n\nRice (Rabi/Samba)\n\n100:50:40\n\nN: 1/3 basal, 1/3 at tillering, 1/3 at PI. P+K: full basal\n\nZinc Sulfate 25 kg/ha if blast or deficiency sy\n\nGroundnut (Rabi)\n\n25:50:75\n\nAll basal application. Gypsum 400 kg/ha at pegging stage\n\nCalcium via gypsum critical for pod developm\n\nCumin\n\n20:30:0\n\nAll basal — light application. Avoid excess nitrogen\n\nNo additional micronutrient; sulfur 20 kg/ha b\n\n* Purchase fertilizers only from licensed dealers. Demand original cash memo. Report overpricing to District Agriculture Officer.\n* Soil testing recommended before every season. Get your free Soil Health Card from nearest KVK.",
+      "word_count": 99,
+      "char_count": 653,
+      "keywords": [
+        "basal",
+        "all",
+        "application",
+        "gypsum",
+        "rabi",
+        "soil",
+        "additional",
+        "agriculture",
+        "avoid",
+        "before",
+        "blast",
+        "boron"
+      ],
+      "source_pdf": "advisories/rabi_2024.pdf"
+    },
+    {
+      "id": "crop_calendars__kerala::s001::c001",
+      "document_id": "crop_calendars__kerala",
+      "path": "crop_calendars/kerala.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "_Source PDF: `kerala.pdf`_\nRegion: Malabar Coast / Thrissur District\n\nState: Kerala\n\nClimate Zone: Tropical Humid\n\nSoil: Laterite + Loam\n\nWater Source: High Natural Rainfall + Wells\n\nSeason Reference: Kharif & Rabi\n\nCrop Calendar Overview\nCrop\n\nSeason\n\nSowing Window\n\nHarvest Window\n\nDays to\nMaturity\n\nWater\nReq.\n\nNPK\n(kg/ha)\n\nCoconut\n\nPerennial\n\nJun – Jul (planting)\n\nYear-round\n\n365+\n\nHigh\n\n500:320:200 Laterite / Sandy Loam\n\nBlack Pepper\n\nPerennial\n\nJun – Jul (planting)\n\nNov – Feb\n\n365+\n\nHigh\n\n50:50:150\n\nLaterite / Loam\n\nRubber\n\nPerennial\n\nApr – Jun (planting)\n\nTapping yr 5+\n\n1825+\n\nVery High\n\n130:30:100\n\nLaterite\n\nBanana\n\nKharif\n\nJun – Jul\n\n10–12 months\n\n330\n\nHigh\n\n200:60:300\n\nRich Loam\n\nTapioca\n\nKharif\n\nApr – Jun\n\n8–10 months\n\n270\n\nModerate\n\n60:60:120\n\nSandy Loam\n\nBest Soil\n\nGrowth Stages by Crop\nCoconut\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nEstablishment\n\n0 – 12 months",
+      "word_count": 136,
+      "char_count": 904,
+      "keywords": [
+        "high",
+        "jun",
+        "loam",
+        "laterite",
+        "crop",
+        "jul",
+        "kharif",
+        "months",
+        "perennial",
+        "planting",
+        "apr",
+        "coconut"
+      ],
+      "source_pdf": "crop_calendars/kerala.pdf"
+    },
+    {
+      "id": "crop_calendars__kerala::s001::c002",
+      "document_id": "crop_calendars__kerala",
+      "path": "crop_calendars/kerala.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Juvenile\n\n1 – 4 years\n\nApply full NPK; intercrop with banana/pepper\n\nDrip or basin irrigation in summer\n\nBearing (Early)\n\n4 – 7 years\n\nBegins nutbearing; apply potassium heavily\n\nBasin irrigation monthly in dry season\n\nFull Bearing\n\n7+ years\n\nHarvest every 45 days; apply organic mulch\n\nIrrigation in summer critical for nut size\n\nMaintenance\n\nAnnual\n\nGreen manure; remove dead fronds; rat control\n\nRegular irrigation Apr–May\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nPlanting\n\n0 – 30 days\n\nPlant runner cuttings against standard tree\n\nRegular watering till establishment\n\nEstablishment\n\n1 – 12 months\n\nTrain vines; apply cowdung slurry monthly\n\nIrrigate in summer; avoid waterlogging\n\nVegetative Growth\n\n1 – 3 years\n\nApply NPK; train 3–4 main vines per standard\n\nWeekly irrigation in dry months\n\nBearing\n\n3+ years\n\nHarvest\n\nNov – Feb\n\nHarvest when 1–2 berries per spike turn red\n\nNo irrigation at harvest",
+      "word_count": 142,
+      "char_count": 923,
+      "keywords": [
+        "irrigation",
+        "apply",
+        "years",
+        "harvest",
+        "bearing",
+        "days",
+        "summer",
+        "basin",
+        "dry",
+        "establishment",
+        "full",
+        "growth"
+      ],
+      "source_pdf": "crop_calendars/kerala.pdf"
+    },
+    {
+      "id": "crop_calendars__kerala::s001::c003",
+      "document_id": "crop_calendars__kerala",
+      "path": "crop_calendars/kerala.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Growth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nPlanting\n\n0 – 30 days\n\nPlant suckers or TC plants; apply basal dose\n\nEvery 3 days till establishment\n\nVegetative\n\n30 – 150 days\n\nRemove extra suckers; apply N monthly; earth up\n\nDrip — 8 L/plant/day\n\nShooting\n\n150 – 210 days\n\nSupport bunch with prop; apply K heavily\n\nIncrease to 12 L/plant/day\n\nBunch Development\n\n210 – 300 days\n\nCover bunch with sleeve; apply K foliar\n\nRegular — no stress\n\nMaturity\n\n300 – 330 days\n\nHarvest when fingers round; cut bunch with stalk\n\nReduce irrigation\n\nPlant in pits 1×1×1 m with compost; stake seedling Irrigate every 3–4 days in dry season\n\nBlack Pepper\n\nApply Bordeaux mixture before monsoon for Phytophthora\nReduce in monsoon; summer irrigation essential\n\nBanana\n\nRegional Notes\nRainfall Pattern\n\nKerala receives over 3000 mm of annual rainfall from two monsoons — Southwest (June–September) and Northeast\n(October–November). Dry season is December–May. Thrissur district averages 2800–3200 mm annually. Excess rain\ncauses waterlogging and fungal diseases. Drainage management is as important as irrigation.",
+      "word_count": 169,
+      "char_count": 1105,
+      "keywords": [
+        "days",
+        "apply",
+        "bunch",
+        "irrigation",
+        "plant",
+        "day",
+        "dry",
+        "every",
+        "monsoon",
+        "rainfall",
+        "reduce",
+        "season"
+      ],
+      "source_pdf": "crop_calendars/kerala.pdf"
+    },
+    {
+      "id": "crop_calendars__kerala::s001::c004",
+      "document_id": "crop_calendars__kerala",
+      "path": "crop_calendars/kerala.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Common Challenges\nPhytophthora foot rot (quick wilt) in black pepper is a major economic threat — treated with Bordeaux mixture. Coconut root\nwilt disease is endemic in certain areas. Rhinoceros beetle damages young coconut palms. Banana bunchy top virus\nspreads through aphids — use virus-free planting material. Rubber requires 5–7 years before tapping begins.\n\nIntercropping Recommendations\nCoconut + Black Pepper (grown up coconut palm as standard). Coconut + Banana + Cocoa in multi-tier system. Coconut +\nPineapple ground cover. Rubber + Cocoa in young rubber plantations (first 5 years). Tapioca + Cowpea in mixed planting.\n\nOrganic Farming Advisory\nKerala promotes organic farming for spices and coconut. Use Trichoderma viride for soil treatment. Green manure crops like\nsun hemp improve soil health. Vermicompost application recommended for all crops. Neem cake (2 kg/palm) annually for\ncoconut improves resistance to root wilt.",
+      "word_count": 139,
+      "char_count": 938,
+      "keywords": [
+        "coconut",
+        "rubber",
+        "wilt",
+        "banana",
+        "black",
+        "cocoa",
+        "crops",
+        "farming",
+        "organic",
+        "palm",
+        "pepper",
+        "planting"
+      ],
+      "source_pdf": "crop_calendars/kerala.pdf"
+    },
+    {
+      "id": "crop_calendars__maharashtra::s001::c001",
+      "document_id": "crop_calendars__maharashtra",
+      "path": "crop_calendars/maharashtra.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "_Source PDF: `maharashtra.pdf`_\nRegion: Deccan Plateau / Nashik District\n\nState: Maharashtra\n\nClimate Zone: Semi-Arid\n\nSoil: Black Cotton (Vertisol)\n\nWater Source: Borewell + Rain-fed\n\nSeason Reference: Kharif & Rabi\n\nCrop Calendar Overview\nCrop\n\nSeason\n\nSowing Window\n\nHarvest Window\n\nDays to\nMaturity\n\nWater\nReq.\n\nNPK\n(kg/ha)\n\nBest Soil\n\nTomato\n\nKharif\n\nJun – Jul\n\nSep – Nov\n\n90\n\nModerate\n\n100:50:100\n\nWell-drained Loam\n\nTomato\n\nRabi\n\nOct – Nov\n\nFeb – Mar\n\n100\n\nModerate\n\n100:50:100\n\nWell-drained Loam\n\nOnion (Kharif)\n\nKharif\n\nJun – Jul\n\nOct – Nov\n\n120\n\nModerate\n\n50:75:50\n\nSandy Loam\n\nOnion (Rabi)\n\nRabi\n\nOct – Nov\n\nMar – Apr\n\n130\n\nLow–Moderate\n\n50:75:50\n\nSandy Loam\n\nWheat\n\nRabi\n\nNov – Dec\n\nMar – Apr\n\n110\n\nLow\n\n120:60:40\n\nBlack Cotton\n\nGrowth Stages by Crop\nTomato\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nNursery\n\n0 – 25 days\n\nRaise nursery; harden seedlings before transplant",
+      "word_count": 138,
+      "char_count": 900,
+      "keywords": [
+        "nov",
+        "rabi",
+        "kharif",
+        "loam",
+        "moderate",
+        "crop",
+        "days",
+        "mar",
+        "oct",
+        "tomato",
+        "apr",
+        "black"
+      ],
+      "source_pdf": "crop_calendars/maharashtra.pdf"
+    },
+    {
+      "id": "crop_calendars__maharashtra::s001::c002",
+      "document_id": "crop_calendars__maharashtra",
+      "path": "crop_calendars/maharashtra.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Daily light irrigation\n\nTransplanting\n\n25 – 35 days\n\nTransplant at 4–5 leaf stage; apply starter dose\n\nIrrigation every 3 days\n\nVegetative\n\n35 – 55 days\n\nTrain to single stem; first staking; apply N top dress\n\nDrip — 3 L/plant/day\n\nFlowering\n\n55 – 70 days\n\nSpray boron 0.1%; avoid excess N; scout for fruit borer\n\nDrip — 4 L/plant/day\n\nFruit Set\n\n70 – 80 days\n\nCalcium spray for blossom end rot prevention\n\nRegular — no stress\n\nFruit Development\n\n80 – 90 days\n\nReduce N; increase K; manage late blight if humid\n\nReduce slightly\n\nHarvest\n\n90 – 120 days Harvest at breaker stage for market; mature green for transport\n\nMinimal\n\nOnion\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 10 days\n\nDirect sow or transplant from nursery\n\nLight — soil moisture\n\nSeedling\n\n10 – 30 days\n\nThin to 10×10 cm; apply basal fertilizer\n\nEvery 5 days\n\nBulb Initiation\n\n30 – 70 days\n\nEarthing up; apply potassium; control thrips",
+      "word_count": 160,
+      "char_count": 934,
+      "keywords": [
+        "days",
+        "apply",
+        "fruit",
+        "irrigation",
+        "stage",
+        "day",
+        "drip",
+        "every",
+        "harvest",
+        "light",
+        "plant",
+        "reduce"
+      ],
+      "source_pdf": "crop_calendars/maharashtra.pdf"
+    },
+    {
+      "id": "crop_calendars__maharashtra::s001::c003",
+      "document_id": "crop_calendars__maharashtra",
+      "path": "crop_calendars/maharashtra.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Every 7 days\n\nBulb Development\n\n70 – 100 days\n\nReduce nitrogen; increase potassium; monitor purple blotch\n\nReduce frequency\n\nMaturity\n\n100 – 130 days\n\nStop irrigation when 50% tops fall; cure in field\n\nStop 15 days before harvest\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 7 days\n\nEnsure adequate soil moisture at sowing\n\nPre-sowing irrigation\n\nCrown Root Initiation\n\n7 – 21 days\n\nCritical irrigation stage; do not miss\n\nIrrigation at 20–21 DAS\n\nTillering\n\n21 – 45 days\n\nApply first top dress N; weed control\n\nIrrigation at 40–42 DAS\n\nJointing\n\n45 – 65 days\n\nApply second top dress N; watch for rust\n\nIrrigation at 60–65 DAS\n\nFlowering\n\n65 – 80 days\n\nSpray fungicide if rust appears; avoid water stress\n\nIrrigation at 75–80 DAS\n\nGrain Filling\n\n80 – 100 days\n\nApply potassium foliar; protect from aphids\n\nIrrigation at 90–95 DAS\n\nWheat\n\nMaturity\n\n100 – 110 days\n\nHarvest at golden yellow stage; moisture 12–14%",
+      "word_count": 155,
+      "char_count": 943,
+      "keywords": [
+        "days",
+        "irrigation",
+        "das",
+        "apply",
+        "stage",
+        "dress",
+        "harvest",
+        "maturity",
+        "moisture",
+        "potassium",
+        "reduce",
+        "rust"
+      ],
+      "source_pdf": "crop_calendars/maharashtra.pdf"
+    },
+    {
+      "id": "crop_calendars__maharashtra::s001::c004",
+      "document_id": "crop_calendars__maharashtra",
+      "path": "crop_calendars/maharashtra.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "No irrigation\n\nRegional Notes\nRainfall Pattern\nNashik and Deccan Plateau receive 600–800 mm rainfall annually from the Southwest Monsoon (June–September). Rain is\nconcentrated in July–August. October onwards is dry. Borewell irrigation is essential for Rabi season. Black cotton soil\nretains moisture well but cracks in dry season.\n\nCommon Challenges\nLate blight in tomato during October–November when humidity rises. Thrips infestation in onion during dry Rabi season.\nWheat rust (yellow and brown) in February–March when temperatures rise. Water scarcity in March–May affects summer\ncrops. Borewell dependency increases cost of cultivation.\n\nIntercropping Recommendations\nTomato + Basil repels whitefly and improves aroma. Onion + Carrot improves land utilization in Rabi. Wheat + Chickpea at\n4:1 ratio for Rabi season. Marigold as border crop around tomato to trap fruit borer.\n\nMarket Notes\nNashik is India's largest onion market. Onion prices are highly volatile — monitor APMC Lasalgaon daily. Tomato prices peak\nin January–February. Wheat procurement at MSP through FCI is available. Plan harvest timing to avoid market glut in\nOctober for Kharif onion.",
+      "word_count": 169,
+      "char_count": 1160,
+      "keywords": [
+        "onion",
+        "rabi",
+        "season",
+        "tomato",
+        "dry",
+        "market",
+        "october",
+        "wheat",
+        "borewell",
+        "during",
+        "february",
+        "improves"
+      ],
+      "source_pdf": "crop_calendars/maharashtra.pdf"
+    },
+    {
+      "id": "crop_calendars__punjab::s001::c001",
+      "document_id": "crop_calendars__punjab",
+      "path": "crop_calendars/punjab.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "_Source PDF: `punjab.pdf`_\nRegion: Punjab Plains / Ludhiana District\n\nState: Punjab\n\nClimate Zone: Sub-Tropical\n\nSoil: Alluvial (Sandy Loam to Clay Loam)\n\nWater Source: Canal Irrigation + Tubewells\n\nSeason Reference: Kharif & Rabi\n\nCrop Calendar Overview\nCrop\n\nSeason\n\nSowing Window\n\nHarvest Window\n\nDays to\nMaturity\n\nWater\nReq.\n\nNPK\n(kg/ha)\n\nBest Soil\n\nWheat\n\nRabi\n\nNov 1–15\n\nApr – May\n\n155\n\nModerate\n\n120:60:40\n\nAlluvial Loam\n\nRice (Paddy)\n\nKharif\n\nJun 10–25\n\nOct – Nov\n\n145\n\nVery High\n\n120:60:60\n\nClay Loam\n\nMaize\n\nKharif\n\nJun – Jul\n\nSep – Oct\n\n90\n\nModerate\n\n120:60:40\n\nSandy Loam\n\nMaize (Spring)\n\nZaid\n\nFeb – Mar\n\nJun – Jul\n\n100\n\nModerate\n\n150:75:50\n\nSandy Loam\n\nBasmati Rice\n\nKharif\n\nJun 25 – Jul 10\n\nOct – Nov\n\n135\n\nHigh\n\n100:50:50\n\nLoam\n\nGrowth Stages by Crop\nWheat\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 7 days\n\nSow at 5–6 cm depth; seed rate 40–45 kg/ha\n\nPre-sowing irrigation essential",
+      "word_count": 149,
+      "char_count": 932,
+      "keywords": [
+        "loam",
+        "jun",
+        "kharif",
+        "crop",
+        "days",
+        "irrigation",
+        "jul",
+        "moderate",
+        "nov",
+        "oct",
+        "punjab",
+        "sandy"
+      ],
+      "source_pdf": "crop_calendars/punjab.pdf"
+    },
+    {
+      "id": "crop_calendars__punjab::s001::c002",
+      "document_id": "crop_calendars__punjab",
+      "path": "crop_calendars/punjab.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Crown Root Initiation\n\n7 – 21 days\n\nFirst critical irrigation — do not miss\n\nIrrigation at 20–22 DAS\n\nTillering\n\n21 – 45 days\n\nApply 1/3 N top dress; weed with isoproturon\n\nIrrigation at 40–45 DAS\n\nJointing\n\n45 – 65 days\n\nApply 1/3 N; scout for yellow rust (Puccinia)\n\nIrrigation at 60–65 DAS\n\nBooting & Heading\n\n65 – 85 days\n\nApply final N dose; spray fungicide if rust\n\nIrrigation at 75–80 DAS\n\nGrain Filling\n\n85 – 130 days\n\nFoliar spray zinc sulfate; protect from aphids\n\nIrrigation at 100–105 DAS\n\nMaturity\n\n130 – 155 days\n\nHarvest when grains hard; moisture below 14%\n\nNo irrigation after 130 DAS\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nNursery\n\n0 – 30 days\n\nWet nursery method; 30 kg seed per acre nursery\n\nDaily flooding of nursery\n\nTransplanting\n\n30 – 35 days\n\nTransplant 2 seedlings per hill; 20×15 cm spacing\n\nFlood field to 5 cm\n\nVegetative\n\n35 – 65 days\n\nApply N in 2 splits; weed at 20 and 40 DAT",
+      "word_count": 166,
+      "char_count": 929,
+      "keywords": [
+        "days",
+        "irrigation",
+        "das",
+        "apply",
+        "nursery",
+        "per",
+        "rust",
+        "spray",
+        "weed",
+        "acre",
+        "after",
+        "aphids"
+      ],
+      "source_pdf": "crop_calendars/punjab.pdf"
+    },
+    {
+      "id": "crop_calendars__punjab::s001::c003",
+      "document_id": "crop_calendars__punjab",
+      "path": "crop_calendars/punjab.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Continuous flooding 5 cm\n\nPanicle Initiation\n\n65 – 80 days\n\nApply K top dress; spray for stem borer if needed\n\nMaintain 5 cm water\n\nFlowering\n\n80 – 95 days\n\nDo not spray during flowering; water critical\n\nMaintain 3–5 cm water\n\nGrain Filling\n\n95 – 120 days\n\nMonitor BPH; begin alternate wetting and drying\n\nAlternate wet and dry\n\nMaturity\n\n120 – 145 days\n\nDrain 10 days before harvest; golden yellow stage\n\nDrain field\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 7 days\n\nSeed treatment with thiram; sow at 5 cm depth\n\nLight irrigation or rain\n\nSeedling\n\n7 – 20 days\n\nThin to one plant per hill; apply starter fertilizer\n\nLight irrigation every 5 days\n\nVegetative (V6–V12)\n\n20 – 50 days\n\nApply N top dress at V6; earthing up at V8; weed\n\nIrrigation every 7 days\n\nTasseling\n\n50 – 65 days\n\nCritical water stage; do not stress; apply final N\n\nIrrigation every 5 days\n\nRice (Paddy)",
+      "word_count": 159,
+      "char_count": 908,
+      "keywords": [
+        "days",
+        "irrigation",
+        "apply",
+        "water",
+        "every",
+        "stage",
+        "alternate",
+        "critical",
+        "drain",
+        "dress",
+        "flowering",
+        "light"
+      ],
+      "source_pdf": "crop_calendars/punjab.pdf"
+    },
+    {
+      "id": "crop_calendars__punjab::s001::c004",
+      "document_id": "crop_calendars__punjab",
+      "path": "crop_calendars/punjab.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Maize\n\nSilking & Pollination\n\n65 – 75 days\n\nDo not spray during pollination; scout armyworm\n\nIrrigation every 5 days\n\nGrain Fill (Dough)\n\n75 – 85 days\n\nMonitor stalk rot; reduce irrigation\n\nReduce irrigation\n\nMaturity\n\n85 – 100 days\n\nHarvest at 30% moisture for fresh; 15% for dry\n\nStop irrigation\n\nRegional Notes\nRainfall Pattern\nPunjab receives 600–900 mm annually, mostly from the Southwest Monsoon (July–September). Winters are cold and foggy\n(December–January) which impacts wheat tillering. Summer is very hot (May–June). Canal irrigation from Beas and Sutlej\nrivers is well developed. Groundwater is at risk of depletion from paddy cultivation.\n\nCommon Challenges\nYellow rust is the most serious wheat disease in Punjab — monitor from January. Rice stubble burning causes air pollution\nand depletes soil organic matter. Brown plant hopper in rice has developed insecticide resistance — use IPM. Waterlogging\nin low-lying areas during heavy monsoon. High water use in paddy — Punjab Government promotes Direct Seeded Rice\n(DSR).",
+      "word_count": 157,
+      "char_count": 1034,
+      "keywords": [
+        "irrigation",
+        "days",
+        "punjab",
+        "rice",
+        "developed",
+        "during",
+        "january",
+        "monitor",
+        "monsoon",
+        "paddy",
+        "pollination",
+        "reduce"
+      ],
+      "source_pdf": "crop_calendars/punjab.pdf"
+    },
+    {
+      "id": "crop_calendars__punjab::s001::c005",
+      "document_id": "crop_calendars__punjab",
+      "path": "crop_calendars/punjab.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Intercropping Recommendations\nWheat + Mustard border rows (6:1) in Rabi. Maize + Cowpea (3:1) improves soil nitrogen. Basmati rice is grown as mono\ncrop — do not intercrop. Consider maize-wheat rotation instead of rice-wheat to reduce water use.\n\nWater Advisory\nPunjab State Government offers subsidy for drip and sprinkler irrigation. Direct Seeded Rice (DSR) saves 15–20% water vs\ntransplanted paddy. Avoid paddy sowing before June 10 (state law) to reduce groundwater extraction. Laser land leveling\nimproves irrigation efficiency by 20%.",
+      "word_count": 80,
+      "char_count": 541,
+      "keywords": [
+        "water",
+        "improves",
+        "irrigation",
+        "paddy",
+        "reduce",
+        "rice",
+        "state",
+        "advisory",
+        "avoid",
+        "basmati",
+        "before",
+        "border"
+      ],
+      "source_pdf": "crop_calendars/punjab.pdf"
+    },
+    {
+      "id": "crop_calendars__rajasthan::s001::c001",
+      "document_id": "crop_calendars__rajasthan",
+      "path": "crop_calendars/rajasthan.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "_Source PDF: `rajasthan.pdf`_\nRegion: Thar Desert Region / Jaipur District\n\nState: Rajasthan\n\nClimate Zone: Arid / Semi-Arid\n\nSoil: Sandy Arid (Sandy Loam to Loamy Sand)\n\nWater Source: Scarce — Drip Irrigation / Indira Gandhi Canal\nSeason Reference: Kharif & Rabi\n\nCrop Calendar Overview\nCrop\n\nSeason\n\nSowing Window\n\nHarvest Window\n\nDays to\nMaturity\n\nWater\nReq.\n\nNPK\n(kg/ha)\n\nBest Soil\n\nBajra (Pearl Millet)\n\nKharif\n\nJun 15 – Jul 15\n\nSep – Oct\n\n80\n\nLow\n\n40:20:0\n\nSandy Loam\n\nMustard\n\nRabi\n\nOct 1–15\n\nFeb – Mar\n\n120\n\nLow\n\n60:40:40\n\nLoam / Clay Loam\n\nCumin\n\nRabi\n\nNov – Dec\n\nFeb – Mar\n\n100\n\nVery Low\n\n20:30:0\n\nSandy Loam\n\nCluster Bean (Guar)\n\nKharif\n\nJul – Aug\n\nSep – Oct\n\n70\n\nVery Low\n\n20:40:20\n\nSandy Loam\n\nMoth Bean\n\nKharif\n\nJul – Aug\n\nOct\n\n75\n\nVery Low\n\n15:30:15\n\nSandy\n\nGrowth Stages by Crop\nBajra\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 5 days\n\nSow after first good monsoon rain; 4 kg seed/ha",
+      "word_count": 159,
+      "char_count": 932,
+      "keywords": [
+        "loam",
+        "sandy",
+        "low",
+        "kharif",
+        "oct",
+        "crop",
+        "days",
+        "jul",
+        "rabi",
+        "very",
+        "arid",
+        "aug"
+      ],
+      "source_pdf": "crop_calendars/rajasthan.pdf"
+    },
+    {
+      "id": "crop_calendars__rajasthan::s001::c002",
+      "document_id": "crop_calendars__rajasthan",
+      "path": "crop_calendars/rajasthan.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Rain dependent; 1 irrigation if dry\n\nSeedling\n\n5 – 15 days\n\nThin to 15 cm; gap fill at 10 days\n\n1 irrigation if no rain\n\nVegetative\n\n15 – 40 days\n\nApply N top dress at 3–4 leaf stage; weed once\n\nIrrigation if no rain for 10 days\n\nPanicle Emergence\n\n40 – 55 days\n\nCritical moisture stage; downy mildew risk\n\n1 irrigation critical at this stage\n\nFlowering\n\n55 – 65 days\n\nMonitor shoot fly; apply chlorpyrifos if needed\n\n1 irrigation if rain fails\n\nGrain Filling\n\n65 – 75 days\n\nBird scaring needed; monitor ergot disease\n\n1 irrigation if severely dry\n\nMaturity\n\n75 – 80 days\n\nHarvest when grains hard; thresh immediately\n\nNo irrigation\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 5 days\n\nSow at 2–3 cm depth; seed rate 5 kg/ha\n\nPre-sowing irrigation essential\n\nSeedling\n\n5 – 15 days\n\nThin to 15×20 cm; remove weeds\n\nIrrigation at 15–18 DAS\n\nRosette\n\n15 – 35 days\n\nApply N top dress; white rust risk if humid",
+      "word_count": 167,
+      "char_count": 937,
+      "keywords": [
+        "days",
+        "irrigation",
+        "rain",
+        "stage",
+        "apply",
+        "critical",
+        "dress",
+        "dry",
+        "monitor",
+        "needed",
+        "risk",
+        "seedling"
+      ],
+      "source_pdf": "crop_calendars/rajasthan.pdf"
+    },
+    {
+      "id": "crop_calendars__rajasthan::s001::c003",
+      "document_id": "crop_calendars__rajasthan",
+      "path": "crop_calendars/rajasthan.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Irrigation at 30–35 DAS\n\nFlowering\n\n35 – 55 days\n\nCritical water stage; spray boron 0.1%\n\nIrrigation at 50–55 DAS — critical\n\nPod Formation\n\n55 – 80 days\n\nApply sulfur foliar; Alternaria risk; aphid monitoring\n\nIrrigation at 70–75 DAS\n\nMaturity\n\n80 – 120 days\n\nHarvest when 75% pods turn yellow; avoid shattering\n\nNo irrigation after 90 DAS\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 7 days\n\nSow in flat beds; thin seedlings to 5×10 cm\n\nLight irrigation every 3 days\n\nVegetative\n\n7 – 40 days\n\nApply light N; weed carefully by hand only\n\nIrrigation every 7–10 days\n\nFlowering\n\n40 – 60 days\n\nWilt disease risk if overwatered; reduce irrigation\n\nIrrigation every 12 days\n\nSeed Development\n\n60 – 85 days\n\nSpray copper fungicide for blight; bird scaring\n\nIrrigation every 12–15 days\n\nMaturity\n\n85 – 100 days\n\nMustard\n\nCumin\n\nHarvest in early morning to avoid seed shattering Stop irrigation 15 days before harvest",
+      "word_count": 155,
+      "char_count": 942,
+      "keywords": [
+        "days",
+        "irrigation",
+        "das",
+        "every",
+        "harvest",
+        "apply",
+        "avoid",
+        "critical",
+        "flowering",
+        "light",
+        "maturity",
+        "risk"
+      ],
+      "source_pdf": "crop_calendars/rajasthan.pdf"
+    },
+    {
+      "id": "crop_calendars__rajasthan::s001::c004",
+      "document_id": "crop_calendars__rajasthan",
+      "path": "crop_calendars/rajasthan.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Regional Notes\nRainfall Pattern\nRajasthan receives only 200–400 mm of annual rainfall, concentrated in July–August from the Southwest Monsoon. Western\nRajasthan (Jodhpur, Barmer) receives less than 200 mm. Jaipur district averages 550 mm. Hot dry winds (loo) in May–June\ncause crop damage. Fog in December–January affects mustard and cumin.\n\nCommon Challenges\nWater scarcity is the primary constraint — every crop choice must factor water availability. Downy mildew in bajra during\nhumid spells after rain. Aphids in mustard are the most serious pest — they can cause 40–50% yield loss if uncontrolled.\nCumin wilt (Fusarium) spreads in waterlogged conditions — never over-irrigate cumin. Sandy soil has low nutrient retention\n— apply organic matter regularly.\n\nIntercropping Recommendations\nBajra + Moth Bean (2:1) — traditional and drought-tolerant system. Mustard + Chickpea (2:1) in Rabi for risk management.\nCumin is always grown alone — intercropping reduces essential oil quality. Cluster bean + Bajra mixed cropping for fodder\nand grain.",
+      "word_count": 155,
+      "char_count": 1044,
+      "keywords": [
+        "cumin",
+        "bajra",
+        "mustard",
+        "bean",
+        "cause",
+        "crop",
+        "intercropping",
+        "rainfall",
+        "rajasthan",
+        "receives",
+        "water",
+        "affects"
+      ],
+      "source_pdf": "crop_calendars/rajasthan.pdf"
+    },
+    {
+      "id": "crop_calendars__rajasthan::s001::c005",
+      "document_id": "crop_calendars__rajasthan",
+      "path": "crop_calendars/rajasthan.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Water Conservation Advisory\nRajasthan Government provides drip irrigation subsidy up to 70% for horticulture crops. Rainwater harvesting through tanka\nand kund systems recommended. Micro watershed structures help recharge groundwater. Indira Gandhi Canal commands\narea in western Rajasthan — farmers here can grow more water-intensive crops. Mulching with crop residue reduces\nevaporation by 30%.",
+      "word_count": 53,
+      "char_count": 396,
+      "keywords": [
+        "crops",
+        "rajasthan",
+        "advisory",
+        "area",
+        "can",
+        "canal",
+        "commands",
+        "conservation",
+        "crop",
+        "drip",
+        "evaporation",
+        "farmers"
+      ],
+      "source_pdf": "crop_calendars/rajasthan.pdf"
+    },
+    {
+      "id": "crop_calendars__tamil_nadu::s001::c001",
+      "document_id": "crop_calendars__tamil_nadu",
+      "path": "crop_calendars/tamil_nadu.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "_Source PDF: `tamil_nadu.pdf`_\nRegion: Cauvery Delta\n\nState: Tamil Nadu\n\nClimate Zone: Tropical\n\nSoil: Red Laterite\n\nWater Source: Tank Irrigation / Canal\n\nSeason Reference: Kharif & Rabi\n\nCrop Calendar Overview\nCrop\n\nSeason\n\nSowing Window\n\nHarvest Window\n\nDays to\nMaturity\n\nWater\nReq.\n\nNPK\n(kg/ha)\n\nBest Soil\n\nRice\n\nKharif\n\nJun – Jul\n\nOct – Nov\n\n130\n\nHigh\n\n120:60:40\n\nClayey / Loam\n\nRice (Rabi)\n\nRabi\n\nDec – Jan\n\nApr – May\n\n120\n\nHigh\n\n100:50:40\n\nClayey / Loam\n\nGroundnut\n\nKharif\n\nJun – Jul\n\nSep – Oct\n\n105\n\nModerate\n\n25:50:75\n\nRed Sandy Loam\n\nGroundnut\n\nRabi\n\nOct – Nov\n\nFeb – Mar\n\n100\n\nModerate\n\n25:50:75\n\nRed Sandy Loam\n\nSugarcane\n\nZaid\n\nJan – Feb\n\nDec – Jan\n\n365\n\nVery High\n\n275:62:112\n\nDeep Loam\n\nGrowth Stages by Crop\nRice\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 7 days\n\nMaintain shallow standing water 2–3 cm\n\nContinuous flooding\n\nSeedling\n\n7 – 25 days\n\nTransplant at 20–25 days; apply basal fertilizer",
+      "word_count": 154,
+      "char_count": 945,
+      "keywords": [
+        "days",
+        "loam",
+        "rabi",
+        "crop",
+        "high",
+        "jan",
+        "kharif",
+        "oct",
+        "red",
+        "rice",
+        "water",
+        "clayey"
+      ],
+      "source_pdf": "crop_calendars/tamil_nadu.pdf"
+    },
+    {
+      "id": "crop_calendars__tamil_nadu::s001::c002",
+      "document_id": "crop_calendars__tamil_nadu",
+      "path": "crop_calendars/tamil_nadu.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Standing water 3–5 cm\n\nVegetative\n\n25 – 65 days\n\nTop dress nitrogen; weed control critical\n\nMaintain 5 cm flooding\n\nPanicle Initiation\n\n65 – 85 days\n\nApply potassium; watch for blast disease\n\nCritical — no stress\n\nFlowering\n\n85 – 100 days\n\nAvoid pesticide spray; pollination stage\n\nMaintain 3–5 cm water\n\nGrain Filling\n\n100 – 120 days\n\nReduce water; watch for brown planthoppers\n\nReduce to alternate wetting\n\nMaturity\n\n120 – 130 days\n\nDrain field 10 days before harvest\n\nDrain completely\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 8 days\n\nEnsure good soil contact; light irrigation\n\nLight — soil moisture only\n\nSeedling\n\n8 – 20 days\n\nThin to 15 cm spacing; apply gypsum\n\nLight irrigation every 5 days\n\nVegetative\n\n20 – 45 days\n\nApply foliar micronutrients; weed twice\n\nIrrigation every 7 days\n\nFlowering & Pegging\n\n45 – 70 days\n\nEarth up rows; apply gypsum 200 kg/ha",
+      "word_count": 148,
+      "char_count": 900,
+      "keywords": [
+        "days",
+        "apply",
+        "irrigation",
+        "light",
+        "water",
+        "critical",
+        "drain",
+        "every",
+        "flowering",
+        "gypsum",
+        "maintain",
+        "reduce"
+      ],
+      "source_pdf": "crop_calendars/tamil_nadu.pdf"
+    },
+    {
+      "id": "crop_calendars__tamil_nadu::s001::c003",
+      "document_id": "crop_calendars__tamil_nadu",
+      "path": "crop_calendars/tamil_nadu.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Critical — every 5 days\n\nPod Development\n\n70 – 95 days\n\nMonitor Tikka disease; reduce irrigation\n\nReduce — every 10 days\n\nMaturity\n\n95 – 105 days\n\nStop irrigation 10 days before harvest\n\nStop irrigation\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 30 days\n\nPlant sets 3-eye setts; gap filling at 30 days\n\nIrrigation every 7 days\n\nTillering\n\n30 – 120 days\n\nApply nitrogen split; earthing up at 60 days\n\nIrrigation every 10 days\n\nGrand Growth\n\n120 – 270 days\n\nHeavy feeder; apply full NPK; weed monthly\n\nIrrigation every 12 days\n\nMaturity\n\n270 – 365 days\n\nStop nitrogen 60 days before harvest; trash mulch\n\nReduce irrigation\n\nGroundnut\n\nSugarcane\n\nRegional Notes\n\nRainfall Pattern\nTamil Nadu receives rainfall primarily from the Northeast Monsoon (October–December). The Cauvery Delta region gets\n900–1200 mm annually. Kharif season relies on Southwest Monsoon which is moderate (June–September). Tank and canal\nirrigation supplements rain-fed farming.",
+      "word_count": 151,
+      "char_count": 982,
+      "keywords": [
+        "days",
+        "irrigation",
+        "every",
+        "reduce",
+        "stop",
+        "apply",
+        "before",
+        "growth",
+        "harvest",
+        "maturity",
+        "monsoon",
+        "nitrogen"
+      ],
+      "source_pdf": "crop_calendars/tamil_nadu.pdf"
+    },
+    {
+      "id": "crop_calendars__tamil_nadu::s001::c004",
+      "document_id": "crop_calendars__tamil_nadu",
+      "path": "crop_calendars/tamil_nadu.md",
+      "category": "crop_calendars",
+      "title": "FARMWISE AI — CROP CALENDAR",
+      "heading_path": [
+        "FARMWISE AI — CROP CALENDAR"
+      ],
+      "text": "Common Challenges\nBlast disease in rice during humid conditions. Tikka leaf spot in groundnut during Kharif. Sugarcane internode borer active\nJune–August. Drought stress in Rabi groundnut if tank levels are low. Saline soil patches near coastal areas reduce rice\nyield.\n\nIntercropping Recommendations\nGroundnut + Castor (2:1 ratio) for Kharif season. Rice + Azolla as green manure improves nitrogen fixation. Sugarcane +\nOnion during early growth period (first 60 days). Groundnut + Sorghum border rows to repel aphids.\n\nGovernment Advisory\nUse Kuruvai rice varieties (ADT-39, CO-51) for June sowing. Adopt System of Rice Intensification (SRI) to reduce water use\nby 30%. Tamil Nadu Agriculture Department recommends soil testing every 3 years.",
+      "word_count": 110,
+      "char_count": 744,
+      "keywords": [
+        "rice",
+        "groundnut",
+        "during",
+        "june",
+        "kharif",
+        "reduce",
+        "soil",
+        "sugarcane",
+        "use",
+        "active",
+        "adopt",
+        "adt-39"
+      ],
+      "source_pdf": "crop_calendars/tamil_nadu.pdf"
+    },
+    {
+      "id": "pest_guides__bajra::s001::c001",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Bajra is the primary dryland cereal of Rajasthan, Gujarat, and Haryana. It is highly drought-tolerant but susceptible to downy mildew and ergot under specific conditions. It is the staple food crop for millions of small farmers in arid regions where no other cereal can be reliably grown.\n\n---",
+      "word_count": 48,
+      "char_count": 293,
+      "keywords": [
+        "cereal",
+        "arid",
+        "bajra",
+        "but",
+        "can",
+        "conditions",
+        "crop",
+        "downy",
+        "drought-tolerant",
+        "dryland",
+        "ergot",
+        "farmers"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s002::c001",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s003::c001",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Downy Mildew (Green Ear Disease — Sclerospora graminicola)"
+      ],
+      "text": "**Type:** Fungal (Oomycete)\n\n**Symptoms:**\n- Systemic infection — plants stunted and pale from emergence\n- White downy growth on lower leaf surface\n- Panicle (ear) converted into leaf-like structures (green ear) — no grain formed\n- Infected plants are called witches broom — multiple tillers, none forming grain\n- Oospores in soil persist for 10+ years\n\n**Triggering Conditions:**\n- Cool humid conditions at germination (below 30°C, high humidity)\n- Season: Early Kharif — June to July\n- Waterlogged or poorly drained soils\n- Seed-borne and soil-borne\n\n**Treatment:**\n- No field treatment for systemically infected plants — rogue and destroy\n- Metalaxyl 35% WS seed treatment — 6 g/kg seed prevents seed-borne infection\n\n**Organic Alternative:**\n- Hot water seed treatment — 55°C for 10 minutes\n- Use downy mildew-resistant varieties\n\n**Prevention:**\n- Use certified seed from downy mildew-free areas\n- Metalaxyl seed treatment mandatory in endemic areas\n- Remove green ear plants before sporulation\n- Crop rotation — avoid pearl millet after pearl millet",
+      "word_count": 163,
+      "char_count": 1055,
+      "keywords": [
+        "seed",
+        "treatment",
+        "plants",
+        "downy",
+        "ear",
+        "areas",
+        "conditions",
+        "grain",
+        "green",
+        "infected",
+        "infection",
+        "metalaxyl"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s003::c002",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Downy Mildew (Green Ear Disease — Sclerospora graminicola)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s004::c001",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Ergot (Claviceps fusiformis)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Honeydew (sticky liquid) oozing from florets at flowering stage\n- Honeydew is the first sign — attracts flies and bees\n- Honeydew replaced by hard dark purple-brown sclerotia (ergot bodies)\n- Ergot bodies replace individual grains in panicle\n- Ergot contains toxic alkaloids — grain is unfit for human or animal consumption\n\n**Triggering Conditions:**\n- Cool humid conditions at flowering (below 20°C, high humidity)\n- High altitude bajra fields (above 500 m) in Rajasthan\n- Season: August when early-sown bajra flowers during cooler humid conditions\n\n**Treatment:**\n- No chemical treatment — prevention only\n- Remove and destroy infected panicles before sclerotia mature\n\n**Organic Alternative:**\n- Wash panicles with water spray to reduce honeydew and spore spread\n\n**Prevention:**\n- Sow recommended varieties on time — avoid early sowing in high-altitude areas\n- Use ergot-resistant or tolerant varieties\n- Do not use infected grain as seed\n- Immerse seed in 10% salt solution — ergot bodies float and can be removed",
+      "word_count": 163,
+      "char_count": 1053,
+      "keywords": [
+        "ergot",
+        "honeydew",
+        "bodies",
+        "conditions",
+        "bajra",
+        "flowering",
+        "grain",
+        "high",
+        "humid",
+        "infected",
+        "panicles",
+        "prevention"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s004::c002",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Ergot (Claviceps fusiformis)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s005::c001",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Shoot Fly (Atherigona approximata)"
+      ],
+      "text": "**Type:** Insect (Diptera)\n\n**Symptoms:**\n- Dead heart in seedlings — central shoot pulls out easily with foul smell\n- Yellowing and wilting of central leaf before death\n- Maggots visible inside killed shoot\n- Severely attacked fields require re-sowing\n- Economic threshold: 10% dead hearts\n\n**Triggering Conditions:**\n- Temperature: 25–35°C\n- Humid conditions at seedling stage\n- Season: Early Kharif — June to July\n- Late-sown bajra escapes shoot fly as pest population declines\n\n**Treatment:**\n- Primary chemical: Chlorpyrifos 20% EC — 2 ml/litre foliar spray at 10–15 DAS\n- Alternatively: Thiamethoxam 25% WG — 0.3 g/litre spray\n\n**Organic Alternative:**\n- Neem seed kernel extract 5% spray\n- Seed treatment with Imidacloprid 600 FS — 5 ml/kg\n\n**Prevention:**\n- Timely sowing — June 15 to July 15 is optimum\n- Seed treatment with Imidacloprid 600 FS\n- Use resistant varieties (MPMH-17, HHB-67 Improved)\n- Destroy crop debris from previous season",
+      "word_count": 150,
+      "char_count": 949,
+      "keywords": [
+        "seed",
+        "shoot",
+        "spray",
+        "treatment",
+        "central",
+        "conditions",
+        "dead",
+        "imidacloprid",
+        "july",
+        "june",
+        "litre",
+        "season"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s005::c002",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Shoot Fly (Atherigona approximata)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__bajra::s006::c001",
+      "document_id": "pest_guides__bajra",
+      "path": "pest_guides/bajra.md",
+      "category": "pest_guides",
+      "title": "Bajra (Pearl Millet) Pest and Disease Guide",
+      "heading_path": [
+        "Bajra (Pearl Millet) Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Stem Borer (Chilo partellus)"
+      ],
+      "text": "**Type:** Insect (Lepidoptera)\n\n**Symptoms:**\n- Dead heart at vegetative stage — similar to shoot fly but older plants\n- Pinholes on leaves from early larval feeding\n- Frass visible in whorl\n- Late infestation causes chaffy panicles and broken stems\n\n**Triggering Conditions:**\n- Temperature: 25–35°C\n- Season: July to August — after shoot fly peak\n- Humid conditions\n\n**Treatment:**\n- Primary chemical: Fipronil 0.3% GR — 7.5 kg/ha applied in whorl\n- Alternatively: Chlorantraniliprole 18.5% SC — 0.3 ml/litre spray\n\n**Organic Alternative:**\n- Trichogramma chilonis egg cards — 5 cards per acre\n- Bacillus thuringiensis spray — 2 g/litre\n\n**Prevention:**\n- Early sowing to avoid peak borer season\n- Light traps to catch adult moths\n- Intercrop with cowpea which harbors natural enemies",
+      "word_count": 123,
+      "char_count": 786,
+      "keywords": [
+        "cards",
+        "conditions",
+        "early",
+        "fly",
+        "litre",
+        "peak",
+        "season",
+        "shoot",
+        "spray",
+        "whorl",
+        "acre",
+        "adult"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s001::c001",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Coconut is Kerala's most important crop and a major source of livelihood for millions of farmers in coastal India. Root wilt disease is an endemic and incurable problem in certain zones of Kerala, while rhinoceros beetle and red palm weevil cause serious damage to palms across India. Integrated management combining regular monitoring, cultural practices, and targeted treatments is essential.\n\n---",
+      "word_count": 60,
+      "char_count": 399,
+      "keywords": [
+        "india",
+        "kerala",
+        "across",
+        "beetle",
+        "cause",
+        "certain",
+        "coastal",
+        "coconut",
+        "combining",
+        "crop",
+        "cultural",
+        "damage"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s002::c001",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s003::c001",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Root Wilt Disease (Phytoplasma — suspected)"
+      ],
+      "text": "**Type:** Phytoplasma (Mycoplasma-like organism)\n\n**Symptoms:**\n- Leaf flaccidity — leaves hang down losing their normal erect posture\n- Yellowing starts from outer older leaves and progresses inward\n- Root necrosis — feeder roots turn brown and die\n- Reduced nut production; nuts smaller with less kernel\n- Eventual death of palm over years\n- No cure exists — incurable endemic disease in certain zones of Kerala\n\n**Triggering Conditions:**\n- Endemic in certain areas of Kerala (Kuttanad, Kochi region)\n- Spreads through planthoppers (Proutista moesta) which transmit phytoplasma\n- Poorly drained, waterlogged soils worsen symptoms\n- Any season; progressive disease\n\n**Treatment:**\n- No cure — palliative care to extend productive life of affected palms\n- Inject micronutrient mixture (ferrous sulfate, zinc sulfate, manganese sulfate) into trunk\n- Drench root zone with dilute NPK fertilizer\n- Keep affected palms well-nourished to maintain partial productivity",
+      "word_count": 142,
+      "char_count": 963,
+      "keywords": [
+        "sulfate",
+        "affected",
+        "certain",
+        "cure",
+        "disease",
+        "endemic",
+        "kerala",
+        "leaves",
+        "palms",
+        "phytoplasma",
+        "root",
+        "symptoms"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s003::c002",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Root Wilt Disease (Phytoplasma — suspected)"
+      ],
+      "text": "**Organic Alternative:**\n- Organic matter application improves root health and slows progression\n- Vermicompost 25 kg per palm annually\n\n**Prevention:**\n- Plant certified Root Wilt-resistant varieties in endemic areas\n- Control planthopper vector with Imidacloprid drench\n- Improve drainage in root zone\n- Do not plant coconut in areas with known root wilt history\n\n---",
+      "word_count": 55,
+      "char_count": 369,
+      "keywords": [
+        "root",
+        "areas",
+        "organic",
+        "plant",
+        "alternative",
+        "annually",
+        "application",
+        "certified",
+        "coconut",
+        "control",
+        "drainage",
+        "drench"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s004::c001",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Bud Rot (Phytophthora palmivora)"
+      ],
+      "text": "**Type:** Fungal (Oomycete)\n\n**Symptoms:**\n- Yellowing and wilting of innermost spear leaf (spindle)\n- Spindle pulls out easily — base shows dark brown rotting with foul smell\n- Rotting progresses down into growing point (bud) — killing the palm\n- Coconut has a single growing point — once bud dies, palm cannot recover\n- Outer leaves remain green initially making early detection difficult\n\n**Triggering Conditions:**\n- Heavy rainfall during monsoon — especially June–August\n- Young palms (1–5 years) most vulnerable\n- Waterlogged poorly-drained soils\n- High humidity with poor air circulation in dense plantings\n\n**Treatment:**\n- Remove rotted spindle and bud tissue completely — clean with knife\n- Fill cavity with Bordeaux paste (copper sulfate + lime)\n- Pour Copper oxychloride 3 g/litre solution into bud cavity\n- For early-stage: Metalaxyl drench at vine base\n\n**Organic Alternative:**\n- Bordeaux paste applied to exposed tissue after removal of infected bud\n- Trichoderma application to root zone as preventive",
+      "word_count": 157,
+      "char_count": 1018,
+      "keywords": [
+        "bud",
+        "spindle",
+        "base",
+        "bordeaux",
+        "cavity",
+        "copper",
+        "growing",
+        "into",
+        "palm",
+        "paste",
+        "point",
+        "rotting"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s004::c002",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Bud Rot (Phytophthora palmivora)"
+      ],
+      "text": "**Prevention:**\n- Drain excess water from root zone\n- Remove and destroy infected spindles immediately\n- Spray Bordeaux mixture 1% on crown and collar before monsoon\n- Avoid injuries to palm — beetles create entry points for Phytophthora\n\n---",
+      "word_count": 39,
+      "char_count": 242,
+      "keywords": [
+        "avoid",
+        "beetles",
+        "before",
+        "bordeaux",
+        "collar",
+        "create",
+        "crown",
+        "destroy",
+        "drain",
+        "entry",
+        "excess",
+        "immediately"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s005::c001",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Rhinoceros Beetle (Oryctes rhinoceros)"
+      ],
+      "text": "**Type:** Insect (Coleoptera)\n\n**Symptoms:**\n- V-shaped or rectangular cuts on fronds — characteristic feeding damage\n- Holes bored into soft central shoot (crown)\n- Cut fronds hang like flag leaves\n- Bud damage causes deformed leaves with serrated edges\n- Severe crown boring kills the growing point and eventually the palm\n- Grubs breed in decaying organic matter — compost heaps, log piles\n\n**Triggering Conditions:**\n- Adults most active at night — breed in decaying wood and compost\n- New plantings near decaying coconut logs are at high risk\n- Season: Year-round in tropical humid climate\n\n**Treatment:**\n- Remove adult beetles from crown — use hooked wire inserted into bore hole\n- Apply Naphthalene balls (3–4 per crown) to repel adults\n- Carbaryl 5% dust — 25 g applied into bore hole\n\n**Organic Alternative:**\n- Oryctes baculovirus (Nudivirus) biocontrol — mix in breeding sites\n- Apply to all identified breeding sites\n- Metarhizium anisopliae fungus application in compost heaps",
+      "word_count": 159,
+      "char_count": 990,
+      "keywords": [
+        "crown",
+        "compost",
+        "decaying",
+        "into",
+        "adults",
+        "apply",
+        "bore",
+        "breed",
+        "breeding",
+        "damage",
+        "fronds",
+        "heaps"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s005::c002",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Rhinoceros Beetle (Oryctes rhinoceros)"
+      ],
+      "text": "**Prevention:**\n- Remove and burn all decaying organic matter — coconut stumps, compost heaps\n- Do not allow coconut logs to decompose near garden\n- Install pheromone traps — 1 per 5 acres to mass-trap adults\n- Inject Neem oil into bore holes\n\n---",
+      "word_count": 44,
+      "char_count": 247,
+      "keywords": [
+        "coconut",
+        "acres",
+        "adults",
+        "all",
+        "allow",
+        "bore",
+        "burn",
+        "compost",
+        "decaying",
+        "decompose",
+        "garden",
+        "heaps"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s006::c001",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Red Palm Weevil (Rhynchophorus ferrugineus)"
+      ],
+      "text": "**Type:** Insect (Coleoptera)\n\n**Symptoms:**\n- Large bore holes in trunk near crown with brown fibrous material extruding\n- Fermented odor from bore site\n- Wilting and yellowing of crown leaves\n- Tunneling damage throughout trunk interior\n- Palm dies once the central growing point is reached\n- Grubs (large white C-shaped) found inside trunk — up to 60 per palm\n\n**Triggering Conditions:**\n- Entry through wounds — beetle attack follows rhinoceros beetle damage, pruning cuts, or injuries\n- Any season; year-round in coastal humid areas\n- Pheromone attractant produced by infested palms draws more beetles\n\n**Treatment:**\n- Inject Chlorpyrifos 20% EC — 5 ml diluted in 100 ml water into bore holes\n- Apply cotton wicks soaked in insecticide into holes and seal with clay\n- For early detection: insert probe into soft crown area to check for tunneling\n\n**Organic Alternative:**\n- Entomopathogenic nematodes (Steinernema carpocapsae) injected into bore holes\n- Pheromone traps for mass trapping adults",
+      "word_count": 157,
+      "char_count": 1000,
+      "keywords": [
+        "bore",
+        "holes",
+        "into",
+        "crown",
+        "trunk",
+        "beetle",
+        "damage",
+        "large",
+        "palm",
+        "pheromone",
+        "tunneling",
+        "adults"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__coconut::s006::c002",
+      "document_id": "pest_guides__coconut",
+      "path": "pest_guides/coconut.md",
+      "category": "pest_guides",
+      "title": "Coconut Pest and Disease Guide",
+      "heading_path": [
+        "Coconut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Red Palm Weevil (Rhynchophorus ferrugineus)"
+      ],
+      "text": "**Prevention:**\n- Prevent all trunk injuries — rhinoceros beetle wounds are primary entry points\n- Install pheromone traps — Ferrolure+ pheromone lure, 1 trap per 5 acres\n- Apply Carbaryl paste on all pruning cuts and wounds immediately\n- Remove severely infested palms completely — burn trunk on site\n- Regular monitoring — inspect crown monthly",
+      "word_count": 56,
+      "char_count": 346,
+      "keywords": [
+        "all",
+        "pheromone",
+        "trunk",
+        "wounds",
+        "acres",
+        "apply",
+        "beetle",
+        "burn",
+        "carbaryl",
+        "completely",
+        "crown",
+        "cuts"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s001::c001",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Groundnut (peanut) is a major oilseed and cash crop in Andhra Pradesh, Gujarat, Tamil Nadu, Karnataka, and Rajasthan. It is particularly vulnerable to Tikka leaf spot and collar rot in humid conditions. Aflatoxin contamination from Aspergillus infection in storage is a serious food safety concern that must be prevented through proper drying and storage.\n\n---",
+      "word_count": 55,
+      "char_count": 360,
+      "keywords": [
+        "storage",
+        "aflatoxin",
+        "andhra",
+        "aspergillus",
+        "cash",
+        "collar",
+        "concern",
+        "conditions",
+        "contamination",
+        "crop",
+        "drying",
+        "food"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s002::c001",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s003::c001",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Tikka Disease — Early and Late Leaf Spot (Cercospora arachidicola & Phaeoisariopsis personata)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Early leaf spot: Circular brown spots with yellow halo on upper leaf surface; white/gray growth on underside\n- Late leaf spot: Dark brown to black circular spots, no yellow halo; more numerous\n- Severely infected leaves drop prematurely causing defoliation\n- Defoliation reduces pod fill significantly — 50–70% yield loss if uncontrolled\n- Both diseases appear together; late leaf spot is more aggressive\n\n**Triggering Conditions:**\n- Temperature: 25–30°C\n- Humidity: Above 70%; prolonged leaf wetness\n- Season: Kharif — August to September peak\n\n**Treatment:**\n- Primary chemical: Chlorothalonil 75% WP — 2 g/litre spray every 10 days from 30 DAS\n- Alternatively: Mancozeb 75% WP — 2.5 g/litre\n- Application method: Foliar spray — begin preventively at 30 DAS\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre spray\n- Sulfur 80% WP — 3 g/litre spray\n\n**Prevention:**\n- Use resistant varieties (TAG-24, ICGV-86031)\n- Apply gypsum 500 kg/ha at pegging to improve calcium nutrition\n- Maintain crop rotation — avoid groundnut after groundnut\n- Remove and plow under crop debris",
+      "word_count": 173,
+      "char_count": 1106,
+      "keywords": [
+        "leaf",
+        "litre",
+        "spray",
+        "spot",
+        "brown",
+        "circular",
+        "crop",
+        "das",
+        "defoliation",
+        "groundnut",
+        "halo",
+        "late"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s003::c002",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Tikka Disease — Early and Late Leaf Spot (Cercospora arachidicola & Phaeoisariopsis personata)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s004::c001",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Collar Rot (Aspergillus niger)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Sudden wilting of seedlings at collar region (soil surface)\n- Blackening and rotting of stem at soil level\n- Black sclerotia visible on rotted tissue\n- Seedlings pull out easily — roots completely rotted\n- Patches of dead seedlings in field\n\n**Triggering Conditions:**\n- High soil moisture immediately after sowing\n- Poor drainage; heavy clay soils\n- Seed sown too deep or seed coat damaged\n- Season: Early Kharif after heavy rains\n\n**Treatment:**\n- Primary chemical: Carbendazim drench at 1 g/litre around affected plants\n- Remove and destroy infected plants to prevent spread\n\n**Organic Alternative:**\n- Trichoderma viride seed treatment — 4 g/kg seed before sowing\n\n**Prevention:**\n- Seed treatment with Thiram 75% WS + Carbendazim 50% WP — 3 g/kg seed\n- Ensure good drainage in field\n- Avoid over-irrigation at germination stage\n- Sow at optimum depth (5 cm) — not too shallow or deep",
+      "word_count": 151,
+      "char_count": 922,
+      "keywords": [
+        "seed",
+        "seedlings",
+        "soil",
+        "treatment",
+        "after",
+        "carbendazim",
+        "deep",
+        "drainage",
+        "field",
+        "heavy",
+        "plants",
+        "rotted"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s004::c002",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Collar Rot (Aspergillus niger)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s005::c001",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Aphids (Aphis craccivora — Groundnut Aphid)"
+      ],
+      "text": "**Type:** Insect\n\n**Symptoms:**\n- Clusters of small black aphids on growing tips and young leaves\n- Curling and puckering of young leaves\n- Stunted shoot growth\n- Sticky honeydew causing sooty mold\n- Aphids transmit Groundnut Rosette Virus — most damaging viral disease of groundnut in Africa\n\n**Triggering Conditions:**\n- Temperature: 20–30°C\n- Season: Early Kharif — June to July peak when crop is young\n- Dry weather with moderate temperature\n- Dense planting increases aphid buildup\n\n**Treatment:**\n- Primary chemical: Imidacloprid 17.8% SL — 0.5 ml/litre spray\n- Application method: Foliar spray on growing tips; use only when threshold crossed (50 aphids per plant)\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre spray every 5 days\n- Soap solution 10 ml/litre to suffocate colonies\n\n**Prevention:**\n- Seed treatment with Imidacloprid 600 FS — 5 ml/kg seed\n- Maintain plant vigor through balanced fertilization\n- Avoid planting near older infected crops",
+      "word_count": 150,
+      "char_count": 959,
+      "keywords": [
+        "aphids",
+        "litre",
+        "spray",
+        "young",
+        "groundnut",
+        "growing",
+        "imidacloprid",
+        "leaves",
+        "plant",
+        "planting",
+        "seed",
+        "temperature"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s005::c002",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Aphids (Aphis craccivora — Groundnut Aphid)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__groundnut::s006::c001",
+      "document_id": "pest_guides__groundnut",
+      "path": "pest_guides/groundnut.md",
+      "category": "pest_guides",
+      "title": "Groundnut Pest and Disease Guide",
+      "heading_path": [
+        "Groundnut Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "White Grub (Holotrichia spp.)"
+      ],
+      "text": "**Type:** Insect (Coleoptera)\n\n**Symptoms:**\n- Patches of wilted plants — pull out easily with no roots attached\n- Creamy-white C-shaped grubs found in soil around roots\n- Roots and peg zone completely eaten\n- Pods show feeding damage — holes and missing sections\n- Problem is underground and not visible until severe damage done\n\n**Triggering Conditions:**\n- Sandy soils with low clay content\n- Season: Kharif — grubs active June to October\n- Adult beetles emerge during May–June rains and lay eggs in soil\n\n**Treatment:**\n- Primary chemical: Chlorpyrifos 20% EC — 5 litre/ha in irrigation water as drench\n- Alternatively: Phorate 10G — 10 kg/ha applied in furrow at sowing\n\n**Organic Alternative:**\n- Entomopathogenic nematodes (Heterorhabditis spp.) — soil application\n- Metarhizium anisopliae fungus — soil application 2.5 kg/ha\n\n**Prevention:**\n- Deep summer plowing to expose and kill grubs and pupae\n- Light traps to mass-catch adult beetles during May–June emergence\n- Seed treatment with Imidacloprid or Chlorpyrifos\n- Avoid applying fresh farmyard manure which attracts egg-laying beetles",
+      "word_count": 169,
+      "char_count": 1098,
+      "keywords": [
+        "soil",
+        "beetles",
+        "grubs",
+        "june",
+        "roots",
+        "adult",
+        "application",
+        "chlorpyrifos",
+        "damage",
+        "during",
+        "may",
+        "treatment"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s001::c001",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Maize is grown as a Kharif crop in Karnataka, Andhra Pradesh, Maharashtra, and Punjab and as a spring crop in Punjab and UP. The introduction of Fall Armyworm (Spodoptera frugiperda) in 2018 has become a major new threat to maize cultivation across India. Early detection and management of this pest is now a top priority.\n\n---",
+      "word_count": 56,
+      "char_count": 327,
+      "keywords": [
+        "crop",
+        "maize",
+        "punjab",
+        "across",
+        "andhra",
+        "armyworm",
+        "become",
+        "cultivation",
+        "detection",
+        "early",
+        "fall",
+        "frugiperda"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s002::c001",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s003::c001",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Fall Armyworm (Spodoptera frugiperda)"
+      ],
+      "text": "**Type:** Insect (Lepidoptera) — Invasive Species\n\n**Symptoms:**\n- Window-pane feeding on young leaves — transparent patches\n- Ragged leaf damage with sawdust-like frass in whorl\n- Pinholes on leaves arranged in rows\n- In severe cases, entire whorl is consumed — dead heart at vegetative stage\n- Caterpillar has inverted Y mark on head; four square spots on abdomen tip\n\n**Triggering Conditions:**\n- Temperature: 25–35°C\n- Season: Active throughout Kharif; peak at whorl stage (V4–V8)\n- Migrates over long distances — entire regions affected simultaneously\n- Highly resistant to many pesticides — rotate chemicals\n\n**Treatment:**\n- Primary chemical: Chlorantraniliprole (Coragen) 18.5% SC — 0.3 ml/litre into whorl\n- Alternatively: Spinetoram 11.7% SC — 0.9 ml/litre\n- Application method: Apply directly into whorl using knapsack — cover all plants\n\n**Organic Alternative:**\n- Bacillus thuringiensis var. kurstaki — 2 g/litre into whorl at early larval stage\n- NSKE 5% spray every 5 days\n- Release Trichogramma pretiosum egg parasitoid cards",
+      "word_count": 158,
+      "char_count": 1041,
+      "keywords": [
+        "whorl",
+        "into",
+        "litre",
+        "stage",
+        "entire",
+        "leaves",
+        "abdomen",
+        "active",
+        "affected",
+        "all",
+        "alternative",
+        "alternatively"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s003::c002",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Fall Armyworm (Spodoptera frugiperda)"
+      ],
+      "text": "**Prevention:**\n- Monitor from emergence — check 20 plants per acre twice weekly\n- Install pheromone traps for Fall Armyworm — 5 per acre\n- Early planting to avoid peak moth migration period\n- Encourage natural enemies — do not spray broad-spectrum insecticides\n\n---",
+      "word_count": 44,
+      "char_count": 266,
+      "keywords": [
+        "acre",
+        "per",
+        "armyworm",
+        "avoid",
+        "broad-spectrum",
+        "check",
+        "early",
+        "emergence",
+        "encourage",
+        "enemies",
+        "fall",
+        "insecticides"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s004::c001",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Maize Streak Virus (MSV)"
+      ],
+      "text": "**Type:** Viral\n\n**Symptoms:**\n- Bright yellow to white streaks running parallel to leaf veins\n- Young infected plants are severely stunted\n- No grain set in infected plants\n- Transmitted by leafhoppers (Cicadulina spp.)\n- No cure once infected\n\n**Triggering Conditions:**\n- Leafhopper populations high in warm dry conditions\n- Season: Early Kharif when leafhoppers are active\n- Young plants (V1–V6) are most susceptible\n\n**Treatment:**\n- No treatment — infected plants must be removed and destroyed\n- Control leafhopper vector with Imidacloprid 17.8% SL — 0.5 ml/litre\n\n**Organic Alternative:**\n- Reflective silver mulch repels leafhoppers\n- Neem oil spray on young plants to deter leafhoppers\n\n**Prevention:**\n- Use resistant hybrid varieties\n- Seed treatment with Imidacloprid to protect against early leafhopper feeding\n- Roguing and destroying infected plants immediately\n\n---",
+      "word_count": 130,
+      "char_count": 881,
+      "keywords": [
+        "plants",
+        "infected",
+        "leafhoppers",
+        "leafhopper",
+        "treatment",
+        "young",
+        "conditions",
+        "early",
+        "imidacloprid",
+        "active",
+        "against",
+        "alternative"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s005::c001",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Stalk Rot (Fusarium moniliforme & Pythium spp.)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Lower internodes soften and rot — stalk collapses\n- Internal stalk tissue shows pinkish or brown discoloration\n- Plant lodges before maturity — ear contacts ground and rots\n- Roots become brown and necrotic\n- Premature ripening with poor grain fill\n\n**Triggering Conditions:**\n- High nitrogen, low potassium nutrition\n- Water stress followed by heavy rain at tasseling\n- Season: August–September in Kharif\n- Dense planting reduces air circulation\n\n**Treatment:**\n- No effective field treatment — focus on prevention\n- Harvest early if stalk rot detected to minimize loss\n\n**Organic Alternative:**\n- Trichoderma viride seed treatment\n- Balanced potassium application reduces susceptibility\n\n**Prevention:**\n- Balanced NPK — do not skip potassium\n- Avoid water stress at tasseling and silking\n- Plant at recommended spacing — do not crowd\n- Use stalk rot resistant hybrids\n- Harvest promptly at maturity — delayed harvest worsens loss",
+      "word_count": 148,
+      "char_count": 966,
+      "keywords": [
+        "stalk",
+        "harvest",
+        "potassium",
+        "rot",
+        "treatment",
+        "balanced",
+        "brown",
+        "loss",
+        "maturity",
+        "not",
+        "plant",
+        "prevention"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s005::c002",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Stalk Rot (Fusarium moniliforme & Pythium spp.)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__maize::s006::c001",
+      "document_id": "pest_guides__maize",
+      "path": "pest_guides/maize.md",
+      "category": "pest_guides",
+      "title": "Maize Pest and Disease Guide",
+      "heading_path": [
+        "Maize Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Downy Mildew (Peronosclerospora sorghi)"
+      ],
+      "text": "**Type:** Fungal (Oomycete)\n\n**Symptoms:**\n- White downy growth on underside of lower leaves\n- Pale green to yellow striping on upper leaf surface\n- Severely affected plants are stunted with narrow twisted leaves\n- No ears formed — or small deformed ears\n- Systemic infection — entire plant affected from seed or early infection\n\n**Triggering Conditions:**\n- Cool humid conditions\n- High rainfall at germination stage\n- Season: Early Kharif — June to July\n\n**Treatment:**\n- Primary chemical: Metalaxyl 35% WS seed treatment — 6 g/kg seed before sowing\n- Foliar spray with Metalaxyl + Mancozeb — 2.5 g/litre at first symptom\n\n**Organic Alternative:**\n- No effective organic treatment at advanced stage\n- Remove and destroy infected plants before sporulation\n\n**Prevention:**\n- Seed treatment with Metalaxyl is essential in downy mildew-prone areas\n- Use resistant hybrids\n- Avoid planting in waterlogged or low-lying areas\n- Crop rotation with non-host crops (legumes, cotton)",
+      "word_count": 152,
+      "char_count": 975,
+      "keywords": [
+        "seed",
+        "treatment",
+        "metalaxyl",
+        "affected",
+        "areas",
+        "before",
+        "conditions",
+        "downy",
+        "early",
+        "ears",
+        "infection",
+        "leaves"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s001::c001",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Mustard is the primary oilseed Rabi crop of Rajasthan, Haryana, Madhya Pradesh, and Uttar Pradesh. Aphids are the most economically damaging pest, capable of causing 40–60% yield loss in severe infestations. Timely monitoring and action at the economic threshold level is critical for profitable mustard cultivation.\n\n---",
+      "word_count": 47,
+      "char_count": 321,
+      "keywords": [
+        "mustard",
+        "pradesh",
+        "action",
+        "aphids",
+        "capable",
+        "causing",
+        "critical",
+        "crop",
+        "cultivation",
+        "damaging",
+        "economic",
+        "economically"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s002::c001",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s003::c001",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Alternaria Blight (Alternaria brassicae)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Circular brown to dark brown spots with concentric rings on leaves\n- Yellow halo around spots; older spots merge to form large blighted areas\n- Dark elongated lesions on stems and branches\n- Silique (pod) infection causes premature shattering and seed discoloration\n- Defoliation under severe infection\n\n**Triggering Conditions:**\n- Temperature: 20–28°C\n- Humidity: Above 75%; dew and fog in Rabi season\n- Season: January to March in Rajasthan, Haryana\n\n**Treatment:**\n- Primary chemical: Mancozeb 75% WP — 2 g/litre spray every 10 days\n- Alternatively: Iprodione 50% WP — 1.5 g/litre at pod formation stage\n\n**Organic Alternative:**\n- Copper oxychloride 3 g/litre spray\n- Neem oil 5 ml/litre fortnightly\n\n**Prevention:**\n- Use certified disease-free seed\n- Seed treatment with Thiram 75% WS — 3 g/kg seed\n- Maintain spacing of 45×15 cm for air circulation\n- Avoid overhead irrigation — use drip or furrow",
+      "word_count": 149,
+      "char_count": 939,
+      "keywords": [
+        "litre",
+        "seed",
+        "spots",
+        "brown",
+        "dark",
+        "infection",
+        "pod",
+        "season",
+        "spray",
+        "treatment",
+        "use",
+        "above"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s003::c002",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Alternaria Blight (Alternaria brassicae)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s004::c001",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "White Rust (Albugo candida)"
+      ],
+      "text": "**Type:** Fungal (Oomycete)\n\n**Symptoms:**\n- White blister-like pustules on underside of leaves, stems, and inflorescences\n- Upper leaf surface shows yellow patches opposite pustules\n- Infected flower stalks become distorted and swollen (staghead)\n- Staghead causes complete failure of pod formation\n- Can cause 30–40% yield loss in severe years\n\n**Triggering Conditions:**\n- Temperature: 10–18°C — cool weather\n- Humidity: High; fog and dew in December–January\n- Season: December to February\n\n**Treatment:**\n- Primary chemical: Metalaxyl + Mancozeb — 2.5 g/litre spray at first sign\n- Alternatively: Ridomil Gold 2.5 g/litre\n\n**Organic Alternative:**\n- Bordeaux mixture 1% spray\n- Remove and destroy infected flower stalks immediately\n\n**Prevention:**\n- Use white rust tolerant varieties (Pusa Bold, Kranti)\n- Timely sowing — October 1–15\n- Crop rotation with non-crucifer crops\n\n---",
+      "word_count": 129,
+      "char_count": 884,
+      "keywords": [
+        "december",
+        "flower",
+        "infected",
+        "litre",
+        "pustules",
+        "spray",
+        "staghead",
+        "stalks",
+        "white",
+        "alternative",
+        "alternatively",
+        "become"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s005::c001",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Aphids (Lipaphis erysimi — Mustard Aphid)"
+      ],
+      "text": "**Type:** Insect\n\n**Symptoms:**\n- Dense colonies of mustard-green aphids on growing tips, flowers, and pods\n- Leaves and shoots curl inward and distort\n- Honeydew causes sooty mold\n- Flowering and pod set severely disrupted — main yield loss cause\n- Economic threshold: 20–25 aphids per plant at vegetative; 46–50 per plant at flowering\n\n**Triggering Conditions:**\n- Temperature: 15–25°C; cold dry January conditions are ideal\n- Season: January to February — peak in cold dry spells\n- Populations can increase 10x in a week during favorable conditions\n\n**Treatment:**\n- Primary chemical: Dimethoate 30% EC (Rogor) — 2 ml/litre spray at economic threshold\n- Alternatively: Oxydemeton methyl (Metasystox) — 1.5 ml/litre\n- Application method: Spray in morning; cover all plant parts including flower clusters\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre + soap 2 ml/litre spray\n- Spray high-pressure water jet to dislodge colonies\n- Protect natural enemies — syrphid flies, ladybirds, lacewings",
+      "word_count": 152,
+      "char_count": 994,
+      "keywords": [
+        "litre",
+        "spray",
+        "conditions",
+        "plant",
+        "aphids",
+        "cold",
+        "colonies",
+        "dry",
+        "economic",
+        "flowering",
+        "january",
+        "per"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s005::c002",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Aphids (Lipaphis erysimi — Mustard Aphid)"
+      ],
+      "text": "**Prevention:**\n- Timely sowing reduces aphid exposure period\n- Avoid late sowing which extends crop into peak aphid season\n- Monitor twice weekly from December\n- Attract natural enemies by maintaining habitat diversity\n\n---",
+      "word_count": 34,
+      "char_count": 224,
+      "keywords": [
+        "aphid",
+        "sowing",
+        "attract",
+        "avoid",
+        "crop",
+        "december",
+        "diversity",
+        "enemies",
+        "exposure",
+        "extends",
+        "habitat",
+        "into"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__mustard::s006::c001",
+      "document_id": "pest_guides__mustard",
+      "path": "pest_guides/mustard.md",
+      "category": "pest_guides",
+      "title": "Mustard Pest and Disease Guide",
+      "heading_path": [
+        "Mustard Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Sawfly (Athalia proxima)"
+      ],
+      "text": "**Type:** Insect (Hymenoptera)\n\n**Symptoms:**\n- Caterpillar-like larvae (slate-gray with orange-yellow tinge) feeding on leaves\n- Leaves skeletonized — only veins remain\n- Severe attack can defoliate entire field rapidly\n- Adults are yellow and black wasp-like insects\n- Early stage (October–November) attack on seedlings most damaging\n\n**Triggering Conditions:**\n- Season: October to November after sowing; second generation in February\n- Cool moist conditions after first rain following sowing\n- More severe in late-sown crops\n\n**Treatment:**\n- Primary chemical: Quinalphos 25% EC — 2 ml/litre spray\n- Alternatively: Malathion 50% EC — 2 ml/litre\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre spray\n- Hand collection of larvae in small fields\n- Spray in evening when larvae are active\n\n**Prevention:**\n- Timely sowing — October 1–15\n- Early sowing escapes first generation peak\n- Deep plowing to destroy pupae in soil\n- Maintain field hygiene",
+      "word_count": 143,
+      "char_count": 946,
+      "keywords": [
+        "sowing",
+        "larvae",
+        "litre",
+        "october",
+        "spray",
+        "after",
+        "attack",
+        "conditions",
+        "early",
+        "field",
+        "first",
+        "generation"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s001::c001",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Onion is a high-value commercial crop grown extensively in Maharashtra (Nashik), Karnataka, Andhra Pradesh, and Madhya Pradesh. It is highly sensitive to thrips and fungal diseases during bulb development. The crop requires careful monitoring as late-stage disease or pest damage directly impacts market quality and storability.\n\n---",
+      "word_count": 47,
+      "char_count": 333,
+      "keywords": [
+        "crop",
+        "pradesh",
+        "andhra",
+        "bulb",
+        "careful",
+        "commercial",
+        "damage",
+        "development",
+        "directly",
+        "disease",
+        "diseases",
+        "during"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s002::c001",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s003::c001",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Purple Blotch (Alternaria porri)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Small white lesions with purple center on leaves — turns into large papery patches\n- Lesions have water-soaked margins, eventually girdling the leaf\n- Infected leaves collapse and dry — reducing photosynthesis and bulb fill\n- Disease progresses from older outer leaves inward\n- Infected seed stalks break at lesion sites\n\n**Triggering Conditions:**\n- Temperature: 21–30°C\n- Humidity: Above 80%; dew and fog favor infection\n- Season: Kharif October–November; Rabi February–March\n- Wounded leaves from thrips feeding are primary entry points\n\n**Treatment:**\n- Primary chemical: Mancozeb 75% WP — 2 g/litre spray every 7 days\n- Alternatively: Iprodione 50% WP — 1.5 g/litre\n- Application method: Foliar spray with sticker (Triton X-100 0.1%) on waxy leaves\n\n**Organic Alternative:**\n- Copper oxychloride 3 g/litre spray\n- Garlic extract 5% spray has antifungal properties",
+      "word_count": 136,
+      "char_count": 902,
+      "keywords": [
+        "leaves",
+        "spray",
+        "litre",
+        "infected",
+        "lesions",
+        "primary",
+        "above",
+        "alternative",
+        "alternatively",
+        "antifungal",
+        "application",
+        "break"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s003::c002",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Purple Blotch (Alternaria porri)"
+      ],
+      "text": "**Prevention:**\n- Use certified disease-free seed or treated seed\n- Avoid overhead irrigation — use drip\n- Maintain spacing of 10×10 cm for air circulation\n- Rotate with non-allium crops every 2–3 years\n- Apply sticker to improve spray adhesion on waxy leaf surface\n\n---",
+      "word_count": 45,
+      "char_count": 270,
+      "keywords": [
+        "seed",
+        "use",
+        "adhesion",
+        "air",
+        "apply",
+        "avoid",
+        "certified",
+        "circulation",
+        "crops",
+        "disease-free",
+        "drip",
+        "every"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s004::c001",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Thrips (Thrips tabaci — Onion Thrips)"
+      ],
+      "text": "**Type:** Insect (Thysanoptera)\n\n**Symptoms:**\n- Silver streaks and white patches on inner leaves (feeding scars)\n- Leaves curl inward; tips dry and turn brown\n- Tiny yellow insects visible with magnification inside leaf whorls\n- Severely infested plants are stunted with malformed bulbs\n- Thrips transmit Iris Yellow Spot Virus (IYSV)\n- Economic threshold: 15–20 thrips per plant\n\n**Triggering Conditions:**\n- Temperature: 25–35°C; hot dry weather causes population explosion\n- Season: Rabi October–March peak; Kharif also significant\n- Dry dusty conditions favor thrips\n- Dense planting traps heat and creates microhabitat\n\n**Treatment:**\n- Primary chemical: Spinosad 45% SC — 0.3 ml/litre spray targeting leaf base\n- Alternatively: Fipronil 5% SC — 1.5 ml/litre; rotate with spinosad to prevent resistance\n- Application method: Spray into leaf whorl and base — not just on leaf surface\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre + soap 2 ml/litre — spray every 5 days\n- Blue sticky traps — 10 per acre to monitor and mass-trap\n- Spray in morning or evening when thrips are less active",
+      "word_count": 173,
+      "char_count": 1092,
+      "keywords": [
+        "leaf",
+        "litre",
+        "spray",
+        "thrips",
+        "dry",
+        "base",
+        "conditions",
+        "leaves",
+        "per",
+        "spinosad",
+        "traps",
+        "yellow"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s004::c002",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Thrips (Thrips tabaci — Onion Thrips)"
+      ],
+      "text": "**Prevention:**\n- Irrigate frequently — thrips dislike wet conditions\n- Use reflective silver mulch to disorient thrips\n- Avoid planting near older infested crops\n- Remove and destroy crop debris immediately after harvest\n- Plant marigold border rows as trap crop\n\n---",
+      "word_count": 42,
+      "char_count": 268,
+      "keywords": [
+        "crop",
+        "thrips",
+        "after",
+        "avoid",
+        "border",
+        "conditions",
+        "crops",
+        "debris",
+        "destroy",
+        "dislike",
+        "disorient",
+        "frequently"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s005::c001",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Downy Mildew (Peronospora destructor)"
+      ],
+      "text": "**Type:** Fungal (Oomycete)\n\n**Symptoms:**\n- Pale green to yellow patches on outer leaves, covered with violet-gray fuzzy growth in morning\n- Infected leaves collapse and dry from tip downward\n- Plants in affected patches appear pale and water-stressed\n- Bulbs from infected plants store poorly and rot quickly\n\n**Triggering Conditions:**\n- Temperature: 13–25°C (cool humid conditions)\n- Humidity: Very high; dew critical for spore germination\n- Season: November–February Rabi season during foggy cool nights\n\n**Treatment:**\n- Primary chemical: Metalaxyl + Mancozeb (Ridomil Gold) — 2.5 g/litre spray\n- Application method: Foliar spray every 10 days; use sticker for adhesion on waxy leaves\n\n**Organic Alternative:**\n- Copper-based fungicides (Bordeaux 1%) spray every 7–10 days\n- Improve drainage and air circulation\n\n**Prevention:**\n- Use disease-free seed and sets\n- Adequate spacing — 15×10 cm minimum\n- Avoid evening irrigation which promotes overnight leaf wetness\n- Crop rotation with non-allium crops",
+      "word_count": 148,
+      "char_count": 1008,
+      "keywords": [
+        "leaves",
+        "spray",
+        "conditions",
+        "cool",
+        "days",
+        "every",
+        "infected",
+        "pale",
+        "patches",
+        "plants",
+        "season",
+        "use"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s005::c002",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Downy Mildew (Peronospora destructor)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__onion::s006::c001",
+      "document_id": "pest_guides__onion",
+      "path": "pest_guides/onion.md",
+      "category": "pest_guides",
+      "title": "Onion Pest and Disease Guide",
+      "heading_path": [
+        "Onion Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Basal Rot (Fusarium oxysporum f. sp. cepae)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Plants wilt progressively despite adequate moisture\n- Outer leaves yellow from tips downward\n- Pinkish-red rot at base of bulb (basal plate)\n- Roots show brown discoloration and rot\n- Infected bulbs collapse in storage — entire storage lot can be lost\n\n**Triggering Conditions:**\n- Soil temperature: 20–28°C\n- Favored by waterlogged soils and poor drainage\n- Season: Any season but worse in Kharif due to heavy rain\n- Spreads in soil — persists for 8–10 years\n\n**Treatment:**\n- Primary chemical: Carbendazim 50% WP — drench at 1 g/litre around affected plants\n- No effective cure for advanced infection — remove affected plants\n\n**Organic Alternative:**\n- Trichoderma viride — soil application 2.5 kg/ha at transplanting\n- Pseudomonas fluorescens drench around plant base\n\n**Prevention:**\n- Seed and set treatment with Thiram 75% WS — 3 g/kg\n- Raise transplants in sterilized soil\n- Improve field drainage — ridge and furrow planting\n- Crop rotation — avoid allium crops for 3–4 years in infected field\n- Avoid waterlogging at any growth stage",
+      "word_count": 174,
+      "char_count": 1077,
+      "keywords": [
+        "soil",
+        "plants",
+        "affected",
+        "any",
+        "around",
+        "avoid",
+        "base",
+        "drainage",
+        "drench",
+        "field",
+        "infected",
+        "rot"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s001::c001",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Black pepper (Piper nigrum) is a high-value spice crop grown primarily in Kerala, Karnataka, and Tamil Nadu. Phytophthora quick wilt is the most devastating disease — it can kill entire vines within weeks and has caused massive losses in Kerala's pepper gardens. Integrated disease management combining cultural practices, biocontrol, and judicious use of fungicides is essential.\n\n---",
+      "word_count": 57,
+      "char_count": 385,
+      "keywords": [
+        "disease",
+        "kerala",
+        "pepper",
+        "biocontrol",
+        "black",
+        "can",
+        "caused",
+        "combining",
+        "crop",
+        "cultural",
+        "devastating",
+        "entire"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s002::c001",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s003::c001",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Phytophthora Foot Rot / Quick Wilt (Phytophthora capsici)"
+      ],
+      "text": "**Type:** Fungal (Oomycete)\n\n**Symptoms:**\n- Sudden wilting of entire vine within days to weeks — \"quick wilt\"\n- Water-soaked lesions at collar region (base of vine near soil)\n- Dark brown to black rotting of roots and basal stem\n- Leaves turn yellow and fall rapidly — bare vine\n- Berries blacken and fall prematurely\n- Soil splash during rain spreads spores to leaves — brown lesions on leaves and spikes\n\n**Triggering Conditions:**\n- Heavy continuous rainfall — especially July–September monsoon\n- Poorly drained, waterlogged soils\n- Temperature: 20–30°C\n- Disease spreads rapidly through field during monsoon via irrigation and runoff\n\n**Treatment:**\n- Primary chemical: Metalaxyl + Mancozeb (Ridomil Gold) — 2.5 g/litre soil drench around vine base\n- Foliar spray of Bordeaux mixture 1% on leaves and spikes\n- Copper hydroxide (Kocide) 3 g/litre as drench and spray\n\n**Organic Alternative:**\n- Trichoderma harzianum — 50 g per vine as soil application before monsoon\n- Pseudomonas fluorescens — 20 g per vine soil application\n- Bordeaux mixture 1% preventive spray before monsoon begins",
+      "word_count": 173,
+      "char_count": 1091,
+      "keywords": [
+        "vine",
+        "soil",
+        "leaves",
+        "monsoon",
+        "spray",
+        "application",
+        "base",
+        "before",
+        "bordeaux",
+        "brown",
+        "drench",
+        "during"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s003::c002",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Phytophthora Foot Rot / Quick Wilt (Phytophthora capsici)"
+      ],
+      "text": "**Prevention:**\n- Ensure excellent drainage in pepper garden — do not allow waterlogging ever\n- Apply Bordeaux mixture 1% spray in May (before monsoon) as preventive\n- Remove and destroy badly infected vines with surrounding soil\n- Do not replant in same spot for 2–3 years\n- Apply organic mulch around vine base to prevent soil splash\n- Phytosanitation — clean tools with 1% bleach between vines\n\n---",
+      "word_count": 68,
+      "char_count": 401,
+      "keywords": [
+        "apply",
+        "not",
+        "soil",
+        "vines",
+        "allow",
+        "around",
+        "badly",
+        "base",
+        "before",
+        "between",
+        "bleach",
+        "bordeaux"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s004::c001",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Pollu Beetle (Longitarsus nigripennis)"
+      ],
+      "text": "**Type:** Insect (Coleoptera)\n\n**Symptoms:**\n- Small round holes bored into pepper berries\n- Grubs inside berries — berries turn black and fall prematurely\n- Infested berries are hollow and shriveled\n- Berries drop well before maturity causing severe yield loss\n- Adult beetles are tiny metallic blue-black, visible on spikes\n\n**Triggering Conditions:**\n- Season: September–November when berries are forming\n- Humid conditions in dense pepper gardens\n- Gardens with shady and humid microclimate\n\n**Treatment:**\n- Primary chemical: Quinalphos 25% EC — 2 ml/litre spray on spikes and berries\n- Application method: Spray on berry clusters at 15-day intervals during September–November\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre spray\n- Kaolin particle film spray creates physical barrier\n\n**Prevention:**\n- Collect and destroy fallen infested berries daily\n- Prune to reduce canopy density and improve air circulation\n- Timely harvest to reduce exposure period",
+      "word_count": 142,
+      "char_count": 962,
+      "keywords": [
+        "berries",
+        "spray",
+        "conditions",
+        "gardens",
+        "humid",
+        "infested",
+        "litre",
+        "november",
+        "pepper",
+        "reduce",
+        "september",
+        "spikes"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s004::c002",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Pollu Beetle (Longitarsus nigripennis)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s005::c001",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Anthracnose / Colletotrichum Dieback (Colletotrichum gloeosporioides)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Dark brown to black lesions on stems causing dieback from tip downward\n- Circular water-soaked spots on leaves turning brown with yellow halo\n- Infected berries show sunken dark spots and fall prematurely\n- New shoot tips die back — stag-head appearance on branches\n- Salmon-colored spore masses on wet lesions\n\n**Triggering Conditions:**\n- High humidity and frequent rain\n- Season: Monsoon July–September\n- Wounds from pruning, insects, or mechanical damage are entry points\n\n**Treatment:**\n- Primary chemical: Carbendazim 50% WP — 1 g/litre spray on affected parts\n- Alternatively: Propiconazole 25% EC — 1 ml/litre\n\n**Organic Alternative:**\n- Copper oxychloride 3 g/litre spray\n- Trichoderma viride soil application near vine base\n\n**Prevention:**\n- Prune with sterilized tools — dip in 1% bleach between cuts\n- Apply Bordeaux paste on pruning cuts\n- Maintain vigor through balanced nutrition — potassium is critical for disease resistance",
+      "word_count": 149,
+      "char_count": 976,
+      "keywords": [
+        "litre",
+        "brown",
+        "cuts",
+        "dark",
+        "lesions",
+        "pruning",
+        "spots",
+        "spray",
+        "affected",
+        "alternative",
+        "alternatively",
+        "appearance"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s005::c002",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Anthracnose / Colletotrichum Dieback (Colletotrichum gloeosporioides)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__pepper::s006::c001",
+      "document_id": "pest_guides__pepper",
+      "path": "pest_guides/pepper.md",
+      "category": "pest_guides",
+      "title": "Black Pepper Pest and Disease Guide",
+      "heading_path": [
+        "Black Pepper Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Mosaic Virus (Pepper Veinal Mottle Virus — PVMV)"
+      ],
+      "text": "**Type:** Viral\n\n**Symptoms:**\n- Mosaic pattern of light and dark green on leaves\n- Leaves are smaller, distorted, and puckered\n- Yellow vein banding visible on leaves held to light\n- Stunted growth; reduced flowering and berry set\n- No cure once infected\n\n**Triggering Conditions:**\n- Transmitted by aphids (Myzus persicae, Aphis gossypii)\n- Any season when aphid populations are high\n- New plantings near infected older gardens are at high risk\n\n**Treatment:**\n- No treatment — remove and destroy infected vines\n- Control aphid vector with Imidacloprid 17.8% SL — 0.5 ml/litre\n\n**Organic Alternative:**\n- Neem oil spray to reduce aphid vector population\n- Reflective silver mulch disorients aphids\n\n**Prevention:**\n- Use certified virus-free planting material (rooted cuttings)\n- Control aphid vectors in young gardens\n- Do not plant near old infected gardens\n- Roguing — immediately remove any mosaic-symptomatic vine",
+      "word_count": 142,
+      "char_count": 920,
+      "keywords": [
+        "aphid",
+        "infected",
+        "gardens",
+        "leaves",
+        "any",
+        "aphids",
+        "control",
+        "high",
+        "light",
+        "near",
+        "remove",
+        "treatment"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s001::c001",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Rice is India's most important staple crop, grown across Tamil Nadu, Punjab, West Bengal, Andhra Pradesh, and Kerala. It is susceptible to a wide range of fungal diseases, bacterial infections, and insect pests. Humid tropical conditions during Kharif season create ideal environments for disease outbreaks. Integrated Pest Management (IPM) is strongly recommended to reduce chemical dependency.\n\n---",
+      "word_count": 57,
+      "char_count": 400,
+      "keywords": [
+        "across",
+        "andhra",
+        "bacterial",
+        "bengal",
+        "chemical",
+        "conditions",
+        "create",
+        "crop",
+        "dependency",
+        "disease",
+        "diseases",
+        "during"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s002::c001",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s003::c001",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Rice Blast (Magnaporthe oryzae)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Diamond-shaped or spindle-shaped gray lesions with brown borders on leaves (leaf blast)\n- Neck of panicle turns black and rots — entire panicle collapses (neck blast — most damaging)\n- Nodes turn black and break (node blast)\n- Severely affected fields appear burned from a distance\n\n**Triggering Conditions:**\n- Temperature: 24–28°C\n- Humidity: Above 80%; leaf wetness for 10+ hours\n- Season: Kharif — peak during July–September\n- Excessive nitrogen fertilization increases susceptibility dramatically\n- Low silicon soils are more vulnerable\n\n**Treatment:**\n- Primary chemical: Tricyclazole 75% WP — 0.6 g/litre, spray at first symptom and repeat at 10 days\n- Alternatively: Isoprothiolane 40% EC — 1.5 ml/litre\n- Application method: Foliar spray — critical to spray at panicle initiation stage as preventive\n\n**Organic Alternative:**\n- Silicon spray (potassium silicate 2 g/litre) strengthens cell walls\n- Pseudomonas fluorescens 10 g/litre as seed treatment and foliar spray",
+      "word_count": 150,
+      "char_count": 1010,
+      "keywords": [
+        "spray",
+        "litre",
+        "blast",
+        "panicle",
+        "black",
+        "foliar",
+        "leaf",
+        "neck",
+        "silicon",
+        "treatment",
+        "above",
+        "affected"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s003::c002",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Rice Blast (Magnaporthe oryzae)"
+      ],
+      "text": "**Prevention:**\n- Use resistant varieties (IR-64, Swarna, BPT-5204, Pusa Basmati varieties with resistance)\n- Avoid excess nitrogen — split application reduces blast risk\n- Apply silicon fertilizer (slag) in blast-prone areas\n- Maintain optimum plant spacing for air circulation\n- Drain field periodically to reduce leaf wetness\n\n---",
+      "word_count": 48,
+      "char_count": 333,
+      "keywords": [
+        "varieties",
+        "air",
+        "application",
+        "apply",
+        "areas",
+        "avoid",
+        "basmati",
+        "blast",
+        "blast-prone",
+        "bpt-5204",
+        "circulation",
+        "drain"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s004::c001",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Brown Plant Hopper (Nilaparvata lugens)"
+      ],
+      "text": "**Type:** Insect (Hemiptera)\n\n**Symptoms:**\n- Circular patches of dried brown plants in field (hopperburn)\n- Yellow to brown discoloration spreading outward from center\n- Insects visible at base of plant tillers — tiny brown or white bugs\n- Honeydew on leaf sheaths causing sooty mold\n- Severe infestation causes complete crop collapse within days\n\n**Triggering Conditions:**\n- Temperature: 25–30°C\n- Humidity: High — continuous flooding and dense canopy favor outbreak\n- Season: Kharif — August to October peak\n- Excessive nitrogen and close spacing create perfect microclimate\n- Insecticide resistance is widespread — rotate chemicals\n\n**Treatment:**\n- Primary chemical: Buprofezin 25% SC — 1 ml/litre (targets nymphs)\n- Alternatively: Dinotefuran 20% SG — 0.5 g/litre; drain field before spraying at base of plant\n- Application method: Direct spray at base of tillers after partial field drainage\n\n**Organic Alternative:**\n- Drain field for 3–4 days to expose and kill nymphs\n- Release Cyrtorhinus lividipennis (natural predator) — 500 per acre\n- Neem oil 5 ml/litre spray at base of plants",
+      "word_count": 169,
+      "char_count": 1093,
+      "keywords": [
+        "base",
+        "field",
+        "brown",
+        "litre",
+        "days",
+        "drain",
+        "nymphs",
+        "plant",
+        "plants",
+        "spray",
+        "tillers",
+        "acre"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s004::c002",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Brown Plant Hopper (Nilaparvata lugens)"
+      ],
+      "text": "**Prevention:**\n- Use BPH-resistant varieties (Swarna Sub-1, IR-64, PTB-33)\n- Avoid excess nitrogen in single dose — split into 3 applications\n- Maintain proper spacing — do not crowd plants\n- Install light traps to monitor adult migration\n- Avoid broad-spectrum insecticides that kill natural enemies\n\n---",
+      "word_count": 47,
+      "char_count": 306,
+      "keywords": [
+        "avoid",
+        "adult",
+        "applications",
+        "bph-resistant",
+        "broad-spectrum",
+        "crowd",
+        "dose",
+        "enemies",
+        "excess",
+        "insecticides",
+        "install",
+        "into"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s005::c001",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Sheath Blight (Rhizoctonia solani)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Oval or irregular greenish-gray lesions on leaf sheaths near water level\n- Lesions have brown margins and grayish-white centers\n- Disease moves up the plant from sheath to flag leaf\n- Severely affected tillers die before heading (whiteheads)\n- Sclerotia (small brown pellets) visible in infected tissue\n\n**Triggering Conditions:**\n- Temperature: 28–32°C\n- Humidity: Very high — standing water and dense canopy\n- Season: Kharif — July to September\n- High nitrogen and dense planting dramatically increase incidence\n- Sclerotia survive in soil and float to spread between plants\n\n**Treatment:**\n- Primary chemical: Hexaconazole 5% EC — 2 ml/litre; spray at sheath level\n- Alternatively: Propiconazole 25% EC — 1 ml/litre\n- Application method: Direct spray at stem base and sheath — not on upper canopy\n\n**Organic Alternative:**\n- Trichoderma viride (bioagent) — 2.5 kg/ha soil application at transplanting\n- Pseudomonas fluorescens foliar spray — 10 g/litre",
+      "word_count": 151,
+      "char_count": 989,
+      "keywords": [
+        "litre",
+        "sheath",
+        "spray",
+        "application",
+        "brown",
+        "canopy",
+        "dense",
+        "high",
+        "leaf",
+        "lesions",
+        "level",
+        "sclerotia"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s005::c002",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Sheath Blight (Rhizoctonia solani)"
+      ],
+      "text": "**Prevention:**\n- Reduce seed rate — avoid overcrowding\n- Split nitrogen into 3 doses; avoid excess at tillering\n- Remove and burn infected crop debris after harvest\n- Deep plowing in summer to bury sclerotia\n- Balanced potassium application improves resistance\n\n---",
+      "word_count": 42,
+      "char_count": 266,
+      "keywords": [
+        "avoid",
+        "after",
+        "application",
+        "balanced",
+        "burn",
+        "bury",
+        "crop",
+        "debris",
+        "deep",
+        "doses",
+        "excess",
+        "harvest"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s006::c001",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Bacterial Leaf Blight (Xanthomonas oryzae)"
+      ],
+      "text": "**Type:** Bacterial\n\n**Symptoms:**\n- Water-soaked to yellow stripe along leaf margins starting from tip\n- Stripe turns pale yellow to white and dries up\n- Leaf edges become wavy and dry\n- Bacterial ooze visible in early morning on cut leaf ends (milky droplets)\n- Entire leaf wilts and dries in severe Kresek phase (seedling death)\n\n**Triggering Conditions:**\n- Temperature: 25–34°C\n- Humidity: High; heavy rain and wind spread bacteria\n- Season: Kharif — peak after cyclonic storms or heavy rain\n- Flood irrigation spreads bacteria between fields\n- Wounds from insects or wind allow entry\n\n**Treatment:**\n- Primary chemical: Copper oxychloride 50% WP — 3 g/litre spray\n- Alternatively: Streptomycin sulfate + Tetracycline (100 ppm) — use only once\n- Application method: Foliar spray covering all leaves; drain field if possible\n\n**Organic Alternative:**\n- No effective organic cure — prevention is primary strategy\n- Drain fields during outbreak to reduce bacterial spread",
+      "word_count": 153,
+      "char_count": 973,
+      "keywords": [
+        "leaf",
+        "bacterial",
+        "bacteria",
+        "drain",
+        "dries",
+        "fields",
+        "heavy",
+        "organic",
+        "primary",
+        "rain",
+        "spray",
+        "spread"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s006::c002",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Bacterial Leaf Blight (Xanthomonas oryzae)"
+      ],
+      "text": "**Prevention:**\n- Use resistant varieties (IR-20, Pusa Basmati-1121, Improved Samba Mahsuri)\n- Avoid flood irrigation during outbreak — use furrow or drip\n- Do not apply excess nitrogen when disease appears\n- Remove and destroy severely infected plants\n- Avoid movement through wet fields during infection\n\n---",
+      "word_count": 47,
+      "char_count": 310,
+      "keywords": [
+        "avoid",
+        "during",
+        "use",
+        "appears",
+        "apply",
+        "basmati-1121",
+        "destroy",
+        "disease",
+        "drip",
+        "excess",
+        "fields",
+        "flood"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s007::c001",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Stem Borer (Scirpophaga incertulas — Yellow Stem Borer)"
+      ],
+      "text": "**Type:** Insect (Lepidoptera)\n\n**Symptoms:**\n- Dead heart — central tiller dies at vegetative stage (yellow and pulls out easily)\n- White ear — panicle does not fill grain, turns white at reproductive stage\n- Circular holes on leaf sheaths where larvae entered\n- Frass inside hollow tiller\n- Moths are white with a single black dot — visible at night around light traps\n\n**Triggering Conditions:**\n- Temperature: 25–30°C\n- Season: Active throughout Kharif — peaks at tillering and heading\n- Dense canopy and high nitrogen favor population\n- Ratoon crop and continuous cropping build up population\n\n**Treatment:**\n- Primary chemical: Chlorantraniliprole 18.5% SC (Coragen) — 0.3 ml/litre spray or granule\n- Alternatively: Cartap hydrochloride 4G — 18 kg/ha granule applied in standing water\n- Application method: Spray on foliage at egg hatching stage; granules in water\n\n**Organic Alternative:**\n- Bacillus thuringiensis (Bt) spray — 2 g/litre at egg hatching\n- Trichogramma japonicum egg parasitoid — release 5 cards per acre at each brood\n- Light traps to catch and kill adult moths",
+      "word_count": 172,
+      "char_count": 1085,
+      "keywords": [
+        "egg",
+        "spray",
+        "stage",
+        "white",
+        "granule",
+        "hatching",
+        "light",
+        "litre",
+        "moths",
+        "population",
+        "tiller",
+        "traps"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__rice::s007::c002",
+      "document_id": "pest_guides__rice",
+      "path": "pest_guides/rice.md",
+      "category": "pest_guides",
+      "title": "Rice Pest and Disease Guide",
+      "heading_path": [
+        "Rice Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Stem Borer (Scirpophaga incertulas — Yellow Stem Borer)"
+      ],
+      "text": "**Prevention:**\n- Remove ratoon crop immediately after main crop harvest\n- Clip leaf tips during transplanting to remove egg masses\n- Install light traps — 1 per acre from 15 days after transplanting\n- Avoid close spacing; maintain good air circulation\n- Balance nitrogen — excess nitrogen attracts egg-laying females",
+      "word_count": 50,
+      "char_count": 317,
+      "keywords": [
+        "after",
+        "crop",
+        "nitrogen",
+        "remove",
+        "transplanting",
+        "acre",
+        "air",
+        "attracts",
+        "avoid",
+        "balance",
+        "circulation",
+        "clip"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s001::c001",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Tomato is one of the most economically important vegetables in India, grown across Maharashtra, Karnataka, Andhra Pradesh, and Tamil Nadu. It is highly susceptible to fungal diseases, viral infections, and insect pests — especially under humid conditions or poor crop rotation. Early identification and prompt action are critical to protect yield and quality.\n\n---",
+      "word_count": 54,
+      "char_count": 364,
+      "keywords": [
+        "across",
+        "action",
+        "andhra",
+        "conditions",
+        "critical",
+        "crop",
+        "diseases",
+        "early",
+        "economically",
+        "especially",
+        "fungal",
+        "grown"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s002::c001",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s003::c001",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Early Blight (Alternaria solani)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Dark brown to black circular spots with concentric rings (target-board pattern) on older leaves\n- Yellow halo surrounding the spots\n- Leaves turn yellow and drop prematurely\n- Stem lesions at soil level in seedlings (damping-off)\n- Dark sunken spots on fruit near stem end\n\n**Triggering Conditions:**\n- Temperature: 24–29°C\n- Humidity: Above 70%\n- Season: Most common in Kharif (September–October) and post-monsoon\n- Favored by alternating wet and dry periods\n\n**Treatment:**\n- Primary chemical: Mancozeb 75% WP — 2 g/litre, spray every 7–10 days\n- Alternatively: Chlorothalonil 75% WP — 2 g/litre\n- Application method: Foliar spray covering both leaf surfaces\n\n**Organic Alternative:**\n- Copper oxychloride 50% WP — 3 g/litre spray\n- Neem oil 5 ml/litre + soap 1 ml/litre as spreader\n\n**Prevention:**\n- Use certified disease-free seed\n- Avoid overhead irrigation — use drip\n- Remove and destroy infected plant debris\n- Maintain crop rotation — avoid tomato after tomato or potato\n- Apply mulch to reduce soil splash on leaves",
+      "word_count": 168,
+      "char_count": 1060,
+      "keywords": [
+        "litre",
+        "leaves",
+        "spots",
+        "spray",
+        "avoid",
+        "dark",
+        "soil",
+        "stem",
+        "tomato",
+        "use",
+        "yellow",
+        "above"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s003::c002",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Early Blight (Alternaria solani)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s004::c001",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Late Blight (Phytophthora infestans)"
+      ],
+      "text": "**Type:** Fungal (Oomycete)\n\n**Symptoms:**\n- Water-soaked pale green to brown patches on leaves, rapidly enlarging\n- White cottony growth on underside of leaves during humid mornings\n- Dark brown lesions on stems\n- Fruit shows firm brown patches that spread quickly\n- Entire field can collapse within 7–10 days in cool humid weather\n\n**Triggering Conditions:**\n- Temperature: 10–20°C (cool conditions)\n- Humidity: Above 90%\n- Season: October–December in Nashik and Deccan; December–February in hills\n- Spreads very fast during foggy or rainy spells\n\n**Treatment:**\n- Primary chemical: Metalaxyl + Mancozeb (Ridomil Gold) — 2.5 g/litre, spray every 5–7 days\n- Alternatively: Cymoxanil + Mancozeb — 2 g/litre\n- Application method: Foliar spray — begin preventively before disease appears in high-risk weather\n\n**Organic Alternative:**\n- Copper hydroxide (Kocide) — 3 g/litre\n- Bordeaux mixture 1% — spray fortnightly as preventive",
+      "word_count": 139,
+      "char_count": 928,
+      "keywords": [
+        "brown",
+        "litre",
+        "spray",
+        "conditions",
+        "cool",
+        "days",
+        "december",
+        "during",
+        "humid",
+        "leaves",
+        "mancozeb",
+        "patches"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s004::c002",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Late Blight (Phytophthora infestans)"
+      ],
+      "text": "**Prevention:**\n- Plant resistant varieties (Arka Rakshak, Pusa Hybrid-1)\n- Avoid planting in low-lying areas with poor drainage\n- Destroy volunteer tomato plants\n- Monitor weather forecasts — spray before rain forecast\n- Space plants adequately for air circulation\n\n---",
+      "word_count": 40,
+      "char_count": 270,
+      "keywords": [
+        "plants",
+        "adequately",
+        "air",
+        "areas",
+        "arka",
+        "avoid",
+        "before",
+        "circulation",
+        "destroy",
+        "drainage",
+        "forecast",
+        "forecasts"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s005::c001",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Tomato Mosaic Virus (ToMV)"
+      ],
+      "text": "**Type:** Viral\n\n**Symptoms:**\n- Mosaic pattern of light and dark green on leaves\n- Leaves are malformed, smaller than normal, curled inward\n- Stunted plant growth\n- Fruits show yellow blotches or internal browning\n- No treatment possible once infected\n\n**Triggering Conditions:**\n- Transmitted by contact (tools, hands) and seed\n- Not transmitted by insects (unlike other viruses)\n- Any season; worse in dense plantings\n\n**Treatment:**\n- No cure — infected plants must be removed and destroyed immediately\n- Disinfect tools with 1% sodium hypochlorite between plants\n\n**Organic Alternative:**\n- No organic treatment — prevention only\n\n**Prevention:**\n- Use certified virus-free seed or treated seed\n- Wash hands before handling plants\n- Do not use tobacco near tomato plants\n- Remove and burn infected plants immediately\n- Avoid replanting tomato in infected field for 2 seasons\n\n---",
+      "word_count": 137,
+      "char_count": 884,
+      "keywords": [
+        "plants",
+        "infected",
+        "seed",
+        "treatment",
+        "hands",
+        "immediately",
+        "leaves",
+        "not",
+        "organic",
+        "prevention",
+        "tomato",
+        "tools"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s006::c001",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Whitefly (Bemisia tabaci)"
+      ],
+      "text": "**Type:** Insect\n\n**Symptoms:**\n- Tiny white flying insects on underside of leaves\n- Leaves turn yellow, curl upward\n- Sticky honeydew on leaf surface causing sooty mold (black coating)\n- Whitefly is the primary vector for Tomato Yellow Leaf Curl Virus (TYLCV)\n- Severe infestations cause plant wilting and fruit drop\n\n**Triggering Conditions:**\n- Temperature: 25–35°C\n- Humidity: Low to moderate (dry conditions favor population buildup)\n- Season: Kharif and Rabi both; peak in November–January\n- Dense planting and dust on leaves worsen infestation\n\n**Treatment:**\n- Primary chemical: Imidacloprid 17.8% SL — 0.5 ml/litre, spray on leaf undersides\n- Alternatively: Thiamethoxam 25% WG — 0.3 g/litre\n- Application method: Direct spray on leaf undersides; rotate insecticides to prevent resistance\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre + garlic extract 5 ml/litre spray\n- Yellow sticky traps — 10 per acre to monitor and reduce population\n- Reflective silver mulch repels whitefly",
+      "word_count": 151,
+      "char_count": 990,
+      "keywords": [
+        "leaf",
+        "litre",
+        "leaves",
+        "spray",
+        "yellow",
+        "conditions",
+        "curl",
+        "population",
+        "primary",
+        "sticky",
+        "undersides",
+        "whitefly"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s006::c002",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Whitefly (Bemisia tabaci)"
+      ],
+      "text": "**Prevention:**\n- Install 40-mesh nylon net in nursery\n- Remove heavily infested leaves and destroy\n- Plant marigold border rows as trap crop\n- Avoid excess nitrogen fertilization which attracts whitefly\n- Monitor weekly with yellow sticky traps\n\n---",
+      "word_count": 39,
+      "char_count": 250,
+      "keywords": [
+        "attracts",
+        "avoid",
+        "border",
+        "crop",
+        "destroy",
+        "excess",
+        "fertilization",
+        "heavily",
+        "infested",
+        "install",
+        "leaves",
+        "marigold"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s007::c001",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Fruit Borer (Helicoverpa armigera)"
+      ],
+      "text": "**Type:** Insect (Lepidoptera)\n\n**Symptoms:**\n- Small circular entry holes on fruit surface\n- Caterpillar found inside fruit feeding on seeds and pulp\n- Frass (excrement) visible around entry hole\n- Damaged fruits rot quickly due to secondary infection\n- Young larvae initially feed on leaves and flowers before entering fruit\n\n**Triggering Conditions:**\n- Temperature: 25–35°C\n- Season: Active throughout growing season; peak in September–November\n- High nitrogen fertilization increases susceptibility\n- Continuous tomato cultivation increases moth population\n\n**Treatment:**\n- Primary chemical: Spinosad 45% SC — 0.3 ml/litre spray on fruits and foliage\n- Alternatively: Chlorantraniliprole (Coragen) — 0.3 ml/litre\n- Application method: Foliar spray covering fruits thoroughly; spray in evening\n\n**Organic Alternative:**\n- Bacillus thuringiensis (Bt) — 2 g/litre spray at egg hatching stage\n- Neem seed kernel extract (NSKE) 5% spray\n- Pheromone traps — 5 traps per acre to monitor adult moth",
+      "word_count": 144,
+      "char_count": 996,
+      "keywords": [
+        "spray",
+        "fruit",
+        "fruits",
+        "litre",
+        "entry",
+        "increases",
+        "moth",
+        "season",
+        "traps",
+        "acre",
+        "active",
+        "adult"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__tomato::s007::c002",
+      "document_id": "pest_guides__tomato",
+      "path": "pest_guides/tomato.md",
+      "category": "pest_guides",
+      "title": "Tomato Pest and Disease Guide",
+      "heading_path": [
+        "Tomato Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Fruit Borer (Helicoverpa armigera)"
+      ],
+      "text": "**Prevention:**\n- Install pheromone traps from transplanting onwards\n- Remove and destroy damaged fruits immediately\n- Deep summer plowing to kill pupae in soil\n- Avoid mono-cropping of tomato for multiple seasons\n- Intercrop with coriander or basil to attract natural enemies",
+      "word_count": 42,
+      "char_count": 276,
+      "keywords": [
+        "attract",
+        "avoid",
+        "basil",
+        "coriander",
+        "damaged",
+        "deep",
+        "destroy",
+        "enemies",
+        "fruits",
+        "immediately",
+        "install",
+        "intercrop"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s001::c001",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Overview"
+      ],
+      "text": "Wheat is the primary Rabi crop across Punjab, Haryana, Uttar Pradesh, and Madhya Pradesh. The crop faces serious threats from rust diseases, smut, and insect pests. Punjab and Haryana are considered the wheat bowl of India — disease outbreaks here have national food security implications. Early season monitoring from January onwards is critical.\n\n---",
+      "word_count": 54,
+      "char_count": 352,
+      "keywords": [
+        "crop",
+        "haryana",
+        "pradesh",
+        "punjab",
+        "wheat",
+        "across",
+        "bowl",
+        "considered",
+        "critical",
+        "disease",
+        "diseases",
+        "early"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s002::c001",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s003::c001",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Yellow Rust (Puccinia striiformis)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Yellow to orange pustules arranged in stripes along leaf veins\n- Powdery yellow-orange spores rub off on fingers\n- Leaves turn yellow then brown and dry\n- Early infection at flag leaf stage is most damaging\n- Spreads rapidly in cool weather — field can be fully infected in 10 days\n\n**Triggering Conditions:**\n- Temperature: 10–15°C (cool weather is critical trigger)\n- Humidity: High; dew and foggy mornings\n- Season: January–March in Punjab, December–February in hills\n- New virulent races (78S84, 46S119) overcome resistant varieties\n\n**Treatment:**\n- Primary chemical: Propiconazole 25% EC — 1 ml/litre, spray immediately at first sign\n- Alternatively: Tebuconazole 25.9% EC — 1 ml/litre\n- Application method: Foliar spray; repeat after 10–14 days if conditions persist\n\n**Organic Alternative:**\n- No effective organic treatment — act fast with chemical\n- Sulfur dust 25 kg/ha can slow spread slightly",
+      "word_count": 145,
+      "char_count": 939,
+      "keywords": [
+        "can",
+        "chemical",
+        "conditions",
+        "cool",
+        "days",
+        "leaf",
+        "litre",
+        "organic",
+        "spray",
+        "treatment",
+        "weather",
+        "yellow"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s003::c002",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Yellow Rust (Puccinia striiformis)"
+      ],
+      "text": "**Prevention:**\n- Use rust-resistant varieties (HD-3086, WB02, PBW-343 with Yr genes)\n- Monitor fields weekly from January in Punjab\n- Avoid late sowing which extends crop duration into rust season\n- Do not over-irrigate — wet canopy favors spore germination\n\n---",
+      "word_count": 41,
+      "char_count": 263,
+      "keywords": [
+        "avoid",
+        "canopy",
+        "crop",
+        "duration",
+        "extends",
+        "favors",
+        "fields",
+        "genes",
+        "germination",
+        "hd-3086",
+        "into",
+        "january"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s004::c001",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Brown Rust (Puccinia recondita)"
+      ],
+      "text": "**Type:** Fungal\n\n**Symptoms:**\n- Small round orange-brown pustules scattered randomly on leaves (not in stripes)\n- Brown powdery spores rub off on touch\n- Severely affected leaves dry and die\n- Usually appears after yellow rust season — February to March\n- Less damaging than yellow rust but can cause 20–30% yield loss\n\n**Triggering Conditions:**\n- Temperature: 15–22°C (warmer than yellow rust)\n- Humidity: Moderate to high\n- Season: February–March peak in plains\n\n**Treatment:**\n- Primary chemical: Propiconazole 25% EC — 1 ml/litre spray\n- Application method: Foliar spray at first pustule appearance\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre has limited effectiveness — use only for very mild infections\n\n**Prevention:**\n- Same as yellow rust — resistant varieties and timely sowing\n- Ensure balanced potassium nutrition which improves rust tolerance\n\n---",
+      "word_count": 132,
+      "char_count": 867,
+      "keywords": [
+        "rust",
+        "yellow",
+        "february",
+        "leaves",
+        "litre",
+        "march",
+        "season",
+        "spray",
+        "than",
+        "affected",
+        "after",
+        "alternative"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s005::c001",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Loose Smut (Ustilago tritici)"
+      ],
+      "text": "**Type:** Fungal (Seed-borne)\n\n**Symptoms:**\n- Entire ear replaced by black powdery spore mass\n- Black smutted heads visible above healthy crop at heading\n- Spore mass disperses rapidly at flowering — infects neighboring plants\n- Affected plants are taller and head earlier than healthy plants\n- No grain formed in infected heads\n\n**Triggering Conditions:**\n- Spread during flowering — wind-borne spores infect open flowers\n- Cool, humid conditions at flowering favor spore germination\n- Seed-borne — infected seed carries the fungus inside the embryo\n\n**Treatment:**\n- No field treatment possible — disease is inside the plant\n- Rogue out and destroy infected heads before spores disperse (bag and remove)\n\n**Organic Alternative:**\n- Hot water seed treatment — soak seed in hot water at 52°C for 10 minutes then dry\n\n**Prevention:**\n- Use certified disease-free seed\n- Seed treatment with Carboxin 37.5% + Thiram 37.5% (Vitavax) — 2.5 g/kg seed\n- Biproxy (Tebuconazole 2% DS) seed treatment — 1.5 g/kg seed\n- Do not save seed from fields with smut infection",
+      "word_count": 170,
+      "char_count": 1058,
+      "keywords": [
+        "seed",
+        "treatment",
+        "flowering",
+        "heads",
+        "infected",
+        "plants",
+        "spore",
+        "black",
+        "conditions",
+        "healthy",
+        "hot",
+        "inside"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s005::c002",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Loose Smut (Ustilago tritici)"
+      ],
+      "text": "---",
+      "word_count": 1,
+      "char_count": 3,
+      "keywords": [],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s006::c001",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Aphids (Sitobion avenae — Grain Aphid)"
+      ],
+      "text": "**Type:** Insect (Hemiptera)\n\n**Symptoms:**\n- Clusters of small green to brown soft-bodied insects on leaves, stem, and ear\n- Sticky honeydew on plant surface causing sooty mold\n- Leaves turn yellow; severe infestations cause plant wilting\n- Aphids on ears reduce grain filling — shriveled grain\n- Economic threshold: 50 aphids per tiller at tillering; 200 per ear at heading\n\n**Triggering Conditions:**\n- Temperature: 15–25°C\n- Season: December–March in Rabi wheat\n- Dry weather and warm spells in February–March cause rapid population buildup\n- Excess nitrogen fertilization attracts aphids\n\n**Treatment:**\n- Primary chemical: Imidacloprid 17.8% SL — 0.5 ml/litre spray\n- Alternatively: Dimethoate 30% EC (Rogor) — 2 ml/litre\n- Application method: Foliar spray; treat only when threshold exceeded to protect natural enemies\n\n**Organic Alternative:**\n- Neem oil 5 ml/litre + soap 1 ml/litre\n- Spray water jet to dislodge colonies\n- Protect natural enemies — ladybirds, lacewings, parasitic wasps",
+      "word_count": 150,
+      "char_count": 996,
+      "keywords": [
+        "litre",
+        "aphids",
+        "spray",
+        "cause",
+        "ear",
+        "enemies",
+        "grain",
+        "leaves",
+        "march",
+        "natural",
+        "per",
+        "plant"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s006::c002",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Aphids (Sitobion avenae — Grain Aphid)"
+      ],
+      "text": "**Prevention:**\n- Timely sowing (November 1–15) to avoid peak aphid season\n- Balanced fertilization — avoid excess nitrogen\n- Do not over-irrigate — high humidity favors aphids\n- Monitor weekly from December onwards\n\n---",
+      "word_count": 34,
+      "char_count": 220,
+      "keywords": [
+        "avoid",
+        "aphid",
+        "aphids",
+        "balanced",
+        "december",
+        "excess",
+        "favors",
+        "fertilization",
+        "high",
+        "humidity",
+        "monitor",
+        "nitrogen"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pest_guides__wheat::s007::c001",
+      "document_id": "pest_guides__wheat",
+      "path": "pest_guides/wheat.md",
+      "category": "pest_guides",
+      "title": "Wheat Pest and Disease Guide",
+      "heading_path": [
+        "Wheat Pest and Disease Guide",
+        "Pest and Disease Entries",
+        "Termites (Odontotermes spp.)"
+      ],
+      "text": "**Type:** Insect (Isoptera)\n\n**Symptoms:**\n- Plants wilt suddenly and pull out easily from soil\n- Root and stem base eaten — hollowed out with mud-filled galleries\n- Affected plants appear in patches in the field\n- More common in sandy soils and fields with undecomposed organic matter\n- Problem worsens in dry soils\n\n**Triggering Conditions:**\n- Dry soil conditions — termites avoid waterlogged soil\n- Sandy soils with low clay content\n- Fields with crop stubble or roots left undecomposed\n- Season: Most active in dry November–December after sowing\n\n**Treatment:**\n- Primary chemical: Chlorpyrifos 20% EC — 2.5 litre/ha dissolved in irrigation water (drench)\n- Alternatively: Imidacloprid 600 FS seed treatment — 6 ml/kg seed before sowing\n\n**Organic Alternative:**\n- Neem cake 250 kg/ha incorporated in soil before sowing\n- Bacillus cereus biocontrol application\n\n**Prevention:**\n- Deep summer plowing to destroy termite colonies\n- Remove all crop stubble and roots before sowing\n- Avoid applying raw fresh manure or green material — use well-composted FYM only\n- Seed treatment with chlorpyrifos or imidacloprid before sowing",
+      "word_count": 175,
+      "char_count": 1129,
+      "keywords": [
+        "sowing",
+        "before",
+        "soil",
+        "dry",
+        "seed",
+        "soils",
+        "treatment",
+        "avoid",
+        "chlorpyrifos",
+        "conditions",
+        "crop",
+        "fields"
+      ],
+      "source_pdf": null
+    },
+    {
+      "id": "pesticide_reference__approved_pesticides::s001::c001",
+      "document_id": "pesticide_reference__approved_pesticides",
+      "path": "pesticide_reference/approved_pesticides.md",
+      "category": "pesticide_reference",
+      "title": "FARMWISE AI — Approved Pesticide Reference Catalog",
+      "heading_path": [
+        "FARMWISE AI — Approved Pesticide Reference Catalog"
+      ],
+      "text": "_Source PDF: `approved_pesticides.pdf`_\nGovernment of India | Department of Agriculture & Farmers Welfare\nValid for: All Listed States | Reference Year: 2024–25\n\nThis catalog lists pesticides approved for use in Indian agriculture as per Central Insecticides Board & Registration Committee (CIBRC) approvals. Always follow label directions. Wear protective\nequipment. Observe pre-harvest waiting periods strictly.\n\nTrade Name\n\nActive Ingredient\n\nFormulation\n\nCrops\n\nTarget Pest/Disease\n\nDosage\n\nDithane M-45\n\nMancozeb 75%\n\nWP\n\nTomato, Potato, Onion, Groundnut\nEarly Blight, Late Blight, Tikka, Purple Blotch 2 g/litre\n\nRidomil Gold MZ\n\nMetalaxyl 8% + Mancozeb 64%\n\nWP\n\nTomato, Onion, Potato, Bajra, Maize\nLate Blight, Downy Mildew, Damping Off\n\nTilt / Bumper\n\nPropiconazole 25%\n\nEC\n\nWheat, Rice, Groundnut\n\nCoragen\n\nChlorantraniliprole 18.5%\n\nSC\n\nRice, Maize, Tomato, Bajra\n\nConfidor\n\nImidacloprid 17.8%",
+      "word_count": 121,
+      "char_count": 903,
+      "keywords": [
+        "blight",
+        "tomato",
+        "agriculture",
+        "bajra",
+        "groundnut",
+        "late",
+        "maize",
+        "mancozeb",
+        "onion",
+        "pdf",
+        "potato",
+        "rice"
+      ],
+      "source_pdf": "pesticide_reference/approved_pesticides.pdf"
+    },
+    {
+      "id": "pesticide_reference__approved_pesticides::s001::c002",
+      "document_id": "pesticide_reference__approved_pesticides",
+      "path": "pesticide_reference/approved_pesticides.md",
+      "category": "pesticide_reference",
+      "title": "FARMWISE AI — Approved Pesticide Reference Catalog",
+      "heading_path": [
+        "FARMWISE AI — Approved Pesticide Reference Catalog"
+      ],
+      "text": "SL\n\nCotton, Tomato, Wheat, Mustard\n\nWhitefly, Aphids, BPH, Jassids\n\nActara\n\nThiamethoxam 25%\n\nWG\n\nTomato, Rice, Wheat, Bajra\n\nRegent / Fipronil\n\nFipronil 5%\n\nSC\n\nSuccess / Tracer\n\nSpinosad 45%\n\nRogor\n\nApplication\n\nOrganic\n\nMethod\n\nPre-Harvest\n\n(Yes/No) Waiting (days)\n\nFoliar spray\n\nNo\n\n7\n\n2.5 g/litre\n\nFoliar spray / Soil drench\n\nNo\n\n14\n\nRust, Sheath Blight, Late Leaf Spot\n\n1 ml/litre\n\nFoliar spray\n\nNo\n\n14\n\nStem Borer, Fruit Borer, Fall Armyworm\n\n0.3 ml/litre\n\nFoliar spray / Granule\n\nNo\n\n1\n\n0.5 ml/litre Foliar spray / Seed treatment\n\nNo\n\n7\n\nWhitefly, BPH, Aphids, Shoot Fly\n\n0.3 g/litre\n\nFoliar spray\n\nNo\n\n3\n\nRice, Onion, Bajra\n\nBPH, Stem Borer, Thrips\n\n1.5 ml/litre\n\nFoliar spray (base of plant)\n\nNo\n\n3\n\nSC\n\nTomato, Onion, Fruit crops\n\nThrips, Fruit Borer, Fall Armyworm\n\n0.3 ml/litre\n\nFoliar spray\n\nNo\n\n1\n\nDimethoate 30%\n\nEC\n\nWheat, Mustard, Cotton\n\nAphids, Jassids, Whitefly\n\n2 ml/litre\n\nFoliar spray",
+      "word_count": 140,
+      "char_count": 908,
+      "keywords": [
+        "foliar",
+        "spray",
+        "litre",
+        "borer",
+        "aphids",
+        "bph",
+        "fruit",
+        "tomato",
+        "wheat",
+        "whitefly",
+        "armyworm",
+        "bajra"
+      ],
+      "source_pdf": "pesticide_reference/approved_pesticides.pdf"
+    },
+    {
+      "id": "pesticide_reference__approved_pesticides::s001::c003",
+      "document_id": "pesticide_reference__approved_pesticides",
+      "path": "pesticide_reference/approved_pesticides.md",
+      "category": "pesticide_reference",
+      "title": "FARMWISE AI — Approved Pesticide Reference Catalog",
+      "heading_path": [
+        "FARMWISE AI — Approved Pesticide Reference Catalog"
+      ],
+      "text": "No\n\n7\n\nChlorpyrifos 20% EC\n\nChlorpyrifos 20%\n\nEC\n\nRice, Maize, Groundnut, Wheat\n\nStem Borer, Termites, White Grub\n\nNo\n\n14\n\nHexaconazole 5% EC\n\nHexaconazole 5%\n\nEC\n\nRice, Wheat, Groundnut\n\nSheath Blight, Rust, Late Leaf Spot\n\n2 ml/litre\n\nFoliar spray (stem base)\n\nNo\n\n14\n\nTricyclazole 75% WP\n\nTricyclazole 75%\n\nWP\n\nRice\n\nBlast (Leaf, Neck, Node)\n\n0.6 g/litre\n\nFoliar spray\n\nNo\n\n5\n\nCarbendazim 50% WP\n\nCarbendazim 50%\n\nWP\n\n1 g/litre\n\nFoliar spray / Soil drench\n\nNo\n\n7\n\nBordeaux Mixture\n\nCopper Sulfate + Lime\n\nManual mix\n\nCopper Oxychloride 50%\n\nCopper Oxychloride 50%\n\nWP\n\nNeem Gold / Achook\n\nAzadirachtin 0.03%\n\nEC\n\nAll crops\n\nTrichoderma viride\n\nTrichoderma viride (bioagent)\n\nWP\n\nAll crops\n\nWP\n\nRice, Groundnut, Pepper\n\nPseudomonas fluorescens\nPseudomonas fluorescens (bioagent)\n\n2–2.5 ml/litre Foliar spray / Soil drench\n\nRice, Wheat, Groundnut, OnionSheath Blight, Smut, Collar Rot, Basal Rot\nPepper, Coconut, Tomato, Potato Phytophthora, Downy Mildew, Blight\nTomato, Rice, Onion, Pepper Bacterial Leaf Blight, Blight, Purple Blotch",
+      "word_count": 150,
+      "char_count": 1036,
+      "keywords": [
+        "rice",
+        "blight",
+        "foliar",
+        "groundnut",
+        "litre",
+        "spray",
+        "copper",
+        "leaf",
+        "pepper",
+        "wheat",
+        "all",
+        "bioagent"
+      ],
+      "source_pdf": "pesticide_reference/approved_pesticides.pdf"
+    },
+    {
+      "id": "pesticide_reference__approved_pesticides::s001::c004",
+      "document_id": "pesticide_reference__approved_pesticides",
+      "path": "pesticide_reference/approved_pesticides.md",
+      "category": "pesticide_reference",
+      "title": "FARMWISE AI — Approved Pesticide Reference Catalog",
+      "heading_path": [
+        "FARMWISE AI — Approved Pesticide Reference Catalog"
+      ],
+      "text": "1% solution\n\nFoliar spray / Soil drenchYes (Copper)\n\n0\n\n3 g/litre\n\nFoliar spray\n\nYes (Copper)\n\n0\n\n5 ml/litre\n\nFoliar spray\n\nYes\n\n0\n\nSoil application\n\nYes\n\n0\n\n10 g/litre\n\nFoliar spray / Soil drench\n\nYes\n\n0\n\nLepidopteran larvae: Borer, Armyworm, Fruit Borer\n2 g/litre\n\nFoliar spray at egg hatching\n\nYes\n\n0\n\nAphids, Whitefly, Thrips, Fruit Borer\n\nSoil-borne fungi: Fusarium, Rhizoctonia, Pythium\n2.5 kg/ha soil\nBlast, Tikka, Foot Rot\n\nBt (DiPel / Biobit)\n\nBacillus thuringiensis var. kurstaki\n\nWP\n\nAll crops\n\nVitavax Power\n\nCarboxin 37.5% + Thiram 37.5%\n\nWS\n\nWheat, Rice, Groundnut\n\nLoose Smut, Seed-borne Fungi\n\n2.5 g/kg seed\n\nSeed treatment\n\nNo\n\nN/A\n\nIprodione 50% WP\n\nIprodione 50%\n\nWP\n\nOnion, Groundnut, Tomato\n\nPurple Blotch, Alternaria, Early Blight\n\n1.5 g/litre\n\nFoliar spray\n\nNo\n\n7\n\nQuinalphos 25% EC\n\nQuinalphos 25%\n\nEC\n\nMustard, Pepper, Rice\n\nSawfly, Pollu Beetle, Stem Borer\n\n2 ml/litre",
+      "word_count": 136,
+      "char_count": 894,
+      "keywords": [
+        "foliar",
+        "litre",
+        "spray",
+        "yes",
+        "borer",
+        "soil",
+        "copper",
+        "fruit",
+        "fungi",
+        "groundnut",
+        "iprodione",
+        "quinalphos"
+      ],
+      "source_pdf": "pesticide_reference/approved_pesticides.pdf"
+    },
+    {
+      "id": "pesticide_reference__approved_pesticides::s001::c005",
+      "document_id": "pesticide_reference__approved_pesticides",
+      "path": "pesticide_reference/approved_pesticides.md",
+      "category": "pesticide_reference",
+      "title": "FARMWISE AI — Approved Pesticide Reference Catalog",
+      "heading_path": [
+        "FARMWISE AI — Approved Pesticide Reference Catalog"
+      ],
+      "text": "* WP = Wettable Powder | EC = Emulsifiable Concentrate | SC = Suspension Concentrate | WG = Water Granule | WS = Wettable Seed treatment\n* Green rows = Organic / Biological products approved for organic certification. Confirm with certifying agency.\n* Always read label before use. Follow state-specific restrictions. Some products may be restricted in certain states.\n* Source: Central Insecticides Board & Registration Committee (CIBRC), Ministry of Agriculture & Farmers Welfare, GoI.\n\nFoliar spray\n\nNo\n\n14",
+      "word_count": 79,
+      "char_count": 509,
+      "keywords": [
+        "concentrate",
+        "organic",
+        "products",
+        "wettable",
+        "agency",
+        "agriculture",
+        "always",
+        "approved",
+        "before",
+        "biological",
+        "board",
+        "central"
+      ],
+      "source_pdf": "pesticide_reference/approved_pesticides.pdf"
+    }
+  ]
+}

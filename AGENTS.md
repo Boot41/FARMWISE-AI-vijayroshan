@@ -23,6 +23,85 @@ The backend exists to manage structured data and session state. It should never 
 - Username: `user`
 - Password: `password`
 
+## Agent Service Scope
+
+The agent service in `Agents/` owns:
+
+- agricultural reasoning
+- retrieval over the local agricultural document corpus in `Agents/docs/`
+- prompt construction and tool orchestration for advisory generation
+- document parsing and retrieval index generation via `Agents/parser.py`
+
+The agent service does not own:
+
+- frontend API calls
+- FastAPI backend business rules or persistence
+- user authentication
+- direct writes into backend-owned relational tables
+
+If a future change starts moving backend persistence rules into `Agents/`, that is a design regression.
+
+## Current Agent Structure
+
+```text
+Agents/
+├── __init__.py
+├── parser.py
+├── agent/
+│   ├── __init__.py
+│   └── agent.py
+└── docs/
+    ├── index.json
+    ├── advisories/
+    │   ├── kharif_2024.md
+    │   ├── kharif_2024.pdf
+    │   ├── rabi_2024.md
+    │   └── rabi_2024.pdf
+    ├── crop_calendars/
+    │   ├── kerala.md
+    │   ├── kerala.pdf
+    │   ├── maharashtra.md
+    │   ├── maharashtra.pdf
+    │   ├── punjab.md
+    │   ├── punjab.pdf
+    │   ├── rajasthan.md
+    │   ├── rajasthan.pdf
+    │   ├── tamil_nadu.md
+    │   └── tamil_nadu.pdf
+    ├── pest_guides/
+    │   ├── bajra.md
+    │   ├── coconut.md
+    │   ├── groundnut.md
+    │   ├── maize.md
+    │   ├── mustard.md
+    │   ├── onion.md
+    │   ├── pepper.md
+    │   ├── rice.md
+    │   ├── tomato.md
+    │   └── wheat.md
+    └── pesticide_reference/
+        ├── approved_pesticides.md
+        └── approved_pesticides.pdf
+```
+
+## Agent Document Corpus
+
+`Agents/docs/` is the local retrieval corpus for the agent service.
+
+Current behavior:
+
+- source PDFs are stored alongside normalized Markdown files where available
+- `Agents/parser.py` walks the corpus recursively
+- when a PDF does not yet have a sibling `.md`, the parser creates one
+- the parser always rebuilds `Agents/docs/index.json`
+- `index.json` contains both document-level metadata and chunk-level entries intended for agentic RAG
+
+Important constraints:
+
+- keep agricultural source material inside `Agents/docs/`
+- do not move retrieval logic into `server/`
+- if the chunking or metadata contract changes, update both the parser and any agent retrieval code together
+
 ## Frontend Scope
 
 The frontend in `client/` is intentionally small.
