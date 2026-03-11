@@ -1,3 +1,4 @@
+
 from __future__ import annotations
 
 import os
@@ -31,13 +32,16 @@ async def get_user_context(user_id: str) -> dict:
     Use this tool when you need to:
     - Know what crop the farmer is currently growing
     - Know the farmer's region, soil type, or irrigation setup
+    - Know today's date for stage-based or time-sensitive advice
     - Personalise your advice to this specific farmer
 
     Returns: name, current_crop, sowing_date, irrigation_type,
              water_availability, region_id, state, district, region_name,
-             dominant_soil_type, climate_zone.
+             dominant_soil_type, climate_zone, current_date.
     Never returns: email, password_hash, phone_number.
     """
+
+    today = date.today().isoformat()
 
     conn = await asyncpg.connect(os.environ["DATABASE_URL"])
     try:
@@ -55,7 +59,9 @@ async def get_user_context(user_id: str) -> dict:
             user_id,
         )
         if row:
-            return _serialize_row(row)
+            context = _serialize_row(row)
+            context["current_date"] = today
+            return context
 
         demo_email = DEMO_USER_ALIASES.get(user_id)
         if not demo_email:
@@ -74,7 +80,10 @@ async def get_user_context(user_id: str) -> dict:
             """,
             demo_email,
         )
-        return _serialize_row(demo_row)
+        context = _serialize_row(demo_row)
+        if context:
+            context["current_date"] = today
+        return context
     except (ValueError, asyncpg.DataError):
         demo_email = DEMO_USER_ALIASES.get(user_id)
         if not demo_email:
@@ -93,6 +102,9 @@ async def get_user_context(user_id: str) -> dict:
             """,
             demo_email,
         )
-        return _serialize_row(demo_row)
+        context = _serialize_row(demo_row)
+        if context:
+            context["current_date"] = today
+        return context
     finally:
         await conn.close()
