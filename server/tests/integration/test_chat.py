@@ -14,10 +14,9 @@ async def test_chat_message_creates_session_and_persists_messages(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     async def fake_send_chat_request(payload: dict[str, object]) -> str:
+        assert payload["user_id"] == str(seeded_user.id)
         assert payload["message"] == "Should I irrigate this week?"
-        context = payload["context"]
-        assert isinstance(context, dict)
-        assert context["state"] == "Tamil Nadu"
+        assert payload["session_history"] == []
         return "Irrigate lightly and watch rainfall over the next two days."
 
     monkeypatch.setattr("app.services.chat_service.send_chat_request", fake_send_chat_request)
