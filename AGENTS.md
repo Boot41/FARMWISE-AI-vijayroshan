@@ -17,6 +17,16 @@ The backend exists to manage structured data and session state. It should never 
 - Agent service is expected on `http://localhost:8000`
 - Frontend runs on `http://localhost:5173`
 
+## Repo Structure
+
+Top-level working areas:
+
+- `client/` for the Vite + React frontend
+- `server/` for the FastAPI backend and persistence
+- `Agents/` for the ADK-based agent service and local retrieval corpus
+
+When updating this file, keep the structure snippets aligned with the real filesystem rather than planned architecture.
+
 ## PostgreSQL Access
 
 - URL: `postgresql+asyncpg://user:password@localhost:5433/farmwise`
@@ -30,6 +40,8 @@ The agent service in `Agents/` owns:
 - agricultural reasoning
 - retrieval over the local agricultural document corpus in `Agents/docs/`
 - prompt construction and tool orchestration for advisory generation
+- specialist routing between sub-agents
+- user-context lookup needed by the agent at answer time
 - document parsing and retrieval index generation via `Agents/parser.py`
 
 The agent service does not own:
@@ -47,6 +59,18 @@ If a future change starts moving backend persistence rules into `Agents/`, that 
 Agents/
 ├── __init__.py
 ├── app.py
+├── irrigation_agent/
+│   ├── __init__.py
+│   ├── agent.py
+│   └── tools.py
+├── market_agent/
+│   ├── __init__.py
+│   ├── agent.py
+│   └── tools.py
+├── pest_agent/
+│   ├── __init__.py
+│   ├── agent.py
+│   └── tools.py
 ├── pyproject.toml
 ├── parser.py
 ├── orchestrator/
@@ -87,6 +111,18 @@ Agents/
         └── approved_pesticides.pdf
 ```
 
+## Current Agent Runtime Behavior
+
+`Agents/app.py` exposes `POST /agent/chat`.
+
+Current request contract:
+
+- request body includes `user_id`, `message`, and `session_history`
+- the app formats prior turns into a prompt prefix before invoking the root agent
+- the root orchestrator always calls `get_user_context` first
+- the orchestrator can delegate to `pest_agent`, `irrigation_agent`, and `market_agent`
+- the HTTP response currently returns `{ "reply": "..." }`
+
 ## Agent Document Corpus
 
 `Agents/docs/` is the local retrieval corpus for the agent service.
@@ -104,6 +140,16 @@ Important constraints:
 - keep agricultural source material inside `Agents/docs/`
 - do not move retrieval logic into `server/`
 - if the chunking or metadata contract changes, update both the parser and any agent retrieval code together
+
+## Agent Developer Commands
+
+From [`Agents/`](/home/think41/WEEK_4_PROJECT/FARMWISE-AI/Agents):
+
+```bash
+uv sync
+uv run python parser.py
+uv run uvicorn app:app --reload --host 0.0.0.0 --port 8000
+```
 
 ## Frontend Scope
 
@@ -313,7 +359,7 @@ If that metadata contract changes, update `client/src/lib/api.ts`, `client/src/c
 
 ## Frontend Developer Commands
 
-From [`client/`](/home/think41/WEEK_4_PROJECT/FarmWise_AI/client):
+From [`client/`](/home/think41/WEEK_4_PROJECT/FARMWISE-AI/client):
 
 ```bash
 npm install
@@ -361,43 +407,60 @@ If a future change starts embedding reasoning in FastAPI, that is a design regre
 server/
 ├── app/
 │   ├── api/
-│   │   ├── auth.py
-│   │   ├── chat.py
-│   │   ├── data.py
-│   │   ├── farms.py
-│   │   ├── health.py
+│   │   ├── deps.py
+│   │   ├── routes/
+│   │   │   ├── __init__.py
+│   │   │   ├── auth.py
+│   │   │   ├── chat.py
+│   │   │   ├── data.py
+│   │   │   ├── farms.py
+│   │   │   └── health.py
 │   │   └── router.py
 │   ├── auth/
+│   │   ├── __init__.py
 │   │   └── jwt.py
 │   ├── core/
+│   │   ├── __init__.py
 │   │   ├── config.py
 │   │   └── logging.py
 │   ├── db/
+│   │   ├── __init__.py
+│   │   ├── base.py
 │   │   ├── models.py
 │   │   ├── seed.py
 │   │   └── session.py
 │   ├── middleware/
+│   │   ├── __init__.py
 │   │   ├── auth_middleware.py
 │   │   ├── error_handler.py
 │   │   └── request_logging.py
 │   ├── schemas/
+│   │   ├── __init__.py
 │   │   ├── auth.py
 │   │   ├── chat.py
 │   │   ├── common.py
 │   │   ├── data.py
 │   │   └── farm.py
 │   ├── services/
+│   │   ├── __init__.py
 │   │   ├── agent_client.py
 │   │   ├── auth_service.py
 │   │   ├── chat_service.py
 │   │   ├── data_service.py
 │   │   └── user_service.py
+│   ├── __init__.py
 │   └── main.py
 ├── alembic/
+│   └── versions/
 ├── tests/
+│   ├── integration/
+│   └── unit/
+├── Dockerfile
+├── alembic.ini
 ├── .env
 ├── .env.example
-└── pyproject.toml
+├── pyproject.toml
+└── uv.lock
 ```
 
 ## Data Model Summary
@@ -502,7 +565,7 @@ The backend does not decide the answer itself. The agent fetches any additional 
 
 ## Developer Commands
 
-From [`server/`](/home/think41/WEEK_4_PROJECT/FarmWise_AI/server):
+From [`server/`](/home/think41/WEEK_4_PROJECT/FARMWISE-AI/server):
 
 ```bash
 uv sync --extra dev
@@ -518,11 +581,23 @@ From the repo root:
 docker compose up -d db
 ```
 
+## Documentation Maintenance
+
+When changing repo structure or contracts, update `AGENTS.md` in the same change if any of the following drift:
+
+- filesystem structure snippets
+- API route locations or endpoint inventory
+- request or response contracts between `client/`, `server/`, and `Agents/`
+- developer commands in `client/`, `server/`, or `Agents/`
+- scope boundaries between frontend, backend, and agent service
+
 ## Seed Data Notes
 
 The seed script inserts:
 
 - 5 regions with realistic crop, weather, and mandi price data
+- a fixed 7-day mandi price history ending on March 12, 2026 for seeded crops
+- tomato mandi price history for the Chennai/Tamil Nadu seeded region
 - demo users for each region
 - demo user crop profiles with `current_crop` and relative `sowing_date` values so the dashboard can show crop age
 - demo password: `pass123`

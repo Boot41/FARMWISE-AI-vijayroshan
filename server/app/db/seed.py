@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 from datetime import UTC, date, datetime, timedelta
+from typing import cast
 
 from sqlalchemy import delete
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
@@ -20,6 +21,9 @@ from app.db.models import (
     WeatherForecast,
 )
 
+SEED_REFERENCE_DATE = date(2026, 3, 12)
+MANDI_HISTORY_DAYS = 7
+
 SEED_REGIONS = [
     {
         "state": "Tamil Nadu",
@@ -34,6 +38,7 @@ SEED_REGIONS = [
             ("Groundnut", "Zaid", 7.6, "Works on lighter red soils."),
             ("Sugarcane", "Annual", 8.7, "Profitable where tank storage is stable."),
             ("Sesame", "Zaid", 7.2, "Short duration oilseed option."),
+            ("Tomato", "Zaid", 7.5, "Common peri-urban cash crop near Chennai markets."),
         ],
         "weather": [
             (27.0, 33.0, 12.0, 78.0, 18.0),
@@ -44,7 +49,13 @@ SEED_REGIONS = [
             (26.7, 33.5, 14.0, 81.0, 20.0),
             (26.5, 32.9, 18.0, 83.0, 21.0),
         ],
-        "prices": [("Paddy", 2450), ("Groundnut", 6200), ("Black Gram", 7400), ("Sesame", 8900)],
+        "prices": {
+            "Paddy": [2320, 2350, 2375, 2390, 2410, 2430, 2450],
+            "Groundnut": [5920, 5980, 6030, 6090, 6130, 6175, 6200],
+            "Black Gram": [7010, 7080, 7160, 7230, 7300, 7360, 7400],
+            "Sesame": [8450, 8520, 8600, 8690, 8760, 8840, 8900],
+            "Tomato": [1480, 1540, 1610, 1680, 1760, 1840, 1920],
+        },
     },
     {
         "state": "Maharashtra",
@@ -69,7 +80,13 @@ SEED_REGIONS = [
             (19.8, 33.9, 2.0, 39.0, 14.0),
             (19.1, 32.8, 3.0, 42.0, 13.0),
         ],
-        "prices": [("Soybean", 4650), ("Onion", 2100), ("Bajra", 2650), ("Wheat", 2850)],
+        "prices": {
+            "Soybean": [4470, 4510, 4540, 4580, 4610, 4630, 4650],
+            "Onion": [1960, 1990, 2015, 2040, 2060, 2080, 2100],
+            "Bajra": [2520, 2550, 2570, 2590, 2610, 2630, 2650],
+            "Wheat": [2740, 2760, 2785, 2800, 2820, 2840, 2850],
+            "Tomato": [1760, 1810, 1860, 1910, 1970, 2030, 2090],
+        },
     },
     {
         "state": "Punjab",
@@ -94,7 +111,12 @@ SEED_REGIONS = [
             (16.9, 29.8, 0.0, 46.0, 13.0),
             (16.0, 28.9, 0.0, 49.0, 11.0),
         ],
-        "prices": [("Wheat", 2550), ("Paddy", 2380), ("Maize", 2220), ("Potato", 1750)],
+        "prices": {
+            "Wheat": [2470, 2485, 2505, 2520, 2535, 2545, 2550],
+            "Paddy": [2290, 2310, 2330, 2345, 2360, 2370, 2380],
+            "Maize": [2140, 2160, 2175, 2190, 2200, 2210, 2220],
+            "Potato": [1690, 1705, 1720, 1730, 1740, 1745, 1750],
+        },
     },
     {
         "state": "Kerala",
@@ -119,7 +141,12 @@ SEED_REGIONS = [
             (24.3, 31.5, 14.0, 82.0, 12.0),
             (24.1, 31.0, 22.0, 86.0, 13.0),
         ],
-        "prices": [("Coconut", 3100), ("Banana", 2600), ("Rice", 2550), ("Pepper", 54000)],
+        "prices": {
+            "Coconut": [2980, 3005, 3030, 3050, 3070, 3090, 3100],
+            "Banana": [2460, 2490, 2520, 2550, 2570, 2590, 2600],
+            "Rice": [2470, 2485, 2500, 2515, 2530, 2540, 2550],
+            "Pepper": [52100, 52600, 52950, 53300, 53650, 53820, 54000],
+        },
     },
     {
         "state": "Rajasthan",
@@ -144,7 +171,12 @@ SEED_REGIONS = [
             (19.7, 35.8, 0.0, 18.0, 21.0),
             (18.9, 34.7, 0.0, 20.0, 19.0),
         ],
-        "prices": [("Bajra", 2550), ("Mustard", 5850), ("Cumin", 18800), ("Moong", 7600)],
+        "prices": {
+            "Bajra": [2460, 2480, 2500, 2515, 2530, 2540, 2550],
+            "Mustard": [5620, 5660, 5710, 5760, 5800, 5830, 5850],
+            "Cumin": [18150, 18320, 18480, 18620, 18710, 18760, 18800],
+            "Moong": [7350, 7400, 7450, 7490, 7530, 7570, 7600],
+        },
     },
 ]
 
@@ -183,7 +215,7 @@ async def seed_database() -> None:
         async with session_factory() as session:
             await reset_database(session)
             region_map: dict[str, Region] = {}
-            today = date.today()
+            today = SEED_REFERENCE_DATE
 
             for region_seed in SEED_REGIONS:
                 region = Region(
@@ -225,15 +257,24 @@ async def seed_database() -> None:
                         )
                     )
 
-                for crop_name, price in region_seed["prices"]:
-                    session.add(
-                        MandiPrice(
-                            region_id=region.id,
-                            crop_name=crop_name,
-                            price_per_quintal=price,
-                            recorded_date=today,
+                price_map = cast(dict[str, list[int]], region_seed["prices"])
+                for crop_name, price_history in price_map.items():
+                    if len(price_history) != MANDI_HISTORY_DAYS:
+                        raise ValueError(
+                            "Expected "
+                            f"{MANDI_HISTORY_DAYS} mandi prices for "
+                            f"{region.state} / {crop_name}, got {len(price_history)}."
                         )
-                    )
+                    for day_offset, price in enumerate(price_history):
+                        session.add(
+                            MandiPrice(
+                                region_id=region.id,
+                                crop_name=crop_name,
+                                price_per_quintal=price,
+                                recorded_date=today
+                                - timedelta(days=MANDI_HISTORY_DAYS - day_offset - 1),
+                            )
+                        )
 
             password_hash = hash_password("pass123")
             for (
@@ -260,7 +301,10 @@ async def seed_database() -> None:
                 )
 
             await session.commit()
-            print("Seeded 5 regions, regional datasets, and demo users (password: pass123).")
+            print(
+                "Seeded 5 regions, 7-day mandi history through March 12, 2026, "
+                "regional datasets, and demo users (password: pass123)."
+            )
     finally:
         await engine.dispose()
 
