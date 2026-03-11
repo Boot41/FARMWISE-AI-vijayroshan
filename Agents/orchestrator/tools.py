@@ -34,7 +34,7 @@ async def get_user_context(user_id: str) -> dict:
     - Personalise your advice to this specific farmer
 
     Returns: name, current_crop, sowing_date, irrigation_type,
-             water_availability, state, district, region_name,
+             water_availability, region_id, state, district, region_name,
              dominant_soil_type, climate_zone.
     Never returns: email, password_hash, phone_number.
     """
@@ -44,7 +44,7 @@ async def get_user_context(user_id: str) -> dict:
         row = await conn.fetchrow(
             """
             SELECT
-                u.id, u.name, u.current_crop, u.sowing_date,
+                u.id, u.name, u.current_crop, u.sowing_date, u.region_id,
                 u.irrigation_type, u.water_availability,
                 r.state, r.district, r.region_name,
                 r.dominant_soil_type, r.climate_zone
@@ -64,7 +64,7 @@ async def get_user_context(user_id: str) -> dict:
         demo_row = await conn.fetchrow(
             """
             SELECT
-                u.id, u.name, u.current_crop, u.sowing_date,
+                u.id, u.name, u.current_crop, u.sowing_date, u.region_id,
                 u.irrigation_type, u.water_availability,
                 r.state, r.district, r.region_name,
                 r.dominant_soil_type, r.climate_zone
@@ -83,7 +83,7 @@ async def get_user_context(user_id: str) -> dict:
         demo_row = await conn.fetchrow(
             """
             SELECT
-                u.id, u.name, u.current_crop, u.sowing_date,
+                u.id, u.name, u.current_crop, u.sowing_date, u.region_id,
                 u.irrigation_type, u.water_availability,
                 r.state, r.district, r.region_name,
                 r.dominant_soil_type, r.climate_zone
