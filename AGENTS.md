@@ -615,8 +615,8 @@ When changing repo structure or contracts, update `AGENTS.md` in the same change
 The seed script inserts:
 
 - 5 regions with realistic crop, weather, and mandi price data
-- a fixed 7-day mandi price history ending on March 12, 2026 for seeded crops
-- tomato mandi price history for the Chennai/Tamil Nadu seeded region
+- only seeded crops that are grounded in `Agents/docs/` crop calendars, advisories, or pest guides
+- a fixed 14-day mandi price history ending on March 12, 2026 for every seeded crop in every seeded region
 - demo users for each region
 - demo user crop profiles with `current_crop` and relative `sowing_date` values so the dashboard can show crop age
 - demo password: `pass123`

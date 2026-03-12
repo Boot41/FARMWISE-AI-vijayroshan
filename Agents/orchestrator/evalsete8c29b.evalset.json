@@ -1,0 +1,613 @@
+{
+  "eval_set_id": "evalsete8c29b",
+  "name": "evalsete8c29b",
+  "eval_cases": [
+    {
+      "eval_id": "case4397ca",
+      "conversation": [
+        {
+          "invocation_id": "e-f7d3ed15-4f47-4165-821e-cd7b44c2f111",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello! I'm FarmWise, your agricultural assistant. How can I help you with your farm today?",
+                "thought_signature": "Cu4EAb4-9vtm1_dT8M9BC2wuGI4isrmGZ-qUik9vR8dMSIw2WaG6apthrcf1gQNWd7wnxY_A_47qKTy4s-umw6v-JS98yJetcjiUGbWq_Q2Guhr28pMm2x_MvEK-WkAsBtU6Dc9-TPkrleDQjlaln9YfbRr3MIKxUlPOJ3alhFix9il1Cic-LZ0Qi4rRPxI9gYFV2bTgrdcFsJqVHEr52MDUEMJ85TIPW_fLkdAMgvwx7zhfpcuujB8UqNt_EdyWq22B61HxxNQhpaY1Kp6bXhgtb0UnblXego8-d0vgkdoSOZS8aY3vb1vvQc7rl2ka4ndlEOHlxiJOrYni5wdJwsXOiGS54VJC1H0_AjnEu3qatdlXL2BYlcGlykoyk8MjHqDAEgKZ9m6-d6yAqnl2EjKRZ3E8RB7BMekx17nLNLTEXaF0-rv1PMzCaWeXpO0YWTqLGzNBuL8RwHu5gtkiRR34xgdEqMyND0ZDZ0-Bwy13QAo_TRvISLR6t1n3gHTz0GKU26Xdj6UsJNGsd_8inHjqRUv-UI57iv6NFL6KroDF1m4VdWFKWmN6lPX7giNfNEZ6mXdgxrdn5AuRkUg5ckBq4QTovCAi5CpScSTKhXW8dVK2YJaG4KhdkddjyzRoKX7EW7VUt5D1XeJ2zq9B7iPh293hrqIsG9yHjVGIB8bXJKcK3eWX4PEmspdEmXVvEQiCDRJQbQ3oNOxVVjuy8XXHqTXUqOcOEuw_qKO5ErPY5ZgwJfFtmEr5gemhaRZeH8DpHr_erV6GpsVmp-w5EGO7kwJ-r8ZN59z0Lix3XZJhJRmrJ2chqtxSFZiuv2CdBA=="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-36e23762-623d-4186-92ac-5914175249a9",
+                        "args": {
+                          "user_id": "abc-123"
+                        },
+                        "name": "get_user_context"
+                      },
+                      "thought_signature": "CpU6Ab4-9vu2exI7czB_7xzjeL7UEcNIWWBZZ-YgBVyTYq8Jk_bsHjXV6JigVdXHo2ASOyRTqPcI1nAr5AJsfSceBW__Ulj7zVF6WGVDa00GKolgP1l4vQb8ilgKD5HEn7ohRpEa3cX72fA8TbaU-i6Xa7XEZ4BoBq2L-KOUUYQdPsoS1RTFYrdTUpDvtYH9ZYDAWiCiT6WXE2meZPSrU94LiEPGpXN4SQL5OrF3KfQUdNK2p5jAf6CHpCl4EPjZErzDrZVnxxyOLfc3Jw6tWt_YhMxXYimrhoe5J6vMPY4xSzX1BkFE_vy5EZqN87y3rdTRoL_Ir-fb7gkNvPIcrGeoOvxzxTx5UrZ1cNODB2l-92-a7yJuTf_JlRQv8DyQz_ZoEvk0l1_Wz0pyrpvXY4h7FdcTaygUz0ptSrl2faqgD8YwCwXz-1H4ouDaqn7TojL5ul76vAD4piMGhgrW8bUjCdfq-WcRLNjqHkPetpaVgoK3quzFPg13B-HSac5xsdtn-rDZszakzt5MDfKnB8tRIBf_rfx5COGi9TZRQ0nOgDqV9yEW-tpsh4AkqNjK8fWfQRQ3g09L7QHs8X3F8lIIOwMsWdxsJ2vRfZlKBidRRIdkF38M7kRbfE8CZWGp77h37xdcGOVjqn-0Wl42N0xYIswCF5h7ZDHq4tdVz6DXLP66khSz8vH590ocFVOOBxhzYJ-zR9ecg-k4XUJxwUaco5xDpZqi5u4h-JF4ob7xjdxLLmy2u-doUYCbT03fWz7cMNJKBnL1iMGNT99GF1_spYCKYFzx7d6T_XVkchfxL30feRb9N3E4XVBYlAb1dCz2Vh5NLjxvSdC7huyojPSO3bSuvsSXllDUmaHQA2XshHU-ZfUqtr88Atsg_jDYnyvA3KzE5JtoMahOdkrm9766HNuhz2UZYhWErItl2Q5hgbooUAeAcY4fc0Kz-nteriDY3tpjMlXUZMYcCRpvaVg_Y3qlAOlaphlLiepnVGqvdHu-wSk97ECYlM_PbS2lu8XJWa2XDdDjNsmd6kkH9H8Ku-oqlPiEhRg39TPvR1ls1qjTabXxoR7Cxlq9XHCSzcAC71Qn0sx-ooEauH6LqjN8qeOX71zZBR5nsCPm4vAkI9nyVrv03VnjSra9quX5naqzWH9EW_8_s2OuwuBB1pK05YIVuPLbiho5Ztwc4_fRPiWO7l1ge9xZUBav6pJHl9ge6dqx26d4p076zufvcl8XWoR_-nRjmAxG861qjlU5GRIDJYTjTfhh9dauJdx2EA-Kk-gJ8hh143iFCFrGErukNfPXQXlo5mqlcq_UplJ4DjJS35WjbkDQnFl3hssEaTj4D4e730kvEAAevbIQyBe-4fAljkg_fMdHubADnQawnvTTsdshWvsOGijyH6tYsN153L1jpibIIPXSwMxZ6VXY8E8zbaqE3zrya2zgU06gKBSzwuVsvOvOt2WmBhREJ16OosjPhLWHZCRPBk4_TMSpBlBy_tXL6gcHdmX8S0DDrg262M2yx8765Hs2-OC6fO3wdB5nxNOiDmWhzfCgLMu6fU5TFQ9V-W2lY4Yh-Zg6ebQU4adbtkp1NYcWv4FUCRYFEuIR6zeM9pvBoguftwDkJMYoUOOy4aVs1UaYU62DFrj5uN3-nOtn0qODkl3HIsCkT0SftWO2_Y0TYbQZYdqSJ_9VK2hmnZESrpWCZF4DQggX9DbI16aOfq6nHvGM9-Qx-obAK2Y7nLEaM0LYTb0kmHISw8DFhHaUzLG31824uc3niyPy69QqsujilrVIcrBxr_cylia6J82eXQHjcycc4WBRSjF6NPp2lqHWeKKK9vgdfIa1CzSbOb1j_PnC5PKHlq5hJsrsAAH9HA0YT8eWx4Wwn4cHsEnLI81set5uORs2KNLkLTnkHTsUxjN6CtKGptjcdKt2SCBzsWYiYEHSST90L5BgWslCe-zm7sxHfObo25fBjpdeXcDO6qxHcvtsfWQdfc48WrqVe4XsJN4WozQTMcEOjyKDTnlMI8N67hiKSrk5iHVT2-kieZIXX8lmigrpKNkGKfssD25DltpwjQPv_0m9CjAonoL6-Y5PB5rjs-y7tldg7a6h3l8oHSHE8xB8SY9a-uYO4NFowDWnOGNRDwJ4LBoN17jDdscsoSGLt8gY9UXyHvikpqXDrlCrDQmaip3CnWm21QSCW7vyLDD72gSE4jhQRxCU0-9kVQfjq_coZ0ST__FNjWkLvIblUntGKvY5FupAEb1i8n5J7R2xYlCFC6WUE5Q4PKNmJ2nlsZxGaGhOHUq5wRm9VJIdOLbe3PSuNuADG6D3iIe4HFAyOpFrQ_Jxkap5jR4IYsge5m0OnbH4gjoOOymWMUauC8wo-lzRV0maji_JmwrJUOGK3AlBaETPBLdgtI-SeRPtdssThG_99YlOVa4nx9BdGVe0J2LbqlwX5VOWUyzu8FLKDNNVEjd-ETKHw70CceibpYEynvEScDPbpYhNBugoDRLHhE2GOuaU2zyB0c7scxf_WXe00tHWWBYhQEgVEMrKDjSow73vJrPNSSPU_YpsMnK2enQP6k2dcyJMPPCpBRLdyj-p9L_LdAZX0l8lxt2kG-AXeSicnb58JgygYuZEXPneRA7aCeXFXG5xjo1vbRNwmmlcwINKIDXOqczjwHlgl5nKiWimvRqwrDD7-R6E7FbEkn9WmcZCE8DWQmy_u9XwcAeGljfVZ8NrAeJ66X5-QkG-RLCLRnAhtwHX7N66TQBkkH2032Qk72I3rpAfiuLSKnz0yfNFuQr1ID-WJqsc15yMU534hFdP9dLtyYly1dAk4r68miWYffuW9XeCLs3AG9gyUv5leX3Puh6MXWdxVBwht3oqeI1tCFCq627gogWqmMgxcTMsabMvd5ULvn65ITpzRagA_CebpVpSL0BFQCr2-NLC7bhYawgjURAmcYyxtOeNMerCG5LVttWkSaUxltadUsKWodo6clQLFdhUKNYvEOh6Zq6XpE4k0P5wJ4rohHQDLv0qB0yKaWU5HF9e7_HWIcWQV-w3dGbssGs7eF7rVlWU9oyMRMorBYNbT2fIE0D9pPyX2fyt6VxWxIvhKNdsNININ4QdjSwpm9Dljv8OHRGSQriq4gv-kd6JgIFO8pcOI3qs2DIsiONZfxQBZrGdbtC-YKBdWOt5sq5gB4EOFUDGB9SKCoELVa9HOwYafV8eMvzldKOlsW_vexFKYlQb1paGeSgSaR0H9XTMoyL_5yinFI5yAUH_ir4iUFefYWYiahCxGPl6DOj_kUX4ioO2vP1Uy2u-FjVfemOqfcnsHKW3-FSRnsYFXB93wZkfzhpvlEfODxdcasFgUXyR9UsMFmBbvdVwJCDinfzSo-3dYnJ6mXr7q8lYRXJZDkl8B0Ad3dEbDwvjVtPbqKT841cv8NF1QcWIWM5XjbK7p1tPH42elnyaLGgFtunAuYhF4y7p4wf73fKF5gEURY3-hiRBdzjBh5vQsPaKOD-56Pg2cX1Jbkw87RGpzblmxtTK685M7zBRw73--abkWesEFGGME0_Tx78YPoqGnWvI1yGLVn13Z3QgNNM5PDfc0-MWBo_XYqnp6t203yMlQQ2qok7zTXh15GdNSyCXRktY-uSV0BB_x3RkVbfdnUbN9mERRASU1RBCYWZmWIAt5eXgs3mtutuG8FpTDI6HV1XVpAL38wCcXtxxtudme3mnyeCTaP-2rFyiYR9EYGTE01GIyQZcCyImOWTkJFCzFLRJX5xrSkgntkaFtnByQPwwK9xL5ON-Xa_1zGC5DnmjCH682eRgDzA3tAqd09BX2BLHlcurrMoqfRRkYXHGfRmqb-rLrJC8FtTfp1coffCrW6KXOvUG31jpEs6UPsxG5DiUPQqd_ITD3e2eFgVwe28ESvOGroeohGkrX_nG2PClt0ERCz1Gx7961RCtWzRJo-mKANXUpjogT7DNMYLAM1nLf8-GkqI3MKkiQvraqwcSQrFdBEIPXE0TrfEizyOfD011fOU1HfhE0ntbxmeSw2jdO74rR1lOjxQQQlvNNkWlJlEyfxCoqHlDAsfx-z6amGMepvenlSYhUDo_QbOntb_RkztrbNKDWitwUEy47lbMmFFq6UgaL4bHOSUlgrI789Ixuvkk24FTSheWp8lQuNE2sXa-FlncyFwyeJufXfY2OqZ-c_NlqBnLlVtdIvaxW501xl5u2TB3wOpE8QeG0GCWNqh6jncjmOVSDLvN973SML6rX8gDKT1th-UH4b9YegigfX872zTXLXZZfJWr5QFGFmZaJuFie5QTmtBRCrv-X7ZLJeKYCmPzSd94DGa676VsC8h4K1kB4Ly8ia8DTxDryTkl4AKdXO0XpB_Fs2qW2SC-vCc15oi6ZGhDtDTyfOQ1o0_wu4mEjRMH4Axh9eKTSFbLjemekrRowM3QFmNG-9P_WqcKFEsilwkzgdG1Wzm6bYICt6CakXXilvow6QVvpPZ4Zlg_uk2XkbRK68mPjk26jl7uzhLgGgusIGfkJTTnpET6Fo9FqEfOZAR9SBvvPTRUEeMVIk31DAHS35a2Kit5vrofauzk7l1oUKDmZ8wPZbsf0E7tobCGenke8A6mLsK6NIlMPYya04kD3sVTAIM-tkq4_8k9W2aT-Zq72jj3Kwfyj3PNGs7WFIDiVx2p8zOmgn5H-zuXlaDBwMK1OGF3REWhaVpQOdfqbQSAC8wFKO0X9xEkh2PHTZqcsWEU-4yp0dxGOakDSzP7iuGEOWROFFFurqEeD6Z7L2kQ2BO8o0IqpzVBNsPabHlisyUEI4U98YlaGMW-i1HYxxU33zagrypGmbAtRnxPOGwkMue8BXhIhSIsZW0ECzIUx6kF2Yel63lawxW71KIh4JJ7vrhfU33Pfo2QoNgUA05g21I2cVqd_CzZ8aGSb3wpQBUoAEB1Cd0i05wjLt9OXmYjosOM0psRpt5NtVXOoKyWwrsYVcOz-6wzYbRioOine-wMX4HXzXRVTKfPww2ofL8Qtd5jQPQ0cXY4VcSEwHVTO6F70aP4EznbPIcw3ympexHaKY63Dhs3nTUjY6C_hrllqani63zICaBGeSVq4-cyJWOKrQzBKijjdtxffuUzx1UrViqLdzhmYSWKm-25P0j_zmkbx4ipOKHTj915u4LEvmB8JQRl4y5ACgGIAsLIYB0JDRAJumysKslADcKl8QL0FYRVVtmQYemxPKFIT_sGrxXBksz9IujBXiMp2QNepzoXWB1EPL9rVRJu36TCvRyUyYx4pxzmBZlkHUVZCQMfTfqwk5UlfdeAm4k4-nHBUM3Ue8ueEXayAQLWCv0vkIJmDVRJhMhmtm_bh62OpxsA-gu10_3-vBKWNllN0GMdHsBVp-DJJhqXc-IFQk0w39M1Yx9e63CtD6rX8Po8YmryOF8hALnth3IhcstcjqN77Dlnlp3M9uDFHpNn2qPsguifKsq-bcW0xFK50ojJelgZBHRgLYW6xTIWorEEZYELFy1a6lWUDk4spMB7RHfbJjYpUewbTpsDLcIY27wNsWylwYvfB1OlE51eYL30rOZDmkDXJ9M-gghwr2WEf-3eFkOJ9YYRPisW2so9f3KYr0wiSQUgBIP3WZsRqrklrjHjlYPHcLPWPvGB9K198nQC-l5cA4cDd7wN-JKggMRYzmxtCUsVIMqanP3wIisKV1NV8knw3ixkYfusKIfMEz9eXatv7jzX_oyXhYUkZ2cWKMr5dPOAhaWVyqU2hqjqihM7Lpcj5iITwWWobUHk-OC_pyMHesH438rXks-kTDijljaJ9y2efwyNmV-vMDuKPhV0fXeYMBxC8leemTJbR4VytJySu8MEac7pygMRDavqFwq1q8LEJ_SHAqhHyHSRtq4Zr01ltqE2pde5LwV2J8POcNwKVLC9AQic-bazfy8rUxE4GrmeMHXY8q61VgUtoCeAFuZjFRmHufNSr3yGJIEf2UGbXm0zHXQ2gQ1fop6c7aqL-vGijcQRuOdK96TIarfGVfb_0EG8F6AP-PJAYP-riayi_UUJoIEjZCm9uoKgRs63oV7VK7XeQIO7sI8TskBflqoQArEnReIQGW2vBIyqT6QN273jtSAuvPrU-KsA8r27PQ6TfS_kcWOJqkLbTmB86cgOQpcWASVJ3NaY_dtVtxSABKH5cvrHwuiVUExS_6T6NKQuHGOQfuf6ARJTr-k3j1XRGvtofWTij9DCwJyN7T82dhzEklKygyuzcLXz4EjYmBO_nBHcuEKvnQvs2x3777MbOiE7Ls3XaODEzEZI4Bz8v-lYOTOluJyCjQmxJ1P0YDK3kna21k8MYSjhs3XsF_4Oj9KsPuc3SZ6GaLkGnAaZyWXRbs-c6FfxZor-kpAX3dR31YICON06jfjBtIBAMj8w0xj5mDcSyDQMPDHC0n3bKVoK0yOhOUzHWTD0IF-rP76wfrYhrvTgHEUSYCMSThErFRzSC8xa9MYfbCcrwl8V6-xvNqzjCXviocleqOrp0RLtNqUgVvHri_NWU6HbO9tuZ7Ph_6Dew0ROCU4XFSrvZRY_tUp7pP5ZGell-KeTFTRHVGRIk0-5w-xI5vOWtB2a1lwquhcbCWCLiB0u9nC_0YofKrJA-CRGvavlpLsrOX9viwC7-XRCfVJJpz9C3_Nw9GACFiJIVifInvCggRBwwAhlCSSkWBB_E3BcsBOpFFQzAXkSLXGEYYC3LbvacqRFc41PnAGCwN4StGOJ938tI6hEkQW8oS_iU5HgF8Aky0_RM38yyyE5yqLjqfXo-oA0ksUQ9RG8fr0MG3pmD1so2Hp4ymdmrN3wqIHAUphVqLc2tM6ijU01l5HS82O6cqa7scBmagMRZTmihxF_6BmlBuWergft098a-6WKTRHR99IW9uLtfgCEG65iOymwMaj_JngyXx7I_qM1TPKS0fohCc3lx-0TGnJk2ABOf5v5QVtWi6ZwLsfGVIreFnGE1vxbVmVFyR8hGwr8dptzUdYjfv3ZRMu90IEdC_8rGCc28md3tAMz1-0LmMevHoJURAVfhu8_2kJVWoJ37KojxEC_O9Efe9WBN3zHsrYxkZKadqV9mSWTISGjrwV2Pr3QX3RYPHyAXM3NMp8gEipWx0WC9Y_24WdQzPf9u7kkphJgl0hKlvPRjtTijKJAn_7P5Q2j6gPiW3Bn_tCdx1g5DRpHYcfhg00wdICTaim7d_eq1HoO7-lF64DhssqmYYwRMyNSNRWvpoPx6kmxLccyRVKYN0kOABuQYBu8_rSgJOEVrf0O_yPb7jkERfhsBWqXdVFm0g9kpwB8GxQbM20XTv0NV9p7YDrzVe-HfdXxL71GaGl6i3xMBy7Ji1sCPcF8mie5CHpXuwHOCkYHIY2y-tDrctYegeejXQVD2WgTa4CAk63QdOYfimT7gtYXCVSQ-z5wC4pQA2so0IZ2zG-9XLVk2Em-b10Tn9DgolUJupkPhQR0je2MrbMXrGtgA9Jz0dM8EZZp185nuxbgs9j593uePomIAWk0OFjQnwMI2-ZInfkOALsmfMlypm3E27CWMGcW1MzWY1TTW22f4YZL-P6JCNDII5uV4o4HkaDVeV3hq-qk7nOOBCefCKfIb9_UUop2bSDZdJnF5MCDwvjaeE8tnI1sa-10T9-tCqDZ_FeWTuchrxC-BoR6PNXzhzCfc1TdaPYk5rL2n47Jg9mTZdakWc0kgPSuWAokTCwn3xWtB7q31sFL0NXzRGrOKd8emuDV-P_GQE0cbhhicf2FY7PnHahRL-bd712dpbt1CNwQ9X80S2NJu-wo-YcW0JE8VfZW2DVla2PlAeDRAyUZ3xESB-L1-8ZxtKXjNLfEBPe2g0e7hBamwpk4mI-DQH3n9SAEg-8gUrfJ7q3NkxNzqDXu3v3Ldj82vjcGxN7hl_oGJZVGRVrrBnflWtS4S-GyZMVWVkwhXwu7a3aQBBvyQtdLn5oxPNT_OuOqAGzGhfx874QuvelrnrpnBogsejoJj3IkDqxoOhgXhPvMX15YChWWQNqYVlmEy4pnvNNLL2umALpiHw2mYXoTdrNzOWPoj2ETtrhWyYmAiwTqZRXlBiAg3AF9TMj7EzmLv5GUgfZP0UaWKBqWhpdW7F-wXUr_MvR1-36RTiEyl1Yktn5MHitG6a_V_ECgw2FzTjWjLgWhiNxjnMj43JCrf6ut7Cs8PapakZDRIRSbLKk2aKtBDvZsMgpBdN6oGKtDPCUjwtCUsR67urb7g1DQZVSToVJIu44qN4z0tMLLcWam3jUNXT4WkWrsaq-_VvFxlyePQhipcv7MHUsKhyLFS5F7v_Hqsyyjj4QALABMSZNf4zGqRxiL6esNzLQELN52bsGnanX45NZ88_mCU9hdbRTRTBRA6ZJOVm9XaoWQUY5v0BZt5G64KdGUlsaJiwRv6e_JxIKzW2ccLueUdSCCXW__Wfx2tjycb-P2SUo7Lkj3il0zafgZufstloH9pthYQwWk_uWlxCEal3VYROvaidTobs1mvzSsKVHe-5YYNuL0oooknw0w7fyL1de0n73rwqULK1yEGlHV5nKRJu-Brt6G9sez5uilUBkXZPok55YL8KUbklZsa9QWkkzvjElgwMJEs89QnpNW9eXiiJ2xIWKQJFHKqfiWtQ6S1Fc9xOWAP6fYOXkL2OjeXjn1KYxJFFlHz0pK_-YiWbngCUYEEDyGullEfXqJzZUQziwk-djnGYMDgLbO4XAFYiZdNs49rJwhOIT26rx6pJCV4Xab63I2Plzy5yNeAOD8XpjiCMD2i__OlTKuygff2M8h5v90AmixZP5Rsjpj6Ze3KCTYBczECM_giEp-cmcoshTx_eWPY1_CngllnqrRS0tj2nLMjyjc2fJHsX_BvPwvwBJ0N4U1r8Tj-diQPR3Oz85WgOO2YxeRSdpmi9oXNkC9WxBOgD1TBvY5mgtL_FRPGGyts1iZVDX0bTscKFp0S428uLC62Ura8upm9OIoIJW5NTF86IfGWbYnvrMvNMCoy0hPRAUKqDChBG5h2yn3L51KREk8pG-7_IuEhLQBUi0LwdQOFrtH8tqKHW0Tb6W5nLPIndtIs1XfTQukXNgrEqyiCVSCNlNExcxpCZPsUCLRQlqkHUrCL0eIsGCrhOiLDWDjKRyKYl91s9HWs7cPsfynIhXgrz2frlLcvCbrR2wqpYUPjOMv91bxBeD6p_Phr3EjTdKdfpgx7qTPas49-7Wb2GCjLpE_Vi0_6RjhiQbFFVBq0EGfQW7KXITgFiRLt91wZ48TjBZ0S2JATqMijaNtr1afsdhB0I5UrFbHqU_-T8pTSVom2nc06mXRNlwP01NUzLwQnNK5J5J2Vb0zvFh2li3pIJyrtqiAv8hY8xST38uCITQ1W1VxVIvUr6Z18Ptau9ZZ3cLRUhGZVtSKT9JeVh8AtVpH1qxxbG0xQ_Uxw_6x-dufsc4np0EbLYCcDBwUglCOW37dugSqZM1S4Dv8UPMyUPq0h64UZHaARvFUBGdj894YWP5m_zyP7QBSBVF8ne358eJUT3wREH4bsYI5wqG9EUbko7tNULA1hOs3PG_6YylNe1wmwlxvs9nBBuQ1HHcr3Kos_MB44QeVNDNnmJehcWUCsrxhy_1aVwUV_TFQ_NpAS6T9ptlSDUM6TGsq8ayHth_FVjvbqsk3Qu2zEWnvovJDHZBA6r2YdtncUjnEr6gztCTip7WKLAWyTPEM57EXTE6m6lnP6hy5PzLtmRsygc_X-iHuE-_nwuYJSsTIAOxcsdvbr5lywv88i8zRiPDsTBnp4VnC3PROTuMLFJxtvIqFHCBxcJyq4NE1mgkfRh5GiEUa-QNg-G5F_8HLvBc9GXFu-8q2kbfzTey8zIVyvJqX0s7cqP7wg0gY7RoGsupAx82wNGXsAl9tLhC7KRVtFD94kX5FUch902Y="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-36e23762-623d-4186-92ac-5914175249a9",
+                        "name": "get_user_context",
+                        "response": {}
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773296864.335118
+        },
+        {
+          "invocation_id": "e-0a2531f5-97bb-4411-aceb-c4cbc90ea990",
+          "user_content": {
+            "parts": [
+              {
+                "text": "User id: c3b7e2dc-255c-4973-a0ab-5e006c154158"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello Arun Prakash! How can I help you with your rice crop today?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-3297a705-cb53-46c5-9491-b7a061d0b681",
+                        "args": {
+                          "user_id": "c3b7e2dc-255c-4973-a0ab-5e006c154158"
+                        },
+                        "name": "get_user_context"
+                      },
+                      "thought_signature": "CvMDAb4-9vsGAae8CPnYxiH6SGRqYfDbrjZe_NBzf4FTUhZmkHKsacU7BYBgYSJwkKSPFuFlSr3qWNTAALmPN3Ye_4K0X6pS0kGDzYahGpVRNDZQXG2EHv93yMzU49VUYPbFCkMTtpB9LPTneDiRXuNQRLeXDNysHXj6FQgs39ocVdlHPo-z68w4DxvH36c-0om9WQJ0cQ8AetT9hqKtboMBHomxcHiQDMO8bdScpzIeNmH8yu_QFPjMYZJY2xWgvSGpgx2b-UPOqHJI4afcWqKZrXn2IHPC3T4ABHdCKRBNrIuGqISZ10OCcjRNd6UQ2uDDHY-X7H_FhTVQLIEIq7PMbrLUAqmu8I7zetSJuovY9QbezlFC_aUf85zmAKuULxPx-sWv4dq4rjHnEfpjMt7Fx9bP7FjhGKihfuxyy60rCahkzYyxWvjAcWv7hGQSSOZ7FOtrarWkJLVcX4hfCA_RezW12TxS46yOiu3dQ-NSF-UCp49H7dPK_pGOHiSJy9jA8cudgksSRV8GsPi1u8t3LcToq5KATfZ4LRobwCZjdCq1D1IBBDzkKWwufdryTyS-7667TBo3ukq4yTiqmI2wlQXMjkzt9mGKkU61toVdjyyBjalQJSWHY7rvNG4FrBV0Md3Nw88RAgtEYxpyjSjoOMut6w=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-3297a705-cb53-46c5-9491-b7a061d0b681",
+                        "name": "get_user_context",
+                        "response": {
+                          "id": "c3b7e2dc-255c-4973-a0ab-5e006c154158",
+                          "name": "Arun Prakash",
+                          "current_crop": "Rice",
+                          "sowing_date": "2026-02-05",
+                          "region_id": "632845c9-ca19-436f-a0c9-538250bb6990",
+                          "irrigation_type": "Tank irrigation",
+                          "water_availability": "Tank irrigation",
+                          "state": "Tamil Nadu",
+                          "district": "Chennai",
+                          "region_name": "Cauvery Delta",
+                          "dominant_soil_type": "Red Laterite",
+                          "climate_zone": "Tropical",
+                          "current_date": "2026-03-12"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773296888.651126
+        },
+        {
+          "invocation_id": "e-21ed8251-d97d-435e-9b68-1b568f92dca7",
+          "user_content": {
+            "parts": [
+              {
+                "text": "When should I water my plants next?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "{\n  \"intent\": \"irrigation_schedule\",\n  \"crop\": \"Rice\",\n  \"days_since_sowing\": 35,\n  \"growth_stage\": \"Vegetative\",\n  \"irrigation_type\": \"Tank irrigation\",\n  \"schedule\": [\n    {\n      \"date\": \"2026-03-13\",\n      \"action\": \"irrigate\",\n      \"amount\": \"Maintain 5 cm flooding\",\n      \"reason\": \"Expected rainfall 4mm, not enough to meet crop needs.\"\n    },\n    {\n      \"date\": \"2026-03-14\",\n      \"action\": \"irrigate\",\n      \"amount\": \"Maintain 5 cm flooding\",\n      \"reason\": \"Expected rainfall 0mm.\"\n    },\n    {\n      \"date\": \"2026-03-15\",\n      \"action\": \"irrigate\",\n      \"amount\": \"Maintain 5 cm flooding\",\n      \"reason\": \"Expected rainfall 6mm, not enough to meet crop needs.\"\n    },\n    {\n      \"date\": \"2026-03-16\",\n      \"action\": \"irrigate\",\n      \"amount\": \"Maintain 5 cm flooding\",\n      \"reason\": \"Expected rainfall 8mm, not enough to meet crop needs.\"\n    },\n    {\n      \"date\": \"2026-03-17\",\n      \"action\": \"skip\",\n      \"amount\": null,\n      \"reason\": \"Expected rainfall 14mm.\"\n    }\n  ],\n  \"summary\": \"Your Rice crop is currently in the Vegetative stage. During this stage, it's crucial to maintain 5 cm of standing water in the field. Please refer to the schedule for specific irrigation days, skipping when sufficient rainfall is expected.\"\n}",
+                "thought_signature": "CucQAb4-9vuJeJTWVK9PWTeUc0sjCcMtIwnvvbKA8AZ0GqJt01TOKTFf15DL5xW6VfDJkMkRWlEJ9CQceFT0tRCxxtVipzAJpj8MnmbCJ8_4lKHmGMd1ionA3MS6aiLijawqW0xbSgy3kFGEFy5vxGwYchYtYJZSCEw7AnC3cKhcBIsszE7e5xgcbdM2-8Urtj5REhAGT2oehnDaahehcFjxRPfx3xJvFAh_QstAvicO_Vcl2SMolc0DzLl-hrlR9gPXv0VdeMvOfPmYlpwA34r54i6KV2TI9WdDLwuV3aeRlQBUM9gR0bWSfDlmOqRtXkPMZ7USjWAzs9XogtjK4kZhK1Ft7KD2YI98CxE6487CANO4m-Qf0agyEo1568l3dgNxome56Uo5FvHv9j7cT20xJGLB4V-vU7OOJXLV2JDVxy4yXHqk0DPgVAfMoohWCfV2Hw2kSxa0lLbwFPzSKSaGs4AaNHd_Q-weVUZxNEvcXhoEya9LD-q_EzHmS8K8s2roJOmIMWpkDdzcEJzIsVPQAS-BiAl1bl9LMH8hmzaw2uDe76wAg2K3SA8iEpKFbS-ulu2IgPEE94gigxcxjbOvmbeGAIM8QPnZ7o4wDvMrDo37dwjhNtVXzSaim1a5vPez8ow9KcZFl3mYFj-bUAt5CLTEQ-S9bUTlLQFEGotp6RtPeQca4lsgmokL4f1oWky82mU2-pcDCo_e-9QY8Lu8MaTUW1G_7rpY4rzkBSXBizpACxuvsbmh0388JwNkCoGGzmb4qwKCuf02TUiXj6zAiv5_4MK1fekFO_fxHZNE-N5HCdhCTCr5a_D1yKKX1rqIJKw3YBfmMGvLqDslYu-S1skKwQ0WwDE1jpKd49u30hasrRBWhUDZCMBZze0cY2uQR6U5X1eySHS_bdphFzr-BpGW8mlH1MO-79qd0wOEJITmV5mFo6q-DTXVZyHUs9D6HA_Ghqgk3IgUbzN5BWdxSdmjIWONENVUzTRwB8Wg8cmCdRqLQdmOXLGuIhDhHtF7DVSZTgRawpCnjNsvnsM7HxzYczxu6sb6FJAz2P8Gb1KnvCD-8hfkFvbAUPuDXSVwCT4hQ1rJUPbifaOADOFlr5mFODoaMB6w7ZVfuBeA8co0ndc3ma5KnHfRSTJ1sFGm5n7qx8xYDVtCIhx_53xR7UCqkNYpKq5n_HqXk-HC6yxvfliEgWsXe5JCTp25zjZG4b2VqGIMryoyo8QHOOmES8ZL8GxEX8PN-0AVgsUsalczthUzDNwT6zw4SWU0FbtjdgpbFT0DZlAR4EMsU3jq57ZHkUsm-_g1muws6REWgZQsq3pxOBOC7BQF1cLllxgTwnmBphWipfx_jECI0oKx0JO4Bdkl7DFFWqgN4UlAK-5hpEV5d2afN0elLsuXQaYCtmx4eRvWsgiLUyIoe8BIRL5WFYel4QWZ30rKKIhuGZ-20IkVzYFC8LZN-CALoR7XoTcQC5lVZfQXwtIIrAKVHmaKASzF2HB9P3ePU1zDPbzfzsMm7xk44cPz8Nzyrho_Ma9H0Vm5L4PsuPDn1YCnMI48A91mouEdHyY55IkkuKsaptXDlohlauhoXLCtLc3zma-HgpQPrIiqzlS6IEFjvd-vYM-b8FUYiH5m7GYmsgnvF9Fy4sWMO_Z9dNZ_dRxoOokryW4_z2JgNuUZ8HVwlZt1OSUf_VavqSK-ml650wGK1tuwQRFonEVEjZsUa_ZEqg_y4BwnrMG2R1e52dlYtwAe-swUTBwFimc-1Ay-yogrwWJsiET13aZUnxwhwvHqBcEwx-FNq5nVLFbZxnCi9_H1IeR8rW2s-nlPTvDB-83VDBxX4XxsfohzRTec7zE414_cRXXGAAXRx4-aIswXTZt0Vzjtl9QnMkU2mAhLbAxeO39qxDNNeKc_tmRBgIzIXPpyosI6t4fBVG2oh0lCwiHpctqMIt7L2AugWGMV8KvCe6rfLff4zxhmKoh6LACeOuNRlupKo4MC8ZWXXUKzxf1jzAwntdG8dcpGnzyeuSuCkFA1OMJJm0XRNETicn-gaJXU76SZNYwUokh-A40ZHUQubqPXwZAE4Kzyr-c8NsMQkHv6sSvDVQrirZNyBsx_xW8EH0ZPS94TYJ04Tk2zM9xWs_ur_mCCHAey1-NFM6oYHEgOv193mT4CXdB1qrgveIlBlIWuA8KSFmiBZkUPqtPqzp29dktYk9py1VfDBR0hfOmE1_0YNnqX9nlBdCf0ciCOnXrQrroAKjpHR5KYcvJTzj-rnK3phRUSyZpY_-w3JNiCJM2JxjUqSw9pKjoYYd2qtTuIXjSLbSG90pBimjVHhWOpoB3-us2CpGEGMau6ewrnqueBnY7VNoAVQN-vELEWyg8Br1NlQObzLaVfF4g6-RTAfcLkpvVP86k5In_hvi1fHlW2amOM6cIIHryEKA0ySNZfFyLImGG9IQKFtaiFsEnqARfYM8CV_m9hBneMQ30aPkDoSebCrCzHcCVz5iCDLmu_PFc1VegmMqzvUc_OYgDIrKK30f_GZxHftBDcFKHvbLGYJRlxSvwMpbKTsJG7NUPI-pVjGC_B9F8zlneitcC7GRV9CHouxHzvrVKezhZQkyS1MDJPqCdMdeAGgBsB1crIEXW8HE7p8HzN_UncG0c69_QChrvJkVELrkwNKCoct4vHaE4if_lL-0EYmBnCICK4wXcUhl72NMoyrDL5MUQIa2NNA5yGwmvF9mi_mkbhK_IoaGEsnPNeyQ6EIlnQaCdB2c_suaBFkGmFU7entXgmZJzzfGKjSrxuwYfH_W3tWxnwJUCgR35aFlRSge4YNBF0jEla7lzLJa353xXadYtYHSfRp2_T7t5ZcRPIux99hwyH"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-ce38fd72-e4ee-438f-b8e4-8f0e70f757fe",
+                        "args": {
+                          "agent_name": "irrigation_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      },
+                      "thought_signature": "Cu4BAb4-9vvfBNcHQi6K5bU96TuzoshQarSHJB9QveE8f_E2Gy1HpKtSFSwbzjRgJa9a0Sp3EJ9vWwzdzzAXXCAUIarqm2q2eVBJpKkkrvbickIwAwCBZZcb6QtJa12aQuROOxUyZs5uQg3TradysY1xDy4QufCyavvcjorLDl3eNrlKeDKoBGcM7nhy-R1BG9ULIw5zAoiMu0RN2EVIw8YjNBznP5GrOYwM3Jsq8dmgdZMcjVHctBH-ZIHGNkN9hnR6At7lpoucFeIvK8bx1vZTPW1lAFMI4k5ottxiAi5X-i0TWs6b9RyAVSV3mJeCCA=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-ce38fd72-e4ee-438f-b8e4-8f0e70f757fe",
+                        "name": "transfer_to_agent",
+                        "response": {
+                          "result": null
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "irrigation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-d5354395-deb5-4a61-86eb-44fabc9afa9c",
+                        "args": {
+                          "state": "tamil_nadu"
+                        },
+                        "name": "get_crop_calendar"
+                      },
+                      "thought_signature": "Cs0FAb4-9vvKEy3oj9GmXipVoRksB9LtDJtH1jAPTv4vctjHXfbmQ8b0HXNv3rL26q1ey-5nGMwxLqrq45VXurTJsc98k_kA9a0UyuiufU-GZ3z_p1-BKrZSQnfdTTwSfG0oR6aoIRnsE5syDRqpW_fY6uK4WVG66G9pkda5jy33nW_CSgkvqfjIobtHB7gTxYJ9AxeavZfGDP20s8iKhcrCgT3VFr_QZy1h5VZlZAvS1I2JOnXxr3MWJuI_P-81CIbr5AWVqbz67kOswkGFXe-JyLw0UrZyzwwasE2X2H0VvXk6ax9wBO2z9xh6EmhPCFaSV9nbrgGhaKJ4Hxllqles0vlCQkZ4RfTKexJiWlOM0AD-hvX9PW7Fro7zLrxQ5fyjxtuBtivrsIh57OkgU6R2j-V3jf8d7USQBCpC1OFFj-gv-1L5-Ar3srnkmsW5qXS-arWVzf-rZHMBIFW-DycRarH-t4PK80lDepF6EH1GU93t1uuLjsKYxpGwQmk4W2TnMxuNEXdUTdtKgabF5mAHQAeOzVlCdev2WDEiez0Bn2e175cON2oJBIjn-MasOG8m1xoUHtgv2owU6XVtjZxXIOhrqpYSGzSwpL3Ch756iE3SCPKeNJ-lykj1u2c_LGguxQtuNcOR5H0LekXveGlFyL_zdwSLzEFVVMbIoy9IoYEuV_roCunyYUsMj5xMPR0I406ny9VCYWTQkgq_hoOYiSUmYxb2ara7y_KOSPfvOiFcfAayQlr4i8lur1O9SlSvGWoWbpG25lHwxfb__QcTY6m_8djY-xGXPdfiAkHBXfcIf_f_BJRdq_tc53EHVhZbFZT4W6Gg1blY02geA7EkjK3Vx6xafiIFi_g7i3Ng51Riu06coQyutJGPHPQazyJbipqwQqdUXruVk8a5Xwi5v14CF9FVCV8lcun8JwpJD9QG2xd4-w4KhDlyEDSj"
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "irrigation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-d5354395-deb5-4a61-86eb-44fabc9afa9c",
+                        "name": "get_crop_calendar",
+                        "response": {
+                          "result": "# FARMWISE AI — CROP CALENDAR\n\n_Source PDF: `tamil_nadu.pdf`_\nRegion: Cauvery Delta\n\nState: Tamil Nadu\n\nClimate Zone: Tropical\n\nSoil: Red Laterite\n\nWater Source: Tank Irrigation / Canal\n\nSeason Reference: Kharif & Rabi\n\nCrop Calendar Overview\nCrop\n\nSeason\n\nSowing Window\n\nHarvest Window\n\nDays to\nMaturity\n\nWater\nReq.\n\nNPK\n(kg/ha)\n\nBest Soil\n\nRice\n\nKharif\n\nJun – Jul\n\nOct – Nov\n\n130\n\nHigh\n\n120:60:40\n\nClayey / Loam\n\nRice (Rabi)\n\nRabi\n\nDec – Jan\n\nApr – May\n\n120\n\nHigh\n\n100:50:40\n\nClayey / Loam\n\nGroundnut\n\nKharif\n\nJun – Jul\n\nSep – Oct\n\n105\n\nModerate\n\n25:50:75\n\nRed Sandy Loam\n\nGroundnut\n\nRabi\n\nOct – Nov\n\nFeb – Mar\n\n100\n\nModerate\n\n25:50:75\n\nRed Sandy Loam\n\nSugarcane\n\nZaid\n\nJan – Feb\n\nDec – Jan\n\n365\n\nVery High\n\n275:62:112\n\nDeep Loam\n\nGrowth Stages by Crop\nRice\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 7 days\n\nMaintain shallow standing water 2–3 cm\n\nContinuous flooding\n\nSeedling\n\n7 – 25 days\n\nTransplant at 20–25 days; apply basal fertilizer\n\nStanding water 3–5 cm\n\nVegetative\n\n25 – 65 days\n\nTop dress nitrogen; weed control critical\n\nMaintain 5 cm flooding\n\nPanicle Initiation\n\n65 – 85 days\n\nApply potassium; watch for blast disease\n\nCritical — no stress\n\nFlowering\n\n85 – 100 days\n\nAvoid pesticide spray; pollination stage\n\nMaintain 3–5 cm water\n\nGrain Filling\n\n100 – 120 days\n\nReduce water; watch for brown planthoppers\n\nReduce to alternate wetting\n\nMaturity\n\n120 – 130 days\n\nDrain field 10 days before harvest\n\nDrain completely\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 8 days\n\nEnsure good soil contact; light irrigation\n\nLight — soil moisture only\n\nSeedling\n\n8 – 20 days\n\nThin to 15 cm spacing; apply gypsum\n\nLight irrigation every 5 days\n\nVegetative\n\n20 – 45 days\n\nApply foliar micronutrients; weed twice\n\nIrrigation every 7 days\n\nFlowering & Pegging\n\n45 – 70 days\n\nEarth up rows; apply gypsum 200 kg/ha\n\nCritical — every 5 days\n\nPod Development\n\n70 – 95 days\n\nMonitor Tikka disease; reduce irrigation\n\nReduce — every 10 days\n\nMaturity\n\n95 – 105 days\n\nStop irrigation 10 days before harvest\n\nStop irrigation\n\nGrowth Stage\n\nDays from Sowing\n\nKey Care\n\nIrrigation Need\n\nGermination\n\n0 – 30 days\n\nPlant sets 3-eye setts; gap filling at 30 days\n\nIrrigation every 7 days\n\nTillering\n\n30 – 120 days\n\nApply nitrogen split; earthing up at 60 days\n\nIrrigation every 10 days\n\nGrand Growth\n\n120 – 270 days\n\nHeavy feeder; apply full NPK; weed monthly\n\nIrrigation every 12 days\n\nMaturity\n\n270 – 365 days\n\nStop nitrogen 60 days before harvest; trash mulch\n\nReduce irrigation\n\nGroundnut\n\nSugarcane\n\nRegional Notes\n\nRainfall Pattern\nTamil Nadu receives rainfall primarily from the Northeast Monsoon (October–December). The Cauvery Delta region gets\n900–1200 mm annually. Kharif season relies on Southwest Monsoon which is moderate (June–September). Tank and canal\nirrigation supplements rain-fed farming.\n\nCommon Challenges\nBlast disease in rice during humid conditions. Tikka leaf spot in groundnut during Kharif. Sugarcane internode borer active\nJune–August. Drought stress in Rabi groundnut if tank levels are low. Saline soil patches near coastal areas reduce rice\nyield.\n\nIntercropping Recommendations\nGroundnut + Castor (2:1 ratio) for Kharif season. Rice + Azolla as green manure improves nitrogen fixation. Sugarcane +\nOnion during early growth period (first 60 days). Groundnut + Sorghum border rows to repel aphids.\n\nGovernment Advisory\nUse Kuruvai rice varieties (ADT-39, CO-51) for June sowing. Adopt System of Rice Intensification (SRI) to reduce water use\nby 30%. Tamil Nadu Agriculture Department recommends soil testing every 3 years.\n"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "irrigation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-a5b13bc9-5c8f-4560-af95-8d824a991340",
+                        "args": {
+                          "region_id": "632845c9-ca19-436f-a0c9-538250bb6990"
+                        },
+                        "name": "get_weather_forecast"
+                      },
+                      "thought_signature": "Ct8HAb4-9vs6kBQfddi6d2L0ICNA8gjIs3wObt1FVuQIyTCPV2Ba3m0_tZehDMWdNyg-odaXgPLGGwrWrMRxkZtdywcphDa2ESTZtYm96t1TdLZvWowhmb6coKPYPyEqzybDz1mEPEfYP4NTbWOWgL36e67Nl_Jc3DCsa9Wg6lbniQqfmuTShZ7S9IYV23yRhjSzqyzeu19dVpTGd8Q64rRZOP49oZJJI9_1k9R-ee4884k0ny-l7f81OTnJ1GJjm80IcCz-_AknhHVLXtO8FWLLhjGgTx3QNPtxuRtDIDnjE03a33reW2UdgIQzG1YYaepFrXw6bkBoU3r_9ZyxaTriZRE7VwWTnDunnXh6MCfsy97iexm38SUBW1KSMGouZ4HvAJig0YS1f3b4mF62LIeyw4szKvd-f3M4FfY4k0DjBPwdWjz9UL23l0ZD7O2ZiGSC9CAC3p0pwEjHLh_VTXMlV6MSO723QYBvcUYu4bRvfYAP36mEukzqoz9iumydfg4zHIG2hPEs5RkWdIrTPQuECSc30Sbbs-wz0oyNMcWbX-eDJkFrMhR_ogwJfYAX1nkIb85_OZwvl1s60HQqbZgb1R-IgMI9q5ITWJBgacibsw6e5o86Ud-D7jPAKkT1bn_qYLsZSfPNbQzOrxArORwZ68XP4bM3XaGnQ4seLBRz3xCBamBP3aV3gd_i0x3z80qQRGlhZr6_2134mdlDqNC4fNeSYxbTJOxG20D-xozJBvdNEoBhKNFWshdr11_Iw8Mj_vpc0Zj7H1phDJIanmmhp2ezF7BVbh-3KbizHpA2BDTcBdPONWYRfjn__np0i2h-3ktPfwZ2D39kK7A2ZXxjBNTApob57cOJj9spVLBmfXi29n4dEfI2Zr1LKea7M0CQz5StOVMgx8uAAyeE8b73V1oO5bRYhWoOvdEJo7dCnMOl1GTbnH7q2jRSFr4ALWrZHt4FvFz_HDaUR8XrXex9e4Vye6T3bw6dHlQSQ3DxtSGVzxXqY8wC3BhfGq4F1VXqbvbbSp-ty25UWFgs1cHC8ZitfnX4NWmFlputhxajwTorT59x1866fvtAuQQqaABKeIOH2thLZVRDwtwFk3_Jw8HrOzE4KPnr8emjqmy9S6_K-B1qUErETAB83OKP6I11D9woO191yX2_FKr_CpuwNMD9dZvyTbsDjHwXRckYzhrf3oc8HuC0UHj9Bxl3LIFwpUZoybcswU5O0QUcLaUB-9Oz8dNXR1Df_Fo5xCHobscymXwyFREJonCFrpFjSnhPMPwtgoGcRZszXVFKzyVGoCJvklmoLuwcNZhg_CDaOw=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "irrigation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-a5b13bc9-5c8f-4560-af95-8d824a991340",
+                        "name": "get_weather_forecast",
+                        "response": {
+                          "result": [
+                            {
+                              "forecast_date": "2026-03-12",
+                              "min_temp": 27.0,
+                              "max_temp": 33.0,
+                              "expected_rainfall_mm": 12.0,
+                              "humidity_pct": 78.0
+                            },
+                            {
+                              "forecast_date": "2026-03-13",
+                              "min_temp": 27.5,
+                              "max_temp": 34.0,
+                              "expected_rainfall_mm": 4.0,
+                              "humidity_pct": 74.0
+                            },
+                            {
+                              "forecast_date": "2026-03-14",
+                              "min_temp": 26.8,
+                              "max_temp": 33.8,
+                              "expected_rainfall_mm": 0.0,
+                              "humidity_pct": 72.0
+                            },
+                            {
+                              "forecast_date": "2026-03-15",
+                              "min_temp": 27.2,
+                              "max_temp": 34.5,
+                              "expected_rainfall_mm": 6.0,
+                              "humidity_pct": 73.0
+                            },
+                            {
+                              "forecast_date": "2026-03-16",
+                              "min_temp": 27.1,
+                              "max_temp": 33.9,
+                              "expected_rainfall_mm": 8.0,
+                              "humidity_pct": 76.0
+                            },
+                            {
+                              "forecast_date": "2026-03-17",
+                              "min_temp": 26.7,
+                              "max_temp": 33.5,
+                              "expected_rainfall_mm": 14.0,
+                              "humidity_pct": 81.0
+                            },
+                            {
+                              "forecast_date": "2026-03-18",
+                              "min_temp": 26.5,
+                              "max_temp": 32.9,
+                              "expected_rainfall_mm": 18.0,
+                              "humidity_pct": 83.0
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773296962.692047
+        }
+      ],
+      "session_input": {
+        "app_name": "orchestrator",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1773297028.0235655
+    },
+    {
+      "eval_id": "pests_agent",
+      "conversation": [
+        {
+          "invocation_id": "e-a1c1f73c-48af-4cab-971b-7066a355a268",
+          "user_content": {
+            "parts": [
+              {
+                "text": "this is my user id c3b7e2dc-255c-4973-a0ab-5e006c154158"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello Arun Prakash! I see you're growing Rice in the Cauvery Delta. How can I help you today?",
+                "thought_signature": "CvQDAb4-9vvZB6koezkuApOyMLceNZn4NlT-SaxTrz8Dtqt-LS4Tx2WL6wF7iCOOvtX0Y7g0IJ7O3aC-LshRVa5RnuVsrgDCwJg-OIT2NSNBcCHvcKRKG0QiKm-W-plD_osZ2NZWaViPe4X4ZGetKvVgAAhzuYxR8YFG9bQOvE73-2bb9hgY9fNUFokNgbvLnYog2i7UTref35p34PyeMkj7rQZozAAx06ew4mvMdNXVtt7fLnTITwyDtAN9nY3jKHhB6Dr3j4lFR49KmmsLBhYgZU3bpeY_M38trleF7shQF0h6Rro8SjzyRunHltW5U5NJrFdVksvTwxCsjS_TAxmdSg5pCx6Iu6pCIg00jN1FakGXRa23My4gr8vERSM1-BSHzLOLU3EwwKIDOeEH-ahe-uPmkWfvmhpAgc0hf3MmPbdZz7YUQ7uhJbbTa1zAqSocXEXdjjYNcLWe8HD_5TviJ6A7ZCdhWrSPXBIqnyLLXCHCRSSuOIcAQUu_6vMRNI2LaJN4xkbROwv9UVXXzislnjNquYDdqR2XT3i31k9WmFYhEcCRc2i4AMI4BzUa6zFYWJv9WXrG4oVrIECXzBKQAftmwz1O3MEESotrjJuwS2d1jZwwntRouan1za7vjw6TEuRzTpA32Xh_5mRA28LsFK25If8="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-9701dccb-b9fd-49ff-9b10-391e1eebb23f",
+                        "args": {
+                          "user_id": "c3b7e2dc-255c-4973-a0ab-5e006c154158"
+                        },
+                        "name": "get_user_context"
+                      },
+                      "thought_signature": "CsUCAb4-9vvLeLBtxj77FRdgc6NxuMZZs7boqJWY3BcmmSR7jp0KtfMJybvEDGq604YF_nXXzIDYK1BCr1ab2XMWvKFRMaGJ3IIGj6S7EEFNBC7Ppkr9yGxn7RtYYvK2dWRMPddtg1ntG1NhocmnV07q-uMPY1iX5Eygn1oc4fu8mGrAtiCgSOeR7bpibUUHFsy5ALoDZI4AWBJ7BkxQaimqjYWzp4gMA2NVG5TkgAABYTR3XjZiTz2fuc0ydCl8ANVvw7xovQKCK0dE63I_646hbS8tBcF_DvS84ExYraK8Zq0Wma6jqOx-b0qE4aPdFMzi7X1FSMB8Nrg-Wo5zuBYS3IMccIyma2P2Zs521GtKYOl7cz95bEoCsS84TL-7lo_sXRdIoYrBi49tCXvivr1SDoWUdHlZxHTCWXyTsmrEQP-t1Fxa0Q=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-9701dccb-b9fd-49ff-9b10-391e1eebb23f",
+                        "name": "get_user_context",
+                        "response": {
+                          "id": "c3b7e2dc-255c-4973-a0ab-5e006c154158",
+                          "name": "Arun Prakash",
+                          "current_crop": "Rice",
+                          "sowing_date": "2026-02-05",
+                          "region_id": "632845c9-ca19-436f-a0c9-538250bb6990",
+                          "irrigation_type": "Tank irrigation",
+                          "water_availability": "Tank irrigation",
+                          "state": "Tamil Nadu",
+                          "district": "Chennai",
+                          "region_name": "Cauvery Delta",
+                          "dominant_soil_type": "Red Laterite",
+                          "climate_zone": "Tropical",
+                          "current_date": "2026-03-12"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773297318.041471
+        },
+        {
+          "invocation_id": "e-1f75f4aa-6fa3-4b4e-983b-0692a6cba5ae",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what all pests can my rice crop have "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Your rice crop can be affected by the following pests and diseases:\n- Rice Blast (Magnaporthe oryzae)\n- Brown Plant Hopper (Nilaparvata lugens)\n- Sheath Blight (Rhizoctonia solani)\n- Bacterial Leaf Blight (Xanthomonas oryzae)\n- Stem Borer (Scirpophaga incertulas — Yellow Stem Borer)",
+                "thought_signature": "Cv8FAb4-9vvgl68zkrKK-l8KiRR6HnM6EkYrgObEm5mjT6cuskem8iOmf77-ur7dzfPG8wMsHHQpNbJcaWf7Fa0cB22YTkvt1bnWjHWf8ti7iupYn_Arh97xqAC6_heZUcvarDIRwad4OGjgJujKnR3BRd7TEdTWFvKqHtG7FciAeHgBZjzFn56By4H-4qOOX3O8IZhWHNvYKMDTttLyId2L3CwadzWNnRzhOZa4ugqKAkhOGUbLIDDdJfVJr6ds8FOsPDLbWx6oWMLm-5rfPuKPeENJaxaLA-0YZfQFo9pbMOkBSdA0PpM5rRgjP1bqGc44cq7xt-AOgAbxQUnVv5l2JO8v9Fm-x6hEMNGFlUBaodWhAnrzqc9shGlsYKJBEFrZuLLutyoBswlySiQjzV3fvOIaPtzIhTVN_MsciJ_xYHnP48O0UhMbwNJ1SECy5j3CuK339hA7THkeP5Zq0le4XBPuCe8PKU_63FWHijkgZL05NEnsbKBJRe-w6mboqTcIaNF2b-Re0-6R8BSrL8lxjhqsT8G9BzJ4LgHirBAS4YvU4xd1hvy1esOWtHKIAmv__RjEzD1HKBUShTvMJ4mj-rfQDuSVC_CcFTJ_FRCxgBy5MXuttAqsh0X71Vh9kcQ04ruPofnZg18hgvXiRlswIfEHpw2Hl5Famm7S8jBJ5KGkB0-kC5MGwRToSkA0OnSvog61AJyjLjV1TCbQw0ZKhhmf8DMQdrDfE7P7v_9QcsWxW77oaHFo3iCSl-OQXrhMQk2hs3-Vk0r5fof5p0yH6t_lqVw8s2h_R9FwqKKs5TtQOOsVTvBg2Q9BOisNnau9VaUKFDiXRVteJ3P34AU-7L5Jm1GDzO4kPIHxlvZY_fO-myP8vPz95m-Iyx5-vS8QISjEiwraixooteyc-ydgW3IX8K_aMMsbJU8MH7Nh5nQf1SB_HyoCt1CZR0l6Et8v1UwZ293LlaobySyKBcxCSc972BKpy8sp8gNxLncFe8xnr5JTOsOBGoQg4juDKYM="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-1c3a06ba-242c-47bc-a933-01bfa9f66648",
+                        "args": {
+                          "agent_name": "pest_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      },
+                      "thought_signature": "CoECAb4-9vvGuBOlE4UmbNYD1FVY7OFc2hGWFnqYGFt08tEvDWOvE9naA_j32Kamgf5NarnDK1wM8SeZRYAK7t05K4mKz5JJPPPUb0niIzSNDlWjVPcC66gcdgbkyNCCpdDGZbTJZW8Y82hgXRbeXjGsGcFTR_-RMftSUo9u2z8hj5mUFHnyklx3wY0TPwnjyqCXBYWxymfRnMem-NhLGuvo8HGTq8Qp3Tn8NMjh4El0mr5V-nwk1Zg1bcplavXMIJ5e1fkEbzy5SwGhz6pH3ygzeY0Lx8nUlm1Z8niDpID15P1uSRIggsz3Blq93N3eMsqoZz2y6NXEWTDEUF4NEorL33c="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-1c3a06ba-242c-47bc-a933-01bfa9f66648",
+                        "name": "transfer_to_agent",
+                        "response": {
+                          "result": null
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "pest_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-74d95996-a2c5-4cb4-b33a-216504612cb5",
+                        "args": {
+                          "crop": "rice"
+                        },
+                        "name": "get_pest_guide"
+                      },
+                      "thought_signature": "Co4CAb4-9vvKi6uZJxbwB06yEWI4SRr1XFnCgZ_aMcYWgoGYNfdmnwJp0Ql2hvCy_26SuXALfTJzZD7ZV9wFRqcVtS3rohaOhv3-8Ifc_LYIjhDtbY8YtFGhCP1FiqXvJSTUV5xzVk6misknX3OCgxb-hrYCnz70Rk2EhsBmeh5NMUWVczyNkk26UA0HDSlCCRxH7hXTjk5na3cKoo2VVKAY8cgbB3ASWyH2hZan_IsUbTMuVAMkNwECNTTdXHvwQpC31ZoRUWr8lkpocN_sbPAFJzBye9UaXDOp7JvxmZTBiM3xPYaxd1Fy8K7icvsMQC-mbO_jRyjSvsMSqWY36_PfS20KTl2nUufm0F8Cwl-M"
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "pest_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-74d95996-a2c5-4cb4-b33a-216504612cb5",
+                        "name": "get_pest_guide",
+                        "response": {
+                          "result": "# Rice Pest and Disease Guide\n\n## Overview\nRice is India's most important staple crop, grown across Tamil Nadu, Punjab, West Bengal, Andhra Pradesh, and Kerala. It is susceptible to a wide range of fungal diseases, bacterial infections, and insect pests. Humid tropical conditions during Kharif season create ideal environments for disease outbreaks. Integrated Pest Management (IPM) is strongly recommended to reduce chemical dependency.\n\n---\n\n## Pest and Disease Entries\n\n---\n\n### Rice Blast (Magnaporthe oryzae)\n\n**Type:** Fungal\n\n**Symptoms:**\n- Diamond-shaped or spindle-shaped gray lesions with brown borders on leaves (leaf blast)\n- Neck of panicle turns black and rots — entire panicle collapses (neck blast — most damaging)\n- Nodes turn black and break (node blast)\n- Severely affected fields appear burned from a distance\n\n**Triggering Conditions:**\n- Temperature: 24–28°C\n- Humidity: Above 80%; leaf wetness for 10+ hours\n- Season: Kharif — peak during July–September\n- Excessive nitrogen fertilization increases susceptibility dramatically\n- Low silicon soils are more vulnerable\n\n**Treatment:**\n- Primary chemical: Tricyclazole 75% WP — 0.6 g/litre, spray at first symptom and repeat at 10 days\n- Alternatively: Isoprothiolane 40% EC — 1.5 ml/litre\n- Application method: Foliar spray — critical to spray at panicle initiation stage as preventive\n\n**Organic Alternative:**\n- Silicon spray (potassium silicate 2 g/litre) strengthens cell walls\n- Pseudomonas fluorescens 10 g/litre as seed treatment and foliar spray\n\n**Prevention:**\n- Use resistant varieties (IR-64, Swarna, BPT-5204, Pusa Basmati varieties with resistance)\n- Avoid excess nitrogen — split application reduces blast risk\n- Apply silicon fertilizer (slag) in blast-prone areas\n- Maintain optimum plant spacing for air circulation\n- Drain field periodically to reduce leaf wetness\n\n---\n\n### Brown Plant Hopper (Nilaparvata lugens)\n\n**Type:** Insect (Hemiptera)\n\n**Symptoms:**\n- Circular patches of dried brown plants in field (hopperburn)\n- Yellow to brown discoloration spreading outward from center\n- Insects visible at base of plant tillers — tiny brown or white bugs\n- Honeydew on leaf sheaths causing sooty mold\n- Severe infestation causes complete crop collapse within days\n\n**Triggering Conditions:**\n- Temperature: 25–30°C\n- Humidity: High — continuous flooding and dense canopy favor outbreak\n- Season: Kharif — August to October peak\n- Excessive nitrogen and close spacing create perfect microclimate\n- Insecticide resistance is widespread — rotate chemicals\n\n**Treatment:**\n- Primary chemical: Buprofezin 25% SC — 1 ml/litre (targets nymphs)\n- Alternatively: Dinotefuran 20% SG — 0.5 g/litre; drain field before spraying at base of plant\n- Application method: Direct spray at base of tillers after partial field drainage\n\n**Organic Alternative:**\n- Drain field for 3–4 days to expose and kill nymphs\n- Release Cyrtorhinus lividipennis (natural predator) — 500 per acre\n- Neem oil 5 ml/litre spray at base of plants\n\n**Prevention:**\n- Use BPH-resistant varieties (Swarna Sub-1, IR-64, PTB-33)\n- Avoid excess nitrogen in single dose — split into 3 applications\n- Maintain proper spacing — do not crowd plants\n- Install light traps to monitor adult migration\n- Avoid broad-spectrum insecticides that kill natural enemies\n\n---\n\n### Sheath Blight (Rhizoctonia solani)\n\n**Type:** Fungal\n\n**Symptoms:**\n- Oval or irregular greenish-gray lesions on leaf sheaths near water level\n- Lesions have brown margins and grayish-white centers\n- Disease moves up the plant from sheath to flag leaf\n- Severely affected tillers die before heading (whiteheads)\n- Sclerotia (small brown pellets) visible in infected tissue\n\n**Triggering Conditions:**\n- Temperature: 28–32°C\n- Humidity: Very high — standing water and dense canopy\n- Season: Kharif — July to September\n- High nitrogen and dense planting dramatically increase incidence\n- Sclerotia survive in soil and float to spread between plants\n\n**Treatment:**\n- Primary chemical: Hexaconazole 5% EC — 2 ml/litre; spray at sheath level\n- Alternatively: Propiconazole 25% EC — 1 ml/litre\n- Application method: Direct spray at stem base and sheath — not on upper canopy\n\n**Organic Alternative:**\n- Trichoderma viride (bioagent) — 2.5 kg/ha soil application at transplanting\n- Pseudomonas fluorescens foliar spray — 10 g/litre\n\n**Prevention:**\n- Reduce seed rate — avoid overcrowding\n- Split nitrogen into 3 doses; avoid excess at tillering\n- Remove and burn infected crop debris after harvest\n- Deep plowing in summer to bury sclerotia\n- Balanced potassium application improves resistance\n\n---\n\n### Bacterial Leaf Blight (Xanthomonas oryzae)\n\n**Type:** Bacterial\n\n**Symptoms:**\n- Water-soaked to yellow stripe along leaf margins starting from tip\n- Stripe turns pale yellow to white and dries up\n- Leaf edges become wavy and dry\n- Bacterial ooze visible in early morning on cut leaf ends (milky droplets)\n- Entire leaf wilts and dries in severe Kresek phase (seedling death)\n\n**Triggering Conditions:**\n- Temperature: 25–34°C\n- Humidity: High; heavy rain and wind spread bacteria\n- Season: Kharif — peak after cyclonic storms or heavy rain\n- Flood irrigation spreads bacteria between fields\n- Wounds from insects or wind allow entry\n\n**Treatment:**\n- Primary chemical: Copper oxychloride 50% WP — 3 g/litre spray\n- Alternatively: Streptomycin sulfate + Tetracycline (100 ppm) — use only once\n- Application method: Foliar spray covering all leaves; drain field if possible\n\n**Organic Alternative:**\n- No effective organic cure — prevention is primary strategy\n- Drain fields during outbreak to reduce bacterial spread\n\n**Prevention:**\n- Use resistant varieties (IR-20, Pusa Basmati-1121, Improved Samba Mahsuri)\n- Avoid flood irrigation during outbreak — use furrow or drip\n- Do not apply excess nitrogen when disease appears\n- Remove and destroy severely infected plants\n- Avoid movement through wet fields during infection\n\n---\n\n### Stem Borer (Scirpophaga incertulas — Yellow Stem Borer)\n\n**Type:** Insect (Lepidoptera)\n\n**Symptoms:**\n- Dead heart — central tiller dies at vegetative stage (yellow and pulls out easily)\n- White ear — panicle does not fill grain, turns white at reproductive stage\n- Circular holes on leaf sheaths where larvae entered\n- Frass inside hollow tiller\n- Moths are white with a single black dot — visible at night around light traps\n\n**Triggering Conditions:**\n- Temperature: 25–30°C\n- Season: Active throughout Kharif — peaks at tillering and heading\n- Dense canopy and high nitrogen favor population\n- Ratoon crop and continuous cropping build up population\n\n**Treatment:**\n- Primary chemical: Chlorantraniliprole 18.5% SC (Coragen) — 0.3 ml/litre spray or granule\n- Alternatively: Cartap hydrochloride 4G — 18 kg/ha granule applied in standing water\n- Application method: Spray on foliage at egg hatching stage; granules in water\n\n**Organic Alternative:**\n- Bacillus thuringiensis (Bt) spray — 2 g/litre at egg hatching\n- Trichogramma japonicum egg parasitoid — release 5 cards per acre at each brood\n- Light traps to catch and kill adult moths\n\n**Prevention:**\n- Remove ratoon crop immediately after main crop harvest\n- Clip leaf tips during transplanting to remove egg masses\n- Install light traps — 1 per acre from 15 days after transplanting\n- Avoid close spacing; maintain good air circulation\n- Balance nitrogen — excess nitrogen attracts egg-laying females\n"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773297359.529271
+        },
+        {
+          "invocation_id": "e-30a61515-b862-4cd9-bbbd-119a37c14530",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what is the best solution for Sheath Blight ?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "{\n  \"intent\": \"pest_diagnosis\",\n  \"crop\": \"Rice\",\n  \"diagnosis\": \"Sheath Blight (Rhizoctonia solani)\",\n  \"confidence\": \"High\",\n  \"symptoms_matched\": [\n    \"Oval or irregular greenish-gray lesions on leaf sheaths near water level\",\n    \"Lesions have brown margins and grayish-white centers\",\n    \"Disease moves up the plant from sheath to flag leaf\",\n    \"Severely affected tillers die before heading (whiteheads)\",\n    \"Sclerotia (small brown pellets) visible in infected tissue\"\n  ],\n  \"treatment\": {\n    \"chemical\": \"Hexaconazole 5% EC\",\n    \"organic\": \"Pseudomonas fluorescens\",\n    \"dosage\": \"Hexaconazole 5% EC - 2 ml/litre; Pseudomonas fluorescens - 10 g/litre\",\n    \"frequency\": \"Spray at sheath level\"\n  },\n  \"spray_warning\": \"Avoid spraying on March 12th and March 13th due to expected rainfall. The next safe date to spray is March 14th.\",\n  \"prevention\": \"Reduce seed rate to avoid overcrowding, split nitrogen into 3 doses and avoid excess at tillering, remove and burn infected crop debris after harvest, deep plowing in summer to bury sclerotia, and balanced potassium application improves resistance.\",\n  \"summary\": \"Sheath Blight is a fungal disease that causes lesions on leaf sheaths and can lead to tiller death. Treat with Hexaconazole 5% EC at 2 ml/litre. For an organic alternative, use Pseudomonas fluorescens foliar spray at 10 g/litre. Avoid spraying on March 12th and 13th due to rain; the next safe date is March 14th. Prevent by proper spacing, balanced nitrogen, and good field sanitation.\"\n}",
+                "thought_signature": "CqgSAb4-9vvU-FG10VEgXCmxSS_c8KrewG0-YeYKuGbGVfwR6pVgRjcNEZ8q_AgORgS_AUgADaf9RizVP-KTx7fnH48bcAvMkKh-4EG4giqFWjOgc6WUgwjRDeASIvK4EMQufQj9KBFgre40gVeTJREZq_czb2l3xuzFgw1DZL8TZmzsJH-YvmVDZkiBHC3sjxbkPAD-af2ExsTKF33q_IIC7OhSd8ulir-9AArwrXkc18ew-wDFK2jfA3SmTmW5eDIpSorpsTA1AbYQgqvBC58_aOG_bijctqybDbc3pf6DY1OmQKMG3ZSmQ8qHPOacEVoQaelbjePufVtGL_-4Iurjh02SjaWnRRKwaWFrExTIQp-XxfP92wciSJCmMk9XItiRcKotZKW0sy139DG1mtSkwZkb0JFi4-aVfHXOc_PiZn8nis4mQW8N56dzsgUGFz1fyr0n2zoDxZlwXaBy2sLbpExPAfCBJvMfE5amPsC3rq-KpiQASBnT8HT0TJe-bNwVh45V9EWxx4NaPi2oXciam8o4fmUg64Vp2T_rJj2s3QmCqkfkP8Z0fB0HKJJ68d2rPX9pYP_nWN0-v_W1OTDHSIw9lwVJeI-c1FK2-5Fvg_g6tPSxDhftmmzpbLcuuE7NdE_2plrbDxYp-8ALB4UTQFVvikaxcWqx4NG6NCR7tArQsDxwC3bOAP9_240-h1aHFDZbSxwmzDCIuvfBvjHxAuEPPSou5Ubb2CAOGajNqmEHeaD-g9dRHEfJ-AVPc1Q0CVjfcRNJQxFDSK2FT-Tw4kMXNEEH414bJ-6hijrqEJRCq_Xm-KKW1ecH6tO4AALe2wwq7q5V4ISaCPdh73nWlsuVQ0sokv-DBIEC3mn5lIG0MTDKMiGSL8dRS6JllcDhVfVuBs2PlD7AkxL0oFmXgFQoq8JOZwx2YALpc3kWZnPzoWjC8_v-XDvsNnQksWWWqOx-PoOaK4YEfVn7XjhxmjDg6Ug2lPsTEFegNEedqxhvddn43wMiGaPBYCKDEzE0V1sCi2yin_3mDqPYlX073qOaIputIfWLIpuO6xS0h2dIa-onJEiln-1agJdImxMtBOzL1qiT2ufUZfRkWr09H67R6I9H_E7Wwe9kTiYeuqCqqrAODOuylLdXu7g1BipRilHzyy_k-y-BrkQWwgzC-NkWhaqzPsZBq9-ffQ-ueMZXWToPdCp-PxbgYiUgXKgHIufRivAvH4qg95FWNzip09nhb7u2PPwgdc7cbkaqNNxGTHmGydFpwfwlxt0-rnH8Izog4knQ8bZku3rLzMXdppxctQ97_CKOLKKvCUpExmCv287Gtn-pfTRS5D0WHnk8NgiLoU2Prf4zz2Y3SF-wJC4EPKe-REFLwqXaKYKWqbDB9JZInxk_W91uZwtef-eAPBPJ-kqihc44O028Av0VsUCU_gJyrkhVFSbymVLAq5HaAeG_5IWUZ-6OuBiI6vbR6IXJCDyGbmzp2IYHYHRO67QE2oru6i95KivvUFe0dtwjCmqEKfP3MBR6e37l4lTF0jqZDsQJSCyC2yX3xt96kcU7AAokRS7XjpLnxd75yake4vNQob1hfZfNfS_Vvg4gDEWtLZBUZS4aG0zyukANXGlI6maXwzSqww_0sHUJS_n2hbQBdrkspb_uwaXE7rtt1ov57YCBPHIKPs56oWzUcvmu3w8IsqwwMPQeIYMrBcJvq1de-ocQlTUsQmaHzpnxZhdkhtB69w5A0cbkB8a4wV0K2-oz4sJdgFhFtZRBpHgFL0BtSF4OZQn9rXKpKTlgSXB-kDYp5v54VVHXbNHJumHxO37qO6O8QhNMoaHaCdXQNyZZQmgrwGOUCIAoVmT3XdBKOoZhtLS3uHW3WRDS7PusFVfmW-Ts_WRMenWNiTaAbVfBDf-ol5YM6eWn6M3BiwzaKpheKg8_Ks-bK39a_Jy9lslodwFXpJwsOQt7QP4LI6T-0vKkqd8ansaIEX6DVMpLqhB9VN4frGwt96rJ3COsD0CNTJ7qPxFgLZ9RoDON0ro4S7tT3iqhN4aWSWDLjcwwYP0qSGulOCOTJyQCCs2tymra9fZm0FpATYv0SV_8acyxg2mU7Il7ukzkAbNbsUtRzIdHvQCCTehNqvefpdbnYcmxccfgQKYFWoLchsArN3lJ3224m7lCIGTRw9F1laWqF3TmA8ensfOM8mbH1lCavx8MdTqjLIObkj5Decrxgfc23EQrPsTBoHtKC4dHPXjdCr6mbnTh5nvhXmtSGI6RgnNfP3czE1-hfH45Bt7K4oyA-1krUuzWJ-qigyQ4LreOGzZBwsulmHUpTYn12wCbUAG2Fezv1L9yYbBmfREa72Hwor8-Ic7G6vyK0uIT_hp2dg1XWc5w0qN0ts-RgOTM_8QaE7xL7DtlQDFG0lEr8_jLW04-eJUk4hALWmLPvBTZo3RIPkZCrPye_lieWU5bqCZhuT4JQfVtytJpDZsR-HvV_5pZao6eGASbgCQVKeMSOD9jd4Agi-9HB04JNOVSzAQ3KCk9YSILd06zKhtvcOx38-11f6GfGN0YCeHBElZc303SY_6qYcJwFkKCjIKH3uLKAgK3XS7EJTfOIgllUglCaWRmbb5tNJnBYw8s46nc18kuGPZL0OWBz7-BoZQB5rJn6fVzVgBO9QhY_BgOGXxoCMBAxZrzdc4g6_X-OMgcQCYdevj4vVOuVMt7qwil44Ox6QS8pVidAd0FS29GmvVypthfu9h-QG7knewkl22LyLJjEFSpz3Sy9d9CX3i3bRjfIR4fUZdsPet5CBKc2uIGhGAP6ifufIWPuvY23Hk4RWedV20CaD-c5spojwUAh3HvBgrSZd1YZT-t8GW-lr1ZO9SzuK3XfroAgoUcX6mBi29_WWu4ExJvCRPhv7Kne4TyQ0KVaY2eZYJwmJj8yrJYZO1Pj_6u-sfeX2PcDDKNLE1tb4539okHxanPxK2uMQDGY8q43oUP7I71X7iEKUpcDBYiweAAHdBbEpAxDJ-XK5SgLoOF0aMfYC4-1yLBqm150cmLM2GnDFJuCkYBKORpbyHn52bk4onzzIGHvTXQR81ZJQuahIBafI22u48OjMvbEiOUhIg_1O1v6YBqESXGiT8Rwg=="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "pest_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "adk-4c3799c1-0151-49af-8dd5-6e03aacbee5c",
+                        "args": {
+                          "region_id": "632845c9-ca19-436f-a0c9-538250bb6990"
+                        },
+                        "name": "get_weather_forecast"
+                      },
+                      "thought_signature": "CugEAb4-9vsMi8eP8hGhCYfubredXWJcYHAap9Rof-tkwZJ8OIulZ9Bj81dYN8Hl0izR3B99_5S9HrfDvfi1SME9_TqyR0nXMbEuuEGFvqm4EWEESU2UuFZYG2GuJlW739vm6jIt2vmXVUSscjJwjwV_-JOBQf5QkXb8SwCNYSrxOFARowiGc2foDw2oVDJT7wNNsYKejWNAvw-8uQHmhhBA94Tj5l9OEk-9_5oN2iz0zqpNQFnEFP-ZbHtJlRT0ZQ3j9ZH3a_FOl7FDMRyUOOp9r18bzk8H_jeIiF3WJNpMRGrd9LWDhyvar2w6-BFul1H5ECDj3aFuFws-cfWReAkEIzY5nlfbjSyF7UHn_xRWlUsWK5w2qzuSR-CQDAqrPjqaXhbMe0JIEw7Zy7nrK_fY0p-EZjqhdegLO7dHaExa4u_t9XyFpVk1gfdsYh_ZHYzWyksd-4kUDWFjSj7rLUYW0N4V0amKmrCfTpIvKaAnh0kZQ30GaJ_C6cLo0dqH7xNeVIGT-txImi4EpBNTx0teBR8TeNZPYcAs5pyyx75hViKbty_pAcfw9SD6xaQJ_qulRPgtExhjZJlXCZEH7oFHMdYyv-P-pFs_nYhFfqdutK-sFNM-oQ_EfqIVnIExwgAaeVk270P13swKSiuYv1TIO9ChnLPxaibx-FKjjZpS1dZRKaXB0xJRZBerWJZ8JUsKTFEiVqrpPHDA3Z5SV4yE41Y8kP5aZPcfZiVm5ecbLmKJPtNjktKIoGZAo33gWnOQXrzM4dk-CdrhfuQiZw72bEgHOSeCIGqJwrTUgZmEo-hdK6Uscof85A=="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "pest_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "adk-4c3799c1-0151-49af-8dd5-6e03aacbee5c",
+                        "name": "get_weather_forecast",
+                        "response": {
+                          "result": [
+                            {
+                              "forecast_date": "2026-03-12",
+                              "min_temp": 27.0,
+                              "max_temp": 33.0,
+                              "expected_rainfall_mm": 12.0,
+                              "humidity_pct": 78.0
+                            },
+                            {
+                              "forecast_date": "2026-03-13",
+                              "min_temp": 27.5,
+                              "max_temp": 34.0,
+                              "expected_rainfall_mm": 4.0,
+                              "humidity_pct": 74.0
+                            },
+                            {
+                              "forecast_date": "2026-03-14",
+                              "min_temp": 26.8,
+                              "max_temp": 33.8,
+                              "expected_rainfall_mm": 0.0,
+                              "humidity_pct": 72.0
+                            },
+                            {
+                              "forecast_date": "2026-03-15",
+                              "min_temp": 27.2,
+                              "max_temp": 34.5,
+                              "expected_rainfall_mm": 6.0,
+                              "humidity_pct": 73.0
+                            },
+                            {
+                              "forecast_date": "2026-03-16",
+                              "min_temp": 27.1,
+                              "max_temp": 33.9,
+                              "expected_rainfall_mm": 8.0,
+                              "humidity_pct": 76.0
+                            },
+                            {
+                              "forecast_date": "2026-03-17",
+                              "min_temp": 26.7,
+                              "max_temp": 33.5,
+                              "expected_rainfall_mm": 14.0,
+                              "humidity_pct": 81.0
+                            },
+                            {
+                              "forecast_date": "2026-03-18",
+                              "min_temp": 26.5,
+                              "max_temp": 32.9,
+                              "expected_rainfall_mm": 18.0,
+                              "humidity_pct": 83.0
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773297420.334988
+        }
+      ],
+      "session_input": {
+        "app_name": "orchestrator",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1773297494.6131864
+    }
+  ],
+  "creation_timestamp": 1773296838.0537517
+}

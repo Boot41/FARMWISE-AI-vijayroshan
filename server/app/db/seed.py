@@ -22,7 +22,36 @@ from app.db.models import (
 )
 
 SEED_REFERENCE_DATE = date(2026, 3, 12)
-MANDI_HISTORY_DAYS = 7
+MANDI_HISTORY_DAYS = 14
+
+DOCUMENTED_CROPS = {
+    "Banana",
+    "Bajra",
+    "Cluster Bean (Guar)",
+    "Coconut",
+    "Cumin",
+    "Groundnut",
+    "Maize",
+    "Mustard",
+    "Onion",
+    "Pepper",
+    "Rice",
+    "Sugarcane",
+    "Tomato",
+    "Wheat",
+}
+
+
+def build_price_history(start_price: int, daily_changes: list[int]) -> list[int]:
+    prices = [start_price]
+    for change in daily_changes:
+        prices.append(prices[-1] + change)
+    if len(prices) != MANDI_HISTORY_DAYS:
+        raise ValueError(
+            f"Expected {MANDI_HISTORY_DAYS} mandi prices, generated {len(prices)} values."
+        )
+    return prices
+
 
 SEED_REGIONS = [
     {
@@ -33,12 +62,9 @@ SEED_REGIONS = [
         "default_water_availability": "Tank irrigation",
         "climate_zone": "Tropical",
         "crops": [
-            ("Paddy", "Kharif", 9.4, "Reliable tank-fed staple crop."),
-            ("Black Gram", "Rabi", 8.1, "Fits well after paddy harvest."),
-            ("Groundnut", "Zaid", 7.6, "Works on lighter red soils."),
-            ("Sugarcane", "Annual", 8.7, "Profitable where tank storage is stable."),
-            ("Sesame", "Zaid", 7.2, "Short duration oilseed option."),
-            ("Tomato", "Zaid", 7.5, "Common peri-urban cash crop near Chennai markets."),
+            ("Rice", "Kharif", 9.4, "Kuruvai rice is strongly supported in the Cauvery Delta."),
+            ("Groundnut", "Rabi", 8.3, "Fits the documented Tamil Nadu crop calendar well."),
+            ("Sugarcane", "Annual", 7.9, "Profitable where tank storage remains dependable."),
         ],
         "weather": [
             (27.0, 33.0, 12.0, 78.0, 18.0),
@@ -50,11 +76,11 @@ SEED_REGIONS = [
             (26.5, 32.9, 18.0, 83.0, 21.0),
         ],
         "prices": {
-            "Paddy": [2320, 2350, 2375, 2390, 2410, 2430, 2450],
-            "Groundnut": [5920, 5980, 6030, 6090, 6130, 6175, 6200],
-            "Black Gram": [7010, 7080, 7160, 7230, 7300, 7360, 7400],
-            "Sesame": [8450, 8520, 8600, 8690, 8760, 8840, 8900],
-            "Tomato": [1480, 1540, 1610, 1680, 1760, 1840, 1920],
+            "Rice": build_price_history(2260, [15, 20, 10, 25, 20, 10, 15, 20, 15, 10, 25, 15, 20]),
+            "Groundnut": build_price_history(
+                5840, [20, 30, 15, 25, 20, 15, 25, 20, 15, 25, 20, 15, 20]
+            ),
+            "Sugarcane": build_price_history(3180, [5, 10, 5, 0, 10, 5, 0, 10, 5, 5, 10, 0, 10]),
         },
     },
     {
@@ -65,11 +91,14 @@ SEED_REGIONS = [
         "default_water_availability": "Borewell + Rain",
         "climate_zone": "Semi-arid",
         "crops": [
-            ("Soybean", "Kharif", 9.0, "Strong kharif fit on black cotton soils."),
-            ("Onion", "Rabi", 9.3, "High mandi relevance in Nashik."),
-            ("Bajra", "Kharif", 7.9, "Useful in lower rainfall belts."),
-            ("Wheat", "Rabi", 8.0, "Moderate performance with irrigation."),
-            ("Tomato", "Zaid", 7.8, "Profitable under managed irrigation."),
+            (
+                "Tomato",
+                "Zaid",
+                9.2,
+                "Documented crop with strong mandi relevance in the Nashik belt.",
+            ),
+            ("Onion", "Rabi", 9.4, "Matches both the Nashik calendar and the seasonal advisory."),
+            ("Wheat", "Rabi", 7.9, "Suitable where irrigation is available through late winter."),
         ],
         "weather": [
             (19.0, 32.0, 0.0, 38.0, 14.0),
@@ -81,11 +110,15 @@ SEED_REGIONS = [
             (19.1, 32.8, 3.0, 42.0, 13.0),
         ],
         "prices": {
-            "Soybean": [4470, 4510, 4540, 4580, 4610, 4630, 4650],
-            "Onion": [1960, 1990, 2015, 2040, 2060, 2080, 2100],
-            "Bajra": [2520, 2550, 2570, 2590, 2610, 2630, 2650],
-            "Wheat": [2740, 2760, 2785, 2800, 2820, 2840, 2850],
-            "Tomato": [1760, 1810, 1860, 1910, 1970, 2030, 2090],
+            "Tomato": build_price_history(
+                1540, [35, 30, 45, 25, 35, 40, 30, 45, 35, 30, 25, 40, 30]
+            ),
+            "Onion": build_price_history(
+                1820, [20, 15, 20, 10, 15, 20, 15, 10, 20, 15, 10, 15, 20]
+            ),
+            "Wheat": build_price_history(
+                2680, [10, 15, 10, 15, 10, 10, 15, 10, 10, 15, 10, 10, 15]
+            ),
         },
     },
     {
@@ -96,11 +129,10 @@ SEED_REGIONS = [
         "default_water_availability": "Canal irrigation",
         "climate_zone": "Sub-tropical",
         "crops": [
-            ("Wheat", "Rabi", 9.6, "Highest stability crop in the plains."),
-            ("Paddy", "Kharif", 9.1, "Still dominant despite water pressure."),
-            ("Maize", "Kharif", 7.8, "Useful diversification option."),
-            ("Potato", "Rabi", 8.4, "Commercial crop with irrigation."),
-            ("Moong", "Zaid", 7.1, "Short-duration pulse for rotation."),
+            ("Wheat", "Rabi", 9.6, "Primary documented Rabi crop in Punjab."),
+            ("Rice", "Kharif", 8.9, "Direct-seeded rice remains a key kharif option."),
+            ("Maize", "Kharif", 8.1, "Supported as a diversification crop in the Punjab calendar."),
+            ("Mustard", "Rabi", 7.2, "Useful border-row and diversification option."),
         ],
         "weather": [
             (15.0, 28.0, 0.0, 48.0, 11.0),
@@ -112,10 +144,16 @@ SEED_REGIONS = [
             (16.0, 28.9, 0.0, 49.0, 11.0),
         ],
         "prices": {
-            "Wheat": [2470, 2485, 2505, 2520, 2535, 2545, 2550],
-            "Paddy": [2290, 2310, 2330, 2345, 2360, 2370, 2380],
-            "Maize": [2140, 2160, 2175, 2190, 2200, 2210, 2220],
-            "Potato": [1690, 1705, 1720, 1730, 1740, 1745, 1750],
+            "Wheat": build_price_history(
+                2440, [10, 15, 10, 10, 15, 10, 10, 15, 10, 10, 15, 10, 10]
+            ),
+            "Rice": build_price_history(2260, [10, 15, 10, 10, 15, 10, 10, 15, 10, 10, 15, 10, 10]),
+            "Maize": build_price_history(
+                2080, [15, 20, 15, 10, 15, 10, 15, 20, 10, 15, 10, 10, 15]
+            ),
+            "Mustard": build_price_history(
+                5480, [25, 30, 20, 25, 30, 20, 25, 30, 20, 25, 20, 25, 30]
+            ),
         },
     },
     {
@@ -126,11 +164,9 @@ SEED_REGIONS = [
         "default_water_availability": "High rainfall",
         "climate_zone": "Tropical humid",
         "crops": [
-            ("Coconut", "Annual", 9.5, "Backbone perennial crop."),
-            ("Banana", "Annual", 8.9, "Very common under humid conditions."),
-            ("Rice", "Kharif", 7.8, "Important in lowland areas."),
-            ("Pepper", "Annual", 8.7, "Suitable as a spice crop."),
-            ("Tapioca", "Zaid", 7.6, "Resilient food crop."),
+            ("Coconut", "Annual", 9.5, "Most stable perennial crop in the Kerala docs set."),
+            ("Pepper", "Annual", 8.8, "Matches the black pepper calendar and pest guide."),
+            ("Banana", "Annual", 8.6, "Strong fit for humid conditions and the advisory corpus."),
         ],
         "weather": [
             (24.0, 31.0, 24.0, 86.0, 13.0),
@@ -142,10 +178,15 @@ SEED_REGIONS = [
             (24.1, 31.0, 22.0, 86.0, 13.0),
         ],
         "prices": {
-            "Coconut": [2980, 3005, 3030, 3050, 3070, 3090, 3100],
-            "Banana": [2460, 2490, 2520, 2550, 2570, 2590, 2600],
-            "Rice": [2470, 2485, 2500, 2515, 2530, 2540, 2550],
-            "Pepper": [52100, 52600, 52950, 53300, 53650, 53820, 54000],
+            "Coconut": build_price_history(
+                2920, [15, 20, 15, 10, 20, 10, 15, 20, 15, 10, 15, 10, 15]
+            ),
+            "Pepper": build_price_history(
+                50800, [140, 160, 120, 180, 140, 160, 120, 180, 140, 120, 160, 140, 180]
+            ),
+            "Banana": build_price_history(
+                2380, [20, 20, 15, 20, 15, 20, 15, 20, 15, 20, 15, 20, 15]
+            ),
         },
     },
     {
@@ -153,14 +194,18 @@ SEED_REGIONS = [
         "district": "Jaipur",
         "region_name": "Thar Desert",
         "dominant_soil_type": "Sandy Arid",
-        "default_water_availability": "Scarce drip only",
+        "default_water_availability": "Scarce irrigation",
         "climate_zone": "Arid",
         "crops": [
-            ("Bajra", "Kharif", 9.2, "Most dependable cereal under arid stress."),
-            ("Mustard", "Rabi", 8.8, "Strong oilseed option in winter."),
-            ("Cumin", "Rabi", 7.5, "Commercial spice with drip support."),
-            ("Moong", "Kharif", 7.9, "Short duration pulse for low-moisture windows."),
-            ("Guar", "Kharif", 8.4, "Useful drought-tolerant cash crop."),
+            ("Bajra", "Kharif", 9.2, "Primary documented dryland cereal in Rajasthan."),
+            ("Mustard", "Rabi", 8.9, "Strong winter oilseed option with good advisory coverage."),
+            ("Cumin", "Rabi", 7.8, "Commercial spice crop supported in the Rajasthan calendar."),
+            (
+                "Cluster Bean (Guar)",
+                "Kharif",
+                8.3,
+                "Drought-tolerant kharif cash crop in the advisory.",
+            ),
         ],
         "weather": [
             (18.0, 34.0, 0.0, 21.0, 20.0),
@@ -172,21 +217,117 @@ SEED_REGIONS = [
             (18.9, 34.7, 0.0, 20.0, 19.0),
         ],
         "prices": {
-            "Bajra": [2460, 2480, 2500, 2515, 2530, 2540, 2550],
-            "Mustard": [5620, 5660, 5710, 5760, 5800, 5830, 5850],
-            "Cumin": [18150, 18320, 18480, 18620, 18710, 18760, 18800],
-            "Moong": [7350, 7400, 7450, 7490, 7530, 7570, 7600],
+            "Bajra": build_price_history(
+                2380, [15, 20, 15, 10, 15, 10, 15, 20, 10, 15, 10, 15, 10]
+            ),
+            "Mustard": build_price_history(
+                5520, [30, 25, 30, 20, 25, 30, 20, 25, 30, 20, 25, 30, 20]
+            ),
+            "Cumin": build_price_history(
+                17600, [140, 120, 160, 120, 140, 160, 120, 140, 160, 120, 140, 160, 120]
+            ),
+            "Cluster Bean (Guar)": build_price_history(
+                4320, [40, 35, 30, 25, 35, 30, 25, 35, 30, 25, 35, 30, 25]
+            ),
         },
     },
 ]
 
 SEED_USERS = [
-    ("Arun Prakash", "arun@farmwise.ai", "Tamil Nadu", "Tank irrigation", "Rice", 35),
-    ("Meera Patil", "meera@farmwise.ai", "Maharashtra", "Borewell + Rain", "Tomato", 28),
-    ("Gurpreet Singh", "gurpreet@farmwise.ai", "Punjab", "Canal irrigation", "Wheat", 42),
-    ("Anila Joseph", "anila@farmwise.ai", "Kerala", "High rainfall", "Coconut", 20),
-    ("Ravi Shekhawat", "ravi@farmwise.ai", "Rajasthan", "Scarce drip only", "Bajra", 30),
+    {
+        "name": "Arun Prakash",
+        "email": "arun@farmwise.ai",
+        "state": "Tamil Nadu",
+        "water_availability": "Tank irrigation",
+        "irrigation_type": "Flood",
+        "current_crop": "Groundnut",
+        "sowing_days_ago": 78,
+    },
+    {
+        "name": "Meera Patil",
+        "email": "meera@farmwise.ai",
+        "state": "Maharashtra",
+        "water_availability": "Borewell + Rain",
+        "irrigation_type": "Drip",
+        "current_crop": "Tomato",
+        "sowing_days_ago": 42,
+    },
+    {
+        "name": "Gurpreet Singh",
+        "email": "gurpreet@farmwise.ai",
+        "state": "Punjab",
+        "water_availability": "Canal irrigation",
+        "irrigation_type": "Flood",
+        "current_crop": "Wheat",
+        "sowing_days_ago": 110,
+    },
+    {
+        "name": "Anila Joseph",
+        "email": "anila@farmwise.ai",
+        "state": "Kerala",
+        "water_availability": "High rainfall",
+        "irrigation_type": "Basin",
+        "current_crop": "Coconut",
+        "sowing_days_ago": 240,
+    },
+    {
+        "name": "Ravi Shekhawat",
+        "email": "ravi@farmwise.ai",
+        "state": "Rajasthan",
+        "water_availability": "Scarce irrigation",
+        "irrigation_type": "Drip",
+        "current_crop": "Mustard",
+        "sowing_days_ago": 105,
+    },
 ]
+
+
+def _validate_seed_configuration() -> None:
+    region_crops_by_state: dict[str, set[str]] = {}
+
+    for region_seed in SEED_REGIONS:
+        crops = cast(list[tuple[str, str, float, str]], region_seed["crops"])
+        price_map = cast(dict[str, list[int]], region_seed["prices"])
+        crop_names = {crop_name for crop_name, _, _, _ in crops}
+        region_state = cast(str, region_seed["state"])
+
+        undocumented_crops = sorted(crop_names - DOCUMENTED_CROPS)
+        if undocumented_crops:
+            raise ValueError(
+                f"Seed region {region_state} includes crops not grounded in Agents/docs: "
+                f"{', '.join(undocumented_crops)}"
+            )
+
+        missing_price_rows = sorted(crop_names - set(price_map))
+        if missing_price_rows:
+            raise ValueError(
+                f"Seed region {region_state} is missing mandi history for: "
+                f"{', '.join(missing_price_rows)}"
+            )
+
+        extra_price_rows = sorted(set(price_map) - crop_names)
+        if extra_price_rows:
+            raise ValueError(
+                f"Seed region {region_state} has mandi prices for unknown crops: "
+                f"{', '.join(extra_price_rows)}"
+            )
+
+        for crop_name, price_history in price_map.items():
+            if len(price_history) != MANDI_HISTORY_DAYS:
+                raise ValueError(
+                    f"Expected {MANDI_HISTORY_DAYS} mandi prices for {region_state} / "
+                    f"{crop_name}, got {len(price_history)}."
+                )
+
+        region_crops_by_state[region_state] = crop_names
+
+    for user_seed in SEED_USERS:
+        state = cast(str, user_seed["state"])
+        current_crop = cast(str, user_seed["current_crop"])
+        if current_crop not in region_crops_by_state[state]:
+            raise ValueError(
+                f"Demo user crop {current_crop} is not seeded for region state {state}."
+            )
 
 
 async def reset_database(session: AsyncSession) -> None:
@@ -205,6 +346,8 @@ async def reset_database(session: AsyncSession) -> None:
 
 
 async def seed_database() -> None:
+    _validate_seed_configuration()
+
     settings = get_settings()
     engine = create_async_engine(settings.effective_db_url, echo=False, future=True)
     try:
@@ -219,18 +362,20 @@ async def seed_database() -> None:
 
             for region_seed in SEED_REGIONS:
                 region = Region(
-                    state=region_seed["state"],
-                    district=region_seed["district"],
-                    region_name=region_seed["region_name"],
-                    dominant_soil_type=region_seed["dominant_soil_type"],
-                    default_water_availability=region_seed["default_water_availability"],
-                    climate_zone=region_seed["climate_zone"],
+                    state=cast(str, region_seed["state"]),
+                    district=cast(str, region_seed["district"]),
+                    region_name=cast(str, region_seed["region_name"]),
+                    dominant_soil_type=cast(str, region_seed["dominant_soil_type"]),
+                    default_water_availability=cast(str, region_seed["default_water_availability"]),
+                    climate_zone=cast(str, region_seed["climate_zone"]),
                 )
                 session.add(region)
                 await session.flush()
                 region_map[region.state] = region
 
-                for crop_name, crop_season, suitability_score, notes in region_seed["crops"]:
+                for crop_name, crop_season, suitability_score, notes in cast(
+                    list[tuple[str, str, float, str]], region_seed["crops"]
+                ):
                     session.add(
                         RegionCrop(
                             region_id=region.id,
@@ -242,7 +387,9 @@ async def seed_database() -> None:
                     )
 
                 generated_at = datetime.now(UTC)
-                for offset, weather in enumerate(region_seed["weather"]):
+                for offset, weather in enumerate(
+                    cast(list[tuple[float, float, float, float, float]], region_seed["weather"])
+                ):
                     min_temp, max_temp, rainfall, humidity, wind_speed = weather
                     session.add(
                         WeatherForecast(
@@ -259,12 +406,6 @@ async def seed_database() -> None:
 
                 price_map = cast(dict[str, list[int]], region_seed["prices"])
                 for crop_name, price_history in price_map.items():
-                    if len(price_history) != MANDI_HISTORY_DAYS:
-                        raise ValueError(
-                            "Expected "
-                            f"{MANDI_HISTORY_DAYS} mandi prices for "
-                            f"{region.state} / {crop_name}, got {len(price_history)}."
-                        )
                     for day_offset, price in enumerate(price_history):
                         session.add(
                             MandiPrice(
@@ -277,33 +418,27 @@ async def seed_database() -> None:
                         )
 
             password_hash = hash_password("pass123")
-            for (
-                name,
-                email,
-                state,
-                water_availability,
-                current_crop,
-                sowing_days_ago,
-            ) in SEED_USERS:
-                region = region_map[state]
+            for user_seed in SEED_USERS:
+                region = region_map[cast(str, user_seed["state"])]
                 session.add(
                     User(
-                        name=name,
-                        email=email,
+                        name=cast(str, user_seed["name"]),
+                        email=cast(str, user_seed["email"]),
                         phone_number="9000000000",
                         password_hash=password_hash,
                         region_id=region.id,
-                        water_availability=water_availability,
-                        irrigation_type=region.default_water_availability,
-                        current_crop=current_crop,
-                        sowing_date=today - timedelta(days=sowing_days_ago),
+                        water_availability=cast(str, user_seed["water_availability"]),
+                        irrigation_type=cast(str, user_seed["irrigation_type"]),
+                        current_crop=cast(str, user_seed["current_crop"]),
+                        sowing_date=today - timedelta(days=cast(int, user_seed["sowing_days_ago"])),
                     )
                 )
 
             await session.commit()
             print(
-                "Seeded 5 regions, 7-day mandi history through March 12, 2026, "
-                "regional datasets, and demo users (password: pass123)."
+                "Seeded 5 regions with documented crops, 14-day mandi history through "
+                "March 12, 2026, 7-day weather forecasts, and demo users "
+                "(password: pass123)."
             )
     finally:
         await engine.dispose()
