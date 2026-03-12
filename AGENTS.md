@@ -85,6 +85,7 @@ Agents/
 │   ├── agent.py
 │   └── tools.py
 ├── pyproject.toml
+├── uv.lock
 └── docs/
     ├── index.json
     ├── advisories/
@@ -130,6 +131,7 @@ Current request contract:
 - the root orchestrator always calls `get_user_context` first
 - the orchestrator can delegate to `pest_agent`, `irrigation_agent`, `market_agent`, `crop_agent`, and `advisory_agent`
 - the HTTP response currently returns `{ "reply": "..." }`
+- the agent package is launched from the repo root with `uv run --project Agents ...`
 
 ## Specialist Agent Roles
 
@@ -157,6 +159,15 @@ Important constraints:
 - do not move retrieval logic into `server/`
 - if the chunking or metadata contract changes, update both the parser and any agent retrieval code together
 
+## Agent Eval Assets
+
+The orchestrator golden eval currently lives in:
+
+- `Agents/orchestrator/golden_evalset.evalset.json`
+
+ADK eval result files are written under `.adk/eval_history/` beneath the eval target package.
+Because the ADK CLI loads a package `__init__.py` as a standalone module and expects `agent.root_agent`, eval execution can require an ADK-compatible wrapper target if the current package exports only `root_agent`.
+
 ## Agent Developer Commands
 
 From the repo root:
@@ -165,6 +176,7 @@ From the repo root:
 uv sync --project Agents
 uv run --project Agents python -m Agents.parser
 uv run --project Agents uvicorn Agents.app:app --reload --host 0.0.0.0 --port 8000
+env PYTHONPATH="$PWD:$PWD/Agents" uv run --project Agents adk web
 ```
 
 ## Frontend Scope
@@ -579,6 +591,7 @@ What it does:
 - loads prior session history if the session already exists
 - builds the agent payload with `user_id`, `message`, and `session_history`
 - stores the user message and assistant reply in `chat_messages`
+- detects known structured specialist JSON replies and stores normalized `message_metadata.data` for the frontend cards
 
 The backend does not decide the answer itself. The agent fetches any additional user or regional context it needs via its own tools.
 
@@ -617,6 +630,7 @@ The seed script inserts:
 - 5 regions with realistic crop, weather, and mandi price data
 - only seeded crops that are grounded in `Agents/docs/` crop calendars, advisories, or pest guides
 - a fixed 14-day mandi price history ending on March 12, 2026 for every seeded crop in every seeded region
+- a 7-day weather forecast per seeded region
 - demo users for each region
 - demo user crop profiles with `current_crop` and relative `sowing_date` values so the dashboard can show crop age
 - demo password: `pass123`
