@@ -1,0 +1,527 @@
+{
+  "eval_set_id": "golden_evalset",
+  "name": "golden_evalset",
+  "eval_cases": [
+    {
+      "eval_id": "golden",
+      "conversation": [
+        {
+          "invocation_id": "turn-1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "23848a50-63c9-4097-a800-f8e329321b25 this is my user id "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello Arun Prakash, how can I help you today?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-1",
+                        "args": {
+                          "user_id": "23848a50-63c9-4097-a800-f8e329321b25"
+                        },
+                        "name": "get_user_context"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call-1",
+                        "name": "get_user_context",
+                        "response": {
+                          "id": "23848a50-63c9-4097-a800-f8e329321b25",
+                          "name": "Arun Prakash",
+                          "current_crop": "Groundnut",
+                          "sowing_date": "2025-12-24",
+                          "region_id": "8ae2245b-f54a-4a86-8112-ccd5a303de43",
+                          "irrigation_type": "Flood",
+                          "water_availability": "Tank irrigation",
+                          "state": "Tamil Nadu",
+                          "district": "Chennai",
+                          "region_name": "Cauvery Delta",
+                          "dominant_soil_type": "Red Laterite",
+                          "climate_zone": "Tropical",
+                          "current_date": "2026-03-12"
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "invocation_id": "turn-2",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what does my irrigation plan look like "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "```json\n{\n  \"intent\": \"irrigation_schedule\",\n  \"crop\": \"Groundnut\",\n  \"days_since_sowing\": 78,\n  \"growth_stage\": \"Pod Development\",\n  \"irrigation_type\": \"Flood\",\n  \"schedule\": [\n    {\n      \"date\": \"2026-03-12\",\n      \"action\": \"skip\",\n      \"amount\": null,\n      \"reason\": \"Heavy rain expected (12mm)\"\n    },\n    {\n      \"date\": \"2026-03-13\",\n      \"action\": \"skip\",\n      \"amount\": null,\n      \"reason\": \"Not an irrigation day based on the 10-day cycle and recent rainfall.\"\n    },\n    {\n      \"date\": \"2026-03-14\",\n      \"action\": \"skip\",\n      \"amount\": null,\n      \"reason\": \"Not an irrigation day based on the 10-day cycle.\"\n    },\n    {\n      \"date\": \"2026-03-15\",\n      \"action\": \"skip\",\n      \"amount\": null,\n      \"reason\": \"Not an irrigation day based on the 10-day cycle.\"\n    },\n    {\n      \"date\": \"2026-03-16\",\n      \"action\": \"skip\",\n      \"amount\": null,\n      \"reason\": \"Not an irrigation day based on the 10-day cycle.\"\n    }\n  ],\n  \"summary\": \"Arun Prakash, your Groundnut crop is currently 78 days old and is in the Pod Development stage. During this stage, your crop requires reduced flood irrigation, approximately every 10 days. As there is heavy rain expected today, your irrigation needs are met, and the next irrigation will be due around March 22, 2026. Therefore, no irrigation is recommended for the next five days.\"\n}\n```"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-2",
+                        "args": {
+                          "agent_name": "irrigation_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "irrigation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-3",
+                        "args": {
+                          "state": "tamil_nadu"
+                        },
+                        "name": "get_crop_calendar"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "irrigation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-4",
+                        "args": {
+                          "region_id": "8ae2245b-f54a-4a86-8112-ccd5a303de43"
+                        },
+                        "name": "get_weather_forecast"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "invocation_id": "turn-3",
+          "user_content": {
+            "parts": [
+              {
+                "text": "okay what are the possible pests for my crop"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Possible pests and diseases for your Groundnut crop include:\n\nTikka Disease (Early and Late Leaf Spot): This is a fungal disease causing circular brown spots with yellow halos on leaves, eventually leading to defoliation.\n\nCollar Rot (Aspergillus niger): A fungal disease causing sudden wilting of seedlings, blackening and rotting of the stem at the soil level, and easily pulled-out plants with rotted roots.\n\nAphids (Groundnut Aphid): Small black insects that cluster on growing tips and young leaves, causing curling, puckering of leaves, stunted growth, and sticky honeydew.\n\nWhite Grub (Holotrichia spp.): Larvae found in the soil that eat roots and peg zones, leading to patches of wilted plants that can be easily pulled out."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-5",
+                        "args": {
+                          "agent_name": "pest_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "pest_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-6",
+                        "args": {
+                          "crop": "groundnut"
+                        },
+                        "name": "get_pest_guide"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "invocation_id": "turn-4",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what is tikka disease and how do i handle it"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "{\n  \"intent\": \"pest_diagnosis\",\n  \"crop\": \"Groundnut\",\n  \"diagnosis\": \"Tikka Disease — Early and Late Leaf Spot (Cercospora arachidicola & Phaeoisariopsis personata)\",\n  \"confidence\": \"High\",\n  \"symptoms_matched\": [\n    \"Circular brown spots with yellow halo on upper leaf surface (early leaf spot)\",\n    \"Dark brown to black circular spots, no yellow halo (late leaf spot)\",\n    \"Severely infected leaves drop prematurely causing defoliation\"\n  ],\n  \"treatment\": {\n    \"chemical\": \"Mancozeb 75% WP\",\n    \"organic\": \"Neem oil\",\n    \"dosage\": \"2 g/litre (Mancozeb) or 5 ml/litre (Neem oil)\",\n    \"frequency\": \"Every 10 days from 30 Days After Sowing (DAS)\"\n  },\n  \"spray_warning\": \"Heavy rain is expected on March 12th (12mm), March 15th (6mm), March 16th (8mm), March 17th (14mm), and March 18th (18mm). Avoid spraying on these dates. The safest date to spray would be March 14th.\",\n  \"prevention\": \"Use resistant varieties (TAG-24, ICGV-86031). Apply gypsum 500 kg/ha at pegging to improve calcium nutrition. Maintain crop rotation and avoid planting groundnut after groundnut. Remove and plow under crop debris.\",\n  \"summary\": \"Tikka disease, also known as early and late leaf spot, is a fungal disease affecting groundnuts, characterized by brown or black spots on leaves, leading to premature leaf drop and significant yield loss. To treat it, you can use Mancozeb 75% WP at a dosage of 2 g/litre, spraying every 10 days from 30 DAS. An organic alternative is Neem oil at 5 ml/litre, also sprayed every 10 days. Avoid spraying on March 12th, 15th, 16th, 17th, and 18th due to expected rain. The safest day to spray is March 14th.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "pest_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-7",
+                        "args": {},
+                        "name": "get_pesticide_reference"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "pest_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-8",
+                        "args": {
+                          "region_id": "8ae2245b-f54a-4a86-8112-ccd5a303de43"
+                        },
+                        "name": "get_weather_forecast"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "invocation_id": "turn-5",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what is the market trends looking like for my crop ?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "{\n  \"intent\": \"market_timing\",\n  \"crop\": \"Groundnut\",\n  \"current_price_per_qtl\": 6105,\n  \"price_7d_ago\": 5990,\n  \"trend\": \"rising\",\n  \"trend_pct\": 1.92,\n  \"msp\": null,\n  \"recommendation\": \"sell\",\n  \"reasoning\": \"The price of Groundnut has been rising by 1.92% over the past week, with the current price of \\u20b96105 per quintal being above the seasonal expected range of \\u20b95200 - \\u20b95800 per quintal. While the seasonal outlook is stable, the current upward trend and favourable price suggest it's a good time to sell.\",\n  \"sell_by\": null,\n  \"summary\": \"The market trend for your Groundnut crop is rising, with prices up 1.92% over the past week. The current price is \\u20b96105 per quintal, which is above the seasonal expected range of \\u20b95200-\\u20b95800. Therefore, it is recommended to sell your Groundnut now.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-9",
+                        "args": {
+                          "agent_name": "market_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "market_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-10",
+                        "args": {
+                          "region_id": "8ae2245b-f54a-4a86-8112-ccd5a303de43",
+                          "crop_name": "Groundnut"
+                        },
+                        "name": "get_mandi_prices"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "market_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-11",
+                        "args": {
+                          "year": 2026,
+                          "season": "rabi"
+                        },
+                        "name": "get_advisory"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "invocation_id": "turn-6",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what should be my next crop for the next season ?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "```json\n{\n  \"intent\": \"crop_recommendation\",\n  \"crops\": [\n    {\n      \"name\": \"Groundnut\",\n      \"suitability_score\": null,\n      \"sowing_window\": \"Jun \\u2013 Jul\",\n      \"harvest_window\": \"Sep \\u2013 Oct\",\n      \"water_requirement\": \"Moderate\",\n      \"estimated_cost_per_ha\": null,\n      \"expected_yield_qtl_per_ha\": null,\n      \"expected_price_per_qtl\": 6105,\n      \"expected_revenue_per_ha\": null,\n      \"why_recommended\": \"Groundnut is an excellent choice for your Red Laterite soil, as it thrives in Red Sandy Loam, a similar soil type. It has moderate water requirements, which is suitable for your tank irrigation and aligns with the advisory to plan for moisture conservation during Kharif. The market prices for Groundnut are currently strong, offering good potential for returns, especially if processed into oil or sold as seed.\",\n      \"scheme\": \"PM Fasal Bima Yojana (Crop insurance)\"\n    },\n    {\n      \"name\": \"Rice\",\n      \"suitability_score\": 9.4,\n      \"sowing_window\": \"Jun \\u2013 Jul\",\n      \"harvest_window\": \"Oct \\u2013 Nov\",\n      \"water_requirement\": \"High\",\n      \"estimated_cost_per_ha\": null,\n      \"expected_yield_qtl_per_ha\": null,\n      \"expected_price_per_qtl\": 2480,\n      \"expected_revenue_per_ha\": null,\n      \"why_recommended\": \"Rice is highly suitable for your Cauvery Delta region, as indicated by its high suitability score. With a forecast of good tank levels and normal Northeast monsoon, your flood and tank irrigation can support its high water requirements. The advisory specifically recommends Kuruvai rice varieties for June sowing in your region and encourages adopting the System of Rice Intensification (SRI) to optimize water use.\",\n      \"scheme\": \"National Food Security Mission (NFSM) and PM Fasal Bima Yojana\"\n    }\n  ],\n  \"summary\": \"For your next Kharif season (June-July sowing), Groundnut is a highly recommended crop due to its excellent fit with your Red Laterite soil and moderate water needs, aligning well with your tank irrigation and the seasonal advisory for moisture conservation. The market for Groundnut shows stable and good prices. As a strong alternative, Rice is also highly suitable for your region, especially with good tank levels expected. While it has high water requirements, using Kuruvai varieties and SRI techniques can make it a successful choice, with government schemes like NFSM providing support. Both crops are covered under PM Fasal Bima Yojana.\"\n}\n```"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-12",
+                        "args": {
+                          "agent_name": "crop_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "crop_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-13",
+                        "args": {
+                          "region_id": "8ae2245b-f54a-4a86-8112-ccd5a303de43"
+                        },
+                        "name": "get_region_crops"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "crop_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-14",
+                        "args": {
+                          "state": "tamil_nadu"
+                        },
+                        "name": "get_crop_calendar"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "crop_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-15",
+                        "args": {
+                          "crop_name": "Rice",
+                          "region_id": "8ae2245b-f54a-4a86-8112-ccd5a303de43"
+                        },
+                        "name": "get_mandi_prices"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "crop_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-16",
+                        "args": {
+                          "region_id": "8ae2245b-f54a-4a86-8112-ccd5a303de43",
+                          "crop_name": "Groundnut"
+                        },
+                        "name": "get_mandi_prices"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "crop_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-17",
+                        "args": {
+                          "season": "kharif",
+                          "year": 2026
+                        },
+                        "name": "get_advisory"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "invocation_id": "turn-7",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what is the NDK for my crop ?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "For your Groundnut crop, the recommended NPK is 25:50:75 kg/ha.\n\n**Split Application:** All NPK should be applied as a basal application.\n**Key Micronutrient:** Calcium is critical for pod development and should be supplied via gypsum at 400 kg/ha during the pegging stage."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "farmwise_orchestrator",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-18",
+                        "args": {
+                          "agent_name": "advisory_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "advisory_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call-19",
+                        "args": {
+                          "query": "Groundnut NPK fertilizer"
+                        },
+                        "name": "search_docs"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
