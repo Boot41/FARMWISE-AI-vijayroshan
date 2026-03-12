@@ -31,7 +31,7 @@ def search_docs(query: str) -> str:
       "drip irrigation subsidy"
       "PM-KISAN scheme"
       "mustard organic farming"
-      "Kharif 2024 water conservation"
+      "Kharif 2026 water conservation"
 
     Returns the text of the top matching document chunks (up to 5 chunks).
     If no relevant chunks are found, returns an empty string.
@@ -90,7 +90,7 @@ def get_advisory(season: str, year: int) -> str:
     - Water conservation advisory
 
     Valid seasons: kharif, rabi.
-    Valid years: 2024.
+    Valid years: 2026.
     Normalise season to lowercase.
     Returns the full markdown content of the advisory.
     Returns an empty string if no advisory exists for that season and year.

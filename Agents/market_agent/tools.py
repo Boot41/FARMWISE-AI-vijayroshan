@@ -116,7 +116,7 @@ async def get_advisory(season: str, year: int) -> str:
     - Understand near-term price direction from expert forecasts
 
     Valid seasons: kharif, rabi.
-    Valid years: 2024 (expand as new advisories are added).
+    Valid years: 2026 (expand as new advisories are added).
     Normalise season to lowercase.
     Returns the full markdown content of the advisory.
     Returns an empty string if no advisory exists for that season and year.

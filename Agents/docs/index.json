@@ -5,11 +5,11 @@
   "chunk_count": 134,
   "documents": [
     {
-      "id": "advisories__kharif_2024",
-      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
-      "path": "advisories/kharif_2024.md",
+      "id": "advisories__kharif_2026",
+      "title": "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY",
+      "path": "advisories/kharif_2026.md",
       "category": "advisories",
-      "source_pdf": "advisories/kharif_2024.pdf",
+      "source_pdf": "advisories/kharif_2026.pdf",
       "word_count": 677,
       "char_count": 4883,
       "keywords": [
@@ -28,11 +28,11 @@
       ]
     },
     {
-      "id": "advisories__rabi_2024",
-      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
-      "path": "advisories/rabi_2024.md",
+      "id": "advisories__rabi_2026",
+      "title": "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY",
+      "path": "advisories/rabi_2026.md",
       "category": "advisories",
-      "source_pdf": "advisories/rabi_2024.pdf",
+      "source_pdf": "advisories/rabi_2026.pdf",
       "word_count": 792,
       "char_count": 5333,
       "keywords": [
@@ -421,15 +421,15 @@
   ],
   "chunks": [
     {
-      "id": "advisories__kharif_2024::s001::c001",
-      "document_id": "advisories__kharif_2024",
-      "path": "advisories/kharif_2024.md",
+      "id": "advisories__kharif_2026::s001::c001",
+      "document_id": "advisories__kharif_2026",
+      "path": "advisories/kharif_2026.md",
       "category": "advisories",
-      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+        "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "_Source PDF: `kharif_2024.pdf`_\nJune – November 2024 | All Zones\nMinistry of Agriculture & Farmers Welfare | ICAR | State Agricultural Universities\nDocument Type: Seasonal Advisory\n\n1. Season Overview\nThe Southwest Monsoon 2024 is forecast to be near-normal to above-normal (104% of Long Period Average) by India\nMeteorological Department. Above-normal rainfall is expected across Maharashtra, Karnataka, and Madhya Pradesh. Below-normal\nrainfall risk exists in parts of Rajasthan and Gujarat. Farmers should plan crop choices based on their specific district forecasts.\nKey message: Good monsoon forecasts support expansion of rice, soybean, and cotton in central India. Groundnut areas in Tamil\nNadu should plan for moisture conservation. Rajasthan farmers should focus on drought-tolerant bajra and cluster bean varieties.\n\n2. Crop Recommendations by Region\nRegion\n\nTop Recommended Crops\n\nWhy Recommended",
+      "text": "_Source PDF: `kharif_2026.pdf`_\nJune – November 2026 | All Zones\nMinistry of Agriculture & Farmers Welfare | ICAR | State Agricultural Universities\nDocument Type: Seasonal Advisory\n\n1. Season Overview\nThe Southwest Monsoon 2026 is forecast to be near-normal to above-normal (104% of Long Period Average) by India\nMeteorological Department. Above-normal rainfall is expected across Maharashtra, Karnataka, and Madhya Pradesh. Below-normal\nrainfall risk exists in parts of Rajasthan and Gujarat. Farmers should plan crop choices based on their specific district forecasts.\nKey message: Good monsoon forecasts support expansion of rice, soybean, and cotton in central India. Groundnut areas in Tamil\nNadu should plan for moisture conservation. Rajasthan farmers should focus on drought-tolerant bajra and cluster bean varieties.\n\n2. Crop Recommendations by Region\nRegion\n\nTop Recommended Crops\n\nWhy Recommended",
       "word_count": 127,
       "char_count": 907,
       "keywords": [
@@ -446,16 +446,16 @@
         "rajasthan",
         "recommended"
       ],
-      "source_pdf": "advisories/kharif_2024.pdf"
+      "source_pdf": "advisories/kharif_2026.pdf"
     },
     {
-      "id": "advisories__kharif_2024::s001::c002",
-      "document_id": "advisories__kharif_2024",
-      "path": "advisories/kharif_2024.md",
+      "id": "advisories__kharif_2026::s001::c002",
+      "document_id": "advisories__kharif_2026",
+      "path": "advisories/kharif_2026.md",
       "category": "advisories",
-      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+        "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY"
       ],
       "text": "Crops to Avoid / Caution\n\nTamil Nadu\n\nRice (Kuruvai)\n\nGood tank levels forecast. Northeast monsoon normal.\nAvoidRice\nsugarcane\nprices firm\nexpansion\nat ■1,800–2,000/qtl\n— water may tighten pos\n\n(Cauvery Delta)\n\nGroundnut (TMV-7)\n\nMaharashtra\n\nTomato (Hybrid)\n\n(Nashik / Deccan)\n\nOnion (Agrifound Dark Red)\n\nPunjab\n\nPaddy (PR-126, PB-1692)\n\n(Plains)\n\nMaize (Spring harvest)\n\nKerala\n\nBanana (Nendran, Grand Naine)Heavy monsoon supports banana. Vegetable prices\nAvoid\nhightransplanting\nin Kerala market\npepper cuttings in July–August —\n\n(Malabar Coast)\n\nVegetables (Kharif)\n\nRajasthan\n\nBajra (HHB-67 Improved)\n\n(Thar / Jaipur)\n\nCluster Bean (Guar)\n\nModerate monsoon supports Kharif onion. TomatoAvoid\npriceslate-sown\nexpectedonion\nstrongafter\nin December–January\nAugust 15 — quality risk\n\nCanal irrigation assured. PR-126 matures early —Avoid\nreduces\nBasmati\nwater in\nuse\nareas\nvs PR-121\nwith bacterial blight history. Re",
       "word_count": 120,
@@ -474,18 +474,18 @@
         "water",
         "agrifound"
       ],
-      "source_pdf": "advisories/kharif_2024.pdf"
+      "source_pdf": "advisories/kharif_2026.pdf"
     },
     {
-      "id": "advisories__kharif_2024::s001::c003",
-      "document_id": "advisories__kharif_2024",
-      "path": "advisories/kharif_2024.md",
+      "id": "advisories__kharif_2026::s001::c003",
+      "document_id": "advisories__kharif_2026",
+      "path": "advisories/kharif_2026.md",
       "category": "advisories",
-      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+        "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "Drought tolerant — viable even in low-rainfall year.Avoid\nGuarmaize\ngum export\nin western\ndemand\nRajasthan\nstrong — water insufficien\n\n3. Market Price Outlook — Kharif 2024\nCrop\n\nExpected Price Range\n\nTrend\n\nKey Factors\n\nTomato\n\n■800 – 2,500/qtl (volatile)\n\n↑ Oct–Jan; ↓ Feb\n\nModerate supply; weather disruptions possible. Good returns if sold October–Dec\n\nOnion (Kharif)\n\n■600 – 1,400/qtl\n\n↑ Nov–Dec\n\nStrong domestic demand. Nashik arrivals peak October — price dips then recover\n\nPaddy (Common)\n\nMSP ■2,183/qtl\n\nStable (MSP)\n\nGovernment procurement at MSP assured in Punjab, UP, AP. Register with APMC\n\nGroundnut\n\n■5,000 – 5,800/qtl\n\n↑ stable\n\nEdible oil prices firm. Process into oil or sell as seed for best returns\n\nBajra\n\n■2,000 – 2,400/qtl\n\n→ Stable\n\nMSP ■2,500 declared. Rajasthan procurement active November–December\n\nMaize\n\n■1,900 – 2,200/qtl\n\n↑ slightly\n\nPoultry and starch industry demand strong. Punjab and Karnataka prices favorabl",
+      "text": "Drought tolerant — viable even in low-rainfall year.Avoid\nGuarmaize\ngum export\nin western\ndemand\nRajasthan\nstrong — water insufficien\n\n3. Market Price Outlook — Kharif 2026\nCrop\n\nExpected Price Range\n\nTrend\n\nKey Factors\n\nTomato\n\n■800 – 2,500/qtl (volatile)\n\n↑ Oct–Jan; ↓ Feb\n\nModerate supply; weather disruptions possible. Good returns if sold October–Dec\n\nOnion (Kharif)\n\n■600 – 1,400/qtl\n\n↑ Nov–Dec\n\nStrong domestic demand. Nashik arrivals peak October — price dips then recover\n\nPaddy (Common)\n\nMSP ■2,183/qtl\n\nStable (MSP)\n\nGovernment procurement at MSP assured in Punjab, UP, AP. Register with APMC\n\nGroundnut\n\n■5,000 – 5,800/qtl\n\n↑ stable\n\nEdible oil prices firm. Process into oil or sell as seed for best returns\n\nBajra\n\n■2,000 – 2,400/qtl\n\n→ Stable\n\nMSP ■2,500 declared. Rajasthan procurement active November–December\n\nMaize\n\n■1,900 – 2,200/qtl\n\n↑ slightly\n\nPoultry and starch industry demand strong. Punjab and Karnataka prices favorabl",
       "word_count": 139,
       "char_count": 945,
       "keywords": [
@@ -502,18 +502,18 @@
         "prices",
         "procurement"
       ],
-      "source_pdf": "advisories/kharif_2024.pdf"
+      "source_pdf": "advisories/kharif_2026.pdf"
     },
     {
-      "id": "advisories__kharif_2024::s001::c004",
-      "document_id": "advisories__kharif_2024",
-      "path": "advisories/kharif_2024.md",
+      "id": "advisories__kharif_2026::s001::c004",
+      "document_id": "advisories__kharif_2026",
+      "path": "advisories/kharif_2026.md",
       "category": "advisories",
-      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+        "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "Cluster Bean (Guar)\n\n■4,500 – 6,500/qtl\n\n↑ volatile\n\nExport-linked price. High guar gum demand from oil industry. Hold stock if possibl\n\n4. Government Schemes — Active for Kharif 2024\nScheme Name\n\nBenefit\n\nWho is Eligible\n\nHow to Apply\n\nPM-KISAN\n\n■6,000/year direct transfer in 3 installments\nAll landholding farmers with Aadhaar-linked\nRegister\nbank\nat pmkisan.gov.in\naccount\nor nearest CSC center\n\nPM Fasal Bima Yojana (PMFBY)Crop insurance against natural calamities,\nAll farmers\npest, disease.\ngrowingPremium:\nnotified crops\n2% forinKharif\nnotified\nRegisterareas\nvia bank branch or Common Service Centre be\nSoil Health Card Scheme\n\nFree soil testing and NPK recommendations\nAll farmers\nevery —\n2 years\nfree of charge\n\nContact nearest Krishi Vigyan Kendra (KVK) or Agricultu\n\nNational Food Security Mission (NFSM)\nSubsidized seed, fertilizer, and machinery\nSmall\nfor and\nrice,marginal\nwheat, pulses\nfarmers in targeted\nApply\ndistricts\nthrough District Agriculture Officer",
+      "text": "Cluster Bean (Guar)\n\n■4,500 – 6,500/qtl\n\n↑ volatile\n\nExport-linked price. High guar gum demand from oil industry. Hold stock if possibl\n\n4. Government Schemes — Active for Kharif 2026\nScheme Name\n\nBenefit\n\nWho is Eligible\n\nHow to Apply\n\nPM-KISAN\n\n■6,000/year direct transfer in 3 installments\nAll landholding farmers with Aadhaar-linked\nRegister\nbank\nat pmkisan.gov.in\naccount\nor nearest CSC center\n\nPM Fasal Bima Yojana (PMFBY)Crop insurance against natural calamities,\nAll farmers\npest, disease.\ngrowingPremium:\nnotified crops\n2% forinKharif\nnotified\nRegisterareas\nvia bank branch or Common Service Centre be\nSoil Health Card Scheme\n\nFree soil testing and NPK recommendations\nAll farmers\nevery —\n2 years\nfree of charge\n\nContact nearest Krishi Vigyan Kendra (KVK) or Agricultu\n\nNational Food Security Mission (NFSM)\nSubsidized seed, fertilizer, and machinery\nSmall\nfor and\nrice,marginal\nwheat, pulses\nfarmers in targeted\nApply\ndistricts\nthrough District Agriculture Officer",
       "word_count": 139,
       "char_count": 974,
       "keywords": [
@@ -530,18 +530,18 @@
         "aadhaar-linked",
         "account"
       ],
-      "source_pdf": "advisories/kharif_2024.pdf"
+      "source_pdf": "advisories/kharif_2026.pdf"
     },
     {
-      "id": "advisories__kharif_2024::s001::c005",
-      "document_id": "advisories__kharif_2024",
-      "path": "advisories/kharif_2024.md",
+      "id": "advisories__kharif_2026::s001::c005",
+      "document_id": "advisories__kharif_2026",
+      "path": "advisories/kharif_2026.md",
       "category": "advisories",
-      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+        "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "Pradhan Mantri Krishi SinchayeeSubsidy\nYojana (PMKSY)\non drip and sprinkler irrigation:All\n55%\nfarmers;\nfor small\nsmall/marginal\nfarmers, 45%\nget\nforhigher\nothers\nApply\nsubsidy\nthrough State Horticulture or Agriculture Departm\n\n5. Water Conservation Advisory — Kharif 2024\n\nDespite near-normal monsoon forecast, water conservation remains essential for sustainable farming. The following practices are\nstrongly recommended:\nRegion\n\nKey Water Conservation Practice\n\nExpected Water Saving\n\nPunjab / Haryana\n\nDirect Seeded Rice (DSR) — avoid transplanted paddy where possible. Saves 15–25% water15–25%\nper season.\n\nTamil Nadu\n\nSystem of Rice Intensification (SRI) — wider spacing, young seedlings, intermittent irrigation 20–30%\n\nMaharashtra\n\nDrip irrigation for tomato and onion. Mulching with sugarcane trash or plastic\n\n30–40%\n\nRajasthan\n\nRainwater harvesting — tanka and kund structures. Zero tillage in low rainfall areas.",
+      "text": "Pradhan Mantri Krishi SinchayeeSubsidy\nYojana (PMKSY)\non drip and sprinkler irrigation:All\n55%\nfarmers;\nfor small\nsmall/marginal\nfarmers, 45%\nget\nforhigher\nothers\nApply\nsubsidy\nthrough State Horticulture or Agriculture Departm\n\n5. Water Conservation Advisory — Kharif 2026\n\nDespite near-normal monsoon forecast, water conservation remains essential for sustainable farming. The following practices are\nstrongly recommended:\nRegion\n\nKey Water Conservation Practice\n\nExpected Water Saving\n\nPunjab / Haryana\n\nDirect Seeded Rice (DSR) — avoid transplanted paddy where possible. Saves 15–25% water15–25%\nper season.\n\nTamil Nadu\n\nSystem of Rice Intensification (SRI) — wider spacing, young seedlings, intermittent irrigation 20–30%\n\nMaharashtra\n\nDrip irrigation for tomato and onion. Mulching with sugarcane trash or plastic\n\n30–40%\n\nRajasthan\n\nRainwater harvesting — tanka and kund structures. Zero tillage in low rainfall areas.",
       "word_count": 122,
       "char_count": 924,
       "keywords": [
@@ -558,16 +558,16 @@
         "apply",
         "areas"
       ],
-      "source_pdf": "advisories/kharif_2024.pdf"
+      "source_pdf": "advisories/kharif_2026.pdf"
     },
     {
-      "id": "advisories__kharif_2024::s001::c006",
-      "document_id": "advisories__kharif_2024",
-      "path": "advisories/kharif_2024.md",
+      "id": "advisories__kharif_2026::s001::c006",
+      "document_id": "advisories__kharif_2026",
+      "path": "advisories/kharif_2026.md",
       "category": "advisories",
-      "title": "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY"
+        "KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY"
       ],
       "text": "Maximize use of rainfall\n\nKerala\n\nDrainage management as important as irrigation — ensure no waterlogging for pepper and coconut\nPrevent loss from excess water",
       "word_count": 24,
@@ -586,18 +586,18 @@
         "pepper",
         "prevent"
       ],
-      "source_pdf": "advisories/kharif_2024.pdf"
+      "source_pdf": "advisories/kharif_2026.pdf"
     },
     {
-      "id": "advisories__rabi_2024::s001::c001",
-      "document_id": "advisories__rabi_2024",
-      "path": "advisories/rabi_2024.md",
+      "id": "advisories__rabi_2026::s001::c001",
+      "document_id": "advisories__rabi_2026",
+      "path": "advisories/rabi_2026.md",
       "category": "advisories",
-      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+        "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "_Source PDF: `rabi_2024.pdf`_\nOctober 2024 – April 2025 | All Zones\nMinistry of Agriculture & Farmers Welfare | ICAR | State Agricultural Universities\nDocument Type: Seasonal Advisory\n\n1. Season Overview\nRabi 2024-25 begins on the back of a near-normal Kharif season. Soil moisture levels are adequate across most wheat-growing\nstates — Punjab, Haryana, Uttar Pradesh, and Madhya Pradesh. Reservoir storage is above average, supporting assured irrigation\nfor wheat and mustard. Cold wave risk in December–January must be monitored for mustard and cumin.\nKey message: Wheat MSP has been increased to ■2,275/qtl — excellent returns expected. Mustard prices remain strong due to\nedible oil demand. Onion Rabi planting window is October–November for February–March harvest.\n\n2. Crop Recommendations by Region\nRegion\n\nTop Recommended Crops\n\nWhy Recommended\n\nCrops to Avoid / Caution\n\nTamil Nadu\n\nRice (Rabi / Samba)",
+      "text": "_Source PDF: `rabi_2026.pdf`_\nOctober 2026 – April 2027 | All Zones\nMinistry of Agriculture & Farmers Welfare | ICAR | State Agricultural Universities\nDocument Type: Seasonal Advisory\n\n1. Season Overview\nRabi 2026-27 begins on the back of a near-normal Kharif season. Soil moisture levels are adequate across most wheat-growing\nstates — Punjab, Haryana, Uttar Pradesh, and Madhya Pradesh. Reservoir storage is above average, supporting assured irrigation\nfor wheat and mustard. Cold wave risk in December–January must be monitored for mustard and cumin.\nKey message: Wheat MSP has been increased to ■2,275/qtl — excellent returns expected. Mustard prices remain strong due to\nedible oil demand. Onion Rabi planting window is October–November for February–March harvest.\n\n2. Crop Recommendations by Region\nRegion\n\nTop Recommended Crops\n\nWhy Recommended\n\nCrops to Avoid / Caution\n\nTamil Nadu\n\nRice (Rabi / Samba)",
       "word_count": 135,
       "char_count": 910,
       "keywords": [
@@ -614,16 +614,16 @@
         "above",
         "across"
       ],
-      "source_pdf": "advisories/rabi_2024.pdf"
+      "source_pdf": "advisories/rabi_2026.pdf"
     },
     {
-      "id": "advisories__rabi_2024::s001::c002",
-      "document_id": "advisories__rabi_2024",
-      "path": "advisories/rabi_2024.md",
+      "id": "advisories__rabi_2026::s001::c002",
+      "document_id": "advisories__rabi_2026",
+      "path": "advisories/rabi_2026.md",
       "category": "advisories",
-      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+        "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY"
       ],
       "text": "Samba rice variety excellent for Rabi season. Good\nAvoid\ntanksugarcane\nlevels fromratoon\nKharif.if Groundnut\nwater is uncertain\nprices firm.\n\n(Cauvery Delta)\n\nGroundnut (Rabi)\n\nMaharashtra\n\nWheat (GW-322, HD-2781)\n\n(Nashik / Deccan)\n\nOnion (Rabi)\n\nPunjab\n\nWheat (HD-3086, PBW-826)\n\n(Plains)\n\nMustard (border rows)\n\nKerala\n\nVegetables (Ash gourd, Bitter gourd)\nRabi season is relatively dry — vegetable cultivation\nAvoid\nprofitable.\nnew pepper\nBanana\nplanting\nplanted\nin November\nnow harvests\n— establishm\nin Onam s\n\n(Malabar Coast)\n\nBanana (Rabi planting)\n\nRajasthan\n\nMustard (Pusa Bold, RH-749)\n\n(Thar / Jaipur)\n\nCumin (GC-4)\n\nBlack cotton soil retains Kharif moisture well for wheat.\nAvoidRabi\nlate onion planting\nis highestafter\nquality\nNovember\n— premium\n20 —prices\nqualityi\n\nHD-3086 and PBW-826 are rust-resistant varietiesAvoid\n— critical\nlate sowing\ngiven new\nafterrust\nNovember\nraces detected\n20 — every\nin 2023.\nweek\nMS\no",
       "word_count": 131,
@@ -642,18 +642,18 @@
         "late",
         "mustard"
       ],
-      "source_pdf": "advisories/rabi_2024.pdf"
+      "source_pdf": "advisories/rabi_2026.pdf"
     },
     {
-      "id": "advisories__rabi_2024::s001::c003",
-      "document_id": "advisories__rabi_2024",
-      "path": "advisories/rabi_2024.md",
+      "id": "advisories__rabi_2026::s001::c003",
+      "document_id": "advisories__rabi_2026",
+      "path": "advisories/rabi_2026.md",
       "category": "advisories",
-      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+        "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "Mustard is the primary Rabi crop — excellent oil content\nAvoid sowing\nvarieties\ncumin\navailable.\nbeforeCumin\nNovember\nprices1very\n— warm\nstrong\ncon\n(■\n\n3. Market Price Outlook — Rabi 2024-25\nCrop\n\nExpected Price Range\n\nTrend\n\nKey Factors\n\nWheat\n\nMSP ■2,275/qtl (floor)\n\n→ Stable\n\nGovernment procurement at MSP. Global wheat prices elevated — export possibi\n\nMustard\n\n■5,200 – 6,500/qtl\n\n↑ Strong\n\nEdible oil import duty raised — domestic mustard oil demand high. Excellent oppo\n\nOnion (Rabi)\n\n■1,200 – 3,000/qtl\n\n↑ Mar–Apr\n\nStorage demand strong. Rabi onion has better storability than Kharif. Hold stock ti\n\nCumin\n\n■18,000 – 28,000/qtl\n\n↑ Very strong\n\nExport demand from Middle East and Europe high. Limited global supply. Best op\n\nGroundnut (Rabi)\n\n■5,200 – 5,800/qtl\n\n→ Stable\n\nOil demand stable. Seed groundnut fetches premium — maintain quality, avoid afl\n\nRice (Rabi/Samba)\n\nMSP ■2,183/qtl\n\n→ Stable",
+      "text": "Mustard is the primary Rabi crop — excellent oil content\nAvoid sowing\nvarieties\ncumin\navailable.\nbeforeCumin\nNovember\nprices1very\n— warm\nstrong\ncon\n(■\n\n3. Market Price Outlook — Rabi 2026-27\nCrop\n\nExpected Price Range\n\nTrend\n\nKey Factors\n\nWheat\n\nMSP ■2,275/qtl (floor)\n\n→ Stable\n\nGovernment procurement at MSP. Global wheat prices elevated — export possibi\n\nMustard\n\n■5,200 – 6,500/qtl\n\n↑ Strong\n\nEdible oil import duty raised — domestic mustard oil demand high. Excellent oppo\n\nOnion (Rabi)\n\n■1,200 – 3,000/qtl\n\n↑ Mar–Apr\n\nStorage demand strong. Rabi onion has better storability than Kharif. Hold stock ti\n\nCumin\n\n■18,000 – 28,000/qtl\n\n↑ Very strong\n\nExport demand from Middle East and Europe high. Limited global supply. Best op\n\nGroundnut (Rabi)\n\n■5,200 – 5,800/qtl\n\n→ Stable\n\nOil demand stable. Seed groundnut fetches premium — maintain quality, avoid afl\n\nRice (Rabi/Samba)\n\nMSP ■2,183/qtl\n\n→ Stable",
       "word_count": 138,
       "char_count": 905,
       "keywords": [
@@ -670,18 +670,18 @@
         "cumin",
         "excellent"
       ],
-      "source_pdf": "advisories/rabi_2024.pdf"
+      "source_pdf": "advisories/rabi_2026.pdf"
     },
     {
-      "id": "advisories__rabi_2024::s001::c004",
-      "document_id": "advisories__rabi_2024",
-      "path": "advisories/rabi_2024.md",
+      "id": "advisories__rabi_2026::s001::c004",
+      "document_id": "advisories__rabi_2026",
+      "path": "advisories/rabi_2026.md",
       "category": "advisories",
-      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+        "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "Procurement available through FCI and state agencies. Samba and Ponni varietie\n\n4. Government Schemes — Active for Rabi 2024-25\nScheme Name\n\nBenefit\n\nWho is Eligible\n\nHow to Apply\n\nWheat MSP Procurement\n\nGuaranteed purchase at ■2,275/qtl through\nRegistered\nFCI / State\nfarmers\nagencies\nin Punjab, Haryana,\nRegister\nUP, MP\nat mandi\nand other\n/ APMC\nnotified\nbefore\nstates\nprocurement season (\n\nMustard Mission (National Oilseeds\nSubsidized\nMission)high-yielding mustard seed,Farmers\nmicronutrients,\nin Rajasthan,\ndemonstration\nHaryana,plots\nMP, Contact\nUP\nDistrict Agriculture Officer before October 15\nPM Fasal Bima Yojana (Rabi)\n\nCrop insurance: 1.5% premium for wheat,\nAll farmers\nmustard,growing\ngram notified crops\n\nEnroll through bank / CSC before November 30 cutoff\n\nKisan Credit Card (KCC)\n\nShort-term crop loan at 4% effective interest\nAll farmers\n(with prompt\nwith land\nrepayment\nrecords incentive)\nApply at any nationalized bank or cooperative bank with",
+      "text": "Procurement available through FCI and state agencies. Samba and Ponni varietie\n\n4. Government Schemes — Active for Rabi 2026-27\nScheme Name\n\nBenefit\n\nWho is Eligible\n\nHow to Apply\n\nWheat MSP Procurement\n\nGuaranteed purchase at ■2,275/qtl through\nRegistered\nFCI / State\nfarmers\nagencies\nin Punjab, Haryana,\nRegister\nUP, MP\nat mandi\nand other\n/ APMC\nnotified\nbefore\nstates\nprocurement season (\n\nMustard Mission (National Oilseeds\nSubsidized\nMission)high-yielding mustard seed,Farmers\nmicronutrients,\nin Rajasthan,\ndemonstration\nHaryana,plots\nMP, Contact\nUP\nDistrict Agriculture Officer before October 15\nPM Fasal Bima Yojana (Rabi)\n\nCrop insurance: 1.5% premium for wheat,\nAll farmers\nmustard,growing\ngram notified crops\n\nEnroll through bank / CSC before November 30 cutoff\n\nKisan Credit Card (KCC)\n\nShort-term crop loan at 4% effective interest\nAll farmers\n(with prompt\nwith land\nrepayment\nrecords incentive)\nApply at any nationalized bank or cooperative bank with",
       "word_count": 137,
       "char_count": 963,
       "keywords": [
@@ -698,18 +698,18 @@
         "fci",
         "haryana"
       ],
-      "source_pdf": "advisories/rabi_2024.pdf"
+      "source_pdf": "advisories/rabi_2026.pdf"
     },
     {
-      "id": "advisories__rabi_2024::s001::c005",
-      "document_id": "advisories__rabi_2024",
-      "path": "advisories/rabi_2024.md",
+      "id": "advisories__rabi_2026::s001::c005",
+      "document_id": "advisories__rabi_2026",
+      "path": "advisories/rabi_2026.md",
       "category": "advisories",
-      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+        "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY"
       ],
-      "text": "Paramparagat Krishi Vikas Yojana\n■50,000/ha\n(PKVY) over 3 years for organic farming\nFarmer\nconversion\ngroups (minimum\nand certification\n50 farmers Apply\n/ 50 ha\nthrough\ncluster)State Agriculture Department\n\n5. Fertilizer Recommendations & Subsidy Advisory — Rabi 2024-25\n\nFertilizer prices have stabilized in 2024. Government subsidy on Urea continues — MRP capped at ■242/50kg bag. DAP subsidy\nextended — MRP ■1,350/50kg bag. Farmers are advised to purchase fertilizers only from licensed dealers and insist on proper\nreceipts.\nCrop\n\nRecommended NPK (kg/ha)\nSplit Application\n\nKey Micronutrient\n\nWheat\n\n120:60:40\n\nN: 1/3 basal, 1/3 at CRI (20 DAS), 1/3 at tillering (40 DAS)\n\nZinc Sulfate 25 kg/ha if deficient\n\nMustard\n\n60:40:40\n\nN: 1/2 basal, 1/2 at 30 DAS. P and K: full basal\n\nSulfur 40 kg/ha — critical for oil content and d\n\nOnion (Rabi)\n\n50:75:50\n\nN: 1/3 basal, 1/3 at 30 DAT, 1/3 at 60 DAT. P+K: full basal",
+      "text": "Paramparagat Krishi Vikas Yojana\n■50,000/ha\n(PKVY) over 3 years for organic farming\nFarmer\nconversion\ngroups (minimum\nand certification\n50 farmers Apply\n/ 50 ha\nthrough\ncluster)State Agriculture Department\n\n5. Fertilizer Recommendations & Subsidy Advisory — Rabi 2026-27\n\nFertilizer prices have stabilized in 2026. Government subsidy on Urea continues — MRP capped at ■242/50kg bag. DAP subsidy\nextended — MRP ■1,350/50kg bag. Farmers are advised to purchase fertilizers only from licensed dealers and insist on proper\nreceipts.\nCrop\n\nRecommended NPK (kg/ha)\nSplit Application\n\nKey Micronutrient\n\nWheat\n\n120:60:40\n\nN: 1/3 basal, 1/3 at CRI (20 DAS), 1/3 at tillering (40 DAS)\n\nZinc Sulfate 25 kg/ha if deficient\n\nMustard\n\n60:40:40\n\nN: 1/2 basal, 1/2 at 30 DAS. P and K: full basal\n\nSulfur 40 kg/ha — critical for oil content and d\n\nOnion (Rabi)\n\n50:75:50\n\nN: 1/3 basal, 1/3 at 30 DAT, 1/3 at 60 DAT. P+K: full basal",
       "word_count": 146,
       "char_count": 915,
       "keywords": [
@@ -726,16 +726,16 @@
         "advised",
         "advisory"
       ],
-      "source_pdf": "advisories/rabi_2024.pdf"
+      "source_pdf": "advisories/rabi_2026.pdf"
     },
     {
-      "id": "advisories__rabi_2024::s001::c006",
-      "document_id": "advisories__rabi_2024",
-      "path": "advisories/rabi_2024.md",
+      "id": "advisories__rabi_2026::s001::c006",
+      "document_id": "advisories__rabi_2026",
+      "path": "advisories/rabi_2026.md",
       "category": "advisories",
-      "title": "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY",
+      "title": "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY",
       "heading_path": [
-        "RABI 2024-25 SEASONAL AGRICULTURAL ADVISORY"
+        "RABI 2026-27 SEASONAL AGRICULTURAL ADVISORY"
       ],
       "text": "Boron 0.5 kg/ha for bulb development\n\nRice (Rabi/Samba)\n\n100:50:40\n\nN: 1/3 basal, 1/3 at tillering, 1/3 at PI. P+K: full basal\n\nZinc Sulfate 25 kg/ha if blast or deficiency sy\n\nGroundnut (Rabi)\n\n25:50:75\n\nAll basal application. Gypsum 400 kg/ha at pegging stage\n\nCalcium via gypsum critical for pod developm\n\nCumin\n\n20:30:0\n\nAll basal — light application. Avoid excess nitrogen\n\nNo additional micronutrient; sulfur 20 kg/ha b\n\n* Purchase fertilizers only from licensed dealers. Demand original cash memo. Report overpricing to District Agriculture Officer.\n* Soil testing recommended before every season. Get your free Soil Health Card from nearest KVK.",
       "word_count": 99,
@@ -754,7 +754,7 @@
         "blast",
         "boron"
       ],
-      "source_pdf": "advisories/rabi_2024.pdf"
+      "source_pdf": "advisories/rabi_2026.pdf"
     },
     {
       "id": "crop_calendars__kerala::s001::c001",

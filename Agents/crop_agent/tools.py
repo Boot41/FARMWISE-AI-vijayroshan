@@ -167,7 +167,7 @@ async def get_advisory(season: str, year: int) -> str:
     - Find government scheme or subsidy information relevant to crop choice
 
     Valid seasons: kharif, rabi.
-    Valid years: 2024.
+    Valid years: 2026.
     Normalise season to lowercase.
     Returns the full markdown content of the advisory.
     Returns an empty string if no advisory exists for that season and year.

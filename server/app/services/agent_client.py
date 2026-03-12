@@ -43,4 +43,4 @@ async def send_chat_request(payload: dict[str, Any]) -> str:
             status_code=status.HTTP_502_BAD_GATEWAY,
             detail="Agent service response did not contain a reply",
         )
-    return reply.strip()
+    return reply

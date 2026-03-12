@@ -1,12 +1,12 @@
-# KHARIF 2024 SEASONAL AGRICULTURAL ADVISORY
+# KHARIF 2026 SEASONAL AGRICULTURAL ADVISORY
 
-_Source PDF: `kharif_2024.pdf`_
-June – November 2024 | All Zones
+_Source PDF: `kharif_2026.pdf`_
+June – November 2026 | All Zones
 Ministry of Agriculture & Farmers Welfare | ICAR | State Agricultural Universities
 Document Type: Seasonal Advisory
 
 1. Season Overview
-The Southwest Monsoon 2024 is forecast to be near-normal to above-normal (104% of Long Period Average) by India
+The Southwest Monsoon 2026 is forecast to be near-normal to above-normal (104% of Long Period Average) by India
 Meteorological Department. Above-normal rainfall is expected across Maharashtra, Karnataka, and Madhya Pradesh. Below-normal
 rainfall risk exists in parts of Rajasthan and Gujarat. Farmers should plan crop choices based on their specific district forecasts.
 Key message: Good monsoon forecasts support expansion of rice, soybean, and cotton in central India. Groundnut areas in Tamil
@@ -97,7 +97,7 @@ demand
 Rajasthan
 strong — water insufficien
 
-3. Market Price Outlook — Kharif 2024
+3. Market Price Outlook — Kharif 2026
 Crop
 
 Expected Price Range
@@ -162,7 +162,7 @@ Cluster Bean (Guar)
 
 Export-linked price. High guar gum demand from oil industry. Hold stock if possibl
 
-4. Government Schemes — Active for Kharif 2024
+4. Government Schemes — Active for Kharif 2026
 Scheme Name
 
 Benefit
@@ -226,7 +226,7 @@ Apply
 subsidy
 through State Horticulture or Agriculture Departm
 
-5. Water Conservation Advisory — Kharif 2024
+5. Water Conservation Advisory — Kharif 2026
 
 Despite near-normal monsoon forecast, water conservation remains essential for sustainable farming. The following practices are
 strongly recommended:

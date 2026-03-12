@@ -88,10 +88,10 @@ Agents/
 └── docs/
     ├── index.json
     ├── advisories/
-    │   ├── kharif_2024.md
-    │   ├── kharif_2024.pdf
-    │   ├── rabi_2024.md
-    │   └── rabi_2024.pdf
+    │   ├── kharif_2026.md
+    │   ├── kharif_2026.pdf
+    │   ├── rabi_2026.md
+    │   └── rabi_2026.pdf
     ├── crop_calendars/
     │   ├── kerala.md
     │   ├── kerala.pdf
@@ -356,7 +356,7 @@ Current logic:
 
 - user messages always render as right-aligned bubbles
 - assistant messages render as plain text by default
-- if `message_metadata.structured === true` and `message_metadata.intent` is known, the relevant card component is used
+- if `message_metadata.structured === true`, `message_metadata.intent` is known, and `message_metadata.data` contains the expected card props, the relevant card component is used
 
 Supported structured intents:
 
@@ -367,9 +367,12 @@ Supported structured intents:
 
 Current backend reality:
 
-- the backend presently stores assistant messages with minimal metadata like `{"source": "agent_service"}`
-- this means the frontend mostly renders plain assistant bubbles today
-- the structured cards are implemented and ready, but they depend on richer `message_metadata`
+- the backend stores plain assistant replies with metadata like `{"source": "agent_service", "structured": false}`
+- when a specialist agent returns a recognized JSON payload, the backend stores `message_metadata` with:
+  - `structured: true`
+  - `intent: <known intent>`
+  - `data: {...}` normalized to the existing card prop shape
+- assistant `message_text` remains the raw reply string, including JSON text for structured specialist responses
 
 If that metadata contract changes, update `client/src/lib/api.ts`, `client/src/components/chat/ChatMessage.tsx`, and the card prop types together.
 
